@@ -1,0 +1,304 @@
+:root {
+  --primary-font: Poppins, sans-serif;
+  --secondary-font: Open Sans, sans-serif;
+  --accent: #ff4a17;
+  --bs-indigo: #6610f2;
+}
+
+.footer-container{
+  width: 100%;
+  height: 250px;
+  /* border:1px solid rgb(192, 22, 87); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  background-color: #181818;
+  
+}
+
+.footer-container-child{
+  width: 25%;
+  height: auto;
+  /* border:1px solid rgb(138, 50, 238); */
+  padding: 15px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ flex-direction: column;
+ gap:15px;
+}
+
+
+
+
+.footer-container-p{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    background-color: #181818;
+    color: hsla(0, 0%, 100%, .7);
+    /* border:1px solid red; */
+    width: 100%;
+}
+
+
+
+.icons-box{
+  width: 100%;
+  /* border:1px solid rgb(78, 1, 1);  */
+ padding: 10px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ gap: 20px;
+
+}
+
+
+.icons-box-child{
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.icons{
+  color: #fff;
+  width: 20px;
+  height: 20px;
+ 
+}
+
+
+.icons:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(243, 113, 247, 0.5);
+}
+
+.footer-section{
+   /* border: 1px solid white;  */
+  width: 100%;
+  
+}
+
+.footer-section2{
+  width: 20%;
+  height: auto;
+   /* border:1px solid rgb(138, 50, 238);  */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.footer-section-child{
+  width: 100%;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.sectionfooter-p {
+  font-size: 16px;
+  color: #ffffffb2;
+  transition: 0.5s linear;
+}
+
+
+.sectionfooter-p:hover{
+  color: var(--accent);
+}
+
+.sectionfooter-h3 {
+  font-size: 18px;
+  color: #fefefe;
+}
+
+
+.menu-widget{
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+
+
+.footer-section3{
+  width: 25%;
+  height: auto;
+  /* border:1px solid rgb(138, 50, 238); */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+
+.footer-section-subscribe{
+  width: 25%;
+  height: auto;
+  /* border:1px solid rgb(138, 50, 238); */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap:20px;
+}
+
+
+
+
+.input-footer {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  padding:10px;
+  background-color: black;
+outline: none;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+
+.input-p2 {
+  color: #ffffffb2;
+  font-size: 16px;
+}
+
+
+.footer-button {
+  background-color: #ff4a17;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid red; */
+  width: 30%;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+top: 23px;
+transition: 0.5s linear;
+}
+
+
+
+.footer-button:hover{
+
+opacity: 0.6;
+
+}
+
+
+
+
+.button-box{
+  width: 100%;
+  height: 60px;
+  /* border:1px solid red; */
+ 
+}
+
+
+
+
+.input-form{
+  position: relative;
+}
+
+
+
+/* От 1100px и меньше */
+@media (max-width: 1100px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-container-child,
+  .footer-section2,
+  .footer-section3,
+  .footer-section-subscribe {
+    width: 50%;
+  }
+
+  .footer-button {
+    width: 20%;
+    top: 25px;
+  }
+}
+
+/* От 768px и меньше */
+@media (max-width: 768px) {
+  .footer-container-child,
+  .footer-section2,
+  .footer-section3,
+  .footer-section-subscribe {
+    width: 50%;
+  }
+
+  .footer-button {
+    width: 20%;
+    height: 45px;
+    font-size: 15px;
+    top: 20px;
+  }
+
+  .input-footer {
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+/* От 480px и меньше */
+@media (max-width: 480px) {
+  .footer-button {
+    width: 30%;
+    height: 40px;
+    font-size: 14px;
+    top: 20px;
+  }
+
+  .input-footer {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .sectionfooter-h3 {
+    font-size: 16px;
+  }
+
+  .sectionfooter-p,
+  .input-p2 {
+    font-size: 14px;
+  }
+}

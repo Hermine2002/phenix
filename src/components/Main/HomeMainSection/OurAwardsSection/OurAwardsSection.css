@@ -1,0 +1,175 @@
+.ourawards-section {
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  padding-top: 180px;
+  padding-left: 120px;
+}
+
+.awards-section {
+  background: black;
+  color: white;
+  padding: 40px;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.award-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h4 {
+  color: orange;
+}
+
+.ourh2 {
+    font-size: 18px;
+    color: #999696;
+}
+
+.ourh3{
+    font-size: 50px;
+    color: #FEFEFE;
+}
+
+
+.contentttbox1{
+    width: 46%;
+    display: flex;
+    flex-wrap: wrap;
+     gap: 120px;
+     
+}
+
+.text001{
+    color: #FF4A17;
+    font-size: 30px;
+}
+
+.text002{
+    color: #Fefefe;
+    font-size: 22px;
+}
+
+.text003{
+    color: #Ffffffb2;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .ourawards-section {
+      gap: 100px;
+      padding-top: 150px;
+      padding-left: 80px;
+  }
+  .ourh3 {
+      font-size: 44px;
+  }
+  .contentttbox1 {
+      width: 50%;
+      gap: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ourawards-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+      padding-top: 120px;
+      padding-left: 0;
+      text-align: center;
+  }
+  .ourh3 {
+      font-size: 38px;
+  }
+  .contentttbox1 {
+      width: 80%;
+      gap: 60px;
+  }
+  .text001 {
+      font-size: 26px;
+  }
+  .text002 {
+      font-size: 20px;
+  }
+  .text003 {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourawards-section {
+      gap: 60px;
+      padding-top: 100px;
+  }
+  .ourh3 {
+      font-size: 34px;
+  }
+  .contentttbox1 {
+      width: 90%;
+      gap: 50px;
+  }
+  .text001 {
+      font-size: 24px;
+  }
+  .text002 {
+      font-size: 18px;
+  }
+  .text003 {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ourawards-section {
+      gap: 40px;
+      padding-top: 80px;
+  }
+  .ourh3 {
+      font-size: 30px;
+  }
+  .contentttbox1 {
+      width: 100%;
+      gap: 40px;
+  }
+  .text001 {
+      font-size: 22px;
+  }
+  .text002 {
+      font-size: 16px;
+  }
+  .text003 {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ourawards-section {
+      padding-top: 60px;
+      gap: 30px;
+  }
+  .ourh3 {
+      font-size: 26px;
+  }
+  .contentttbox1 {
+      gap: 30px;
+  }
+  .text001 {
+      font-size: 20px;
+  }
+  .text002 {
+      font-size: 15px;
+  }
+  .text003 {
+      font-size: 12px;
+  }
+}

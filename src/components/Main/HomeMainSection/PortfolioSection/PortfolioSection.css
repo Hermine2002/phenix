@@ -1,0 +1,151 @@
+.portfolio-section{
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+    gap: 30px;
+}
+
+.portfolioh3{
+    color: #999696;
+    font-size: 18px;
+}
+
+.portfolioh2{
+    color: #FEFEFE;
+    font-size: 50px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .carousel img.active {
+    display: block;
+  }
+  
+  button {
+    /* position: absolute;  */
+    top: 50%;
+    /* transform: translateY(-50%);  */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    .portfolio-section {
+        padding-top: 140px;
+        gap: 25px;
+    }
+    .portfolioh2 {
+        font-size: 44px;
+    }
+    .carousel {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .portfolio-section {
+        padding-top: 120px;
+        gap: 20px;
+    }
+    .portfolioh2 {
+        font-size: 38px;
+    }
+    .carousel {
+        max-width: 600px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-section {
+        padding-top: 100px;
+        gap: 15px;
+    }
+    .portfolioh2 {
+        font-size: 32px;
+    }
+    .carousel {
+        max-width: 500px;
+    }
+    button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-section {
+        padding-top: 80px;
+        gap: 10px;
+    }
+    .portfolioh3 {
+        font-size: 16px;
+    }
+    .portfolioh2 {
+        font-size: 28px;
+    }
+    .carousel {
+        max-width: 400px;
+    }
+    button {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio-section {
+        padding-top: 60px;
+        gap: 8px;
+    }
+    .portfolioh3 {
+        font-size: 14px;
+    }
+    .portfolioh2 {
+        font-size: 24px;
+    }
+    .carousel {
+        max-width: 320px;
+    }
+    button {
+        font-size: 12px;
+        padding: 4px;
+    }
+}

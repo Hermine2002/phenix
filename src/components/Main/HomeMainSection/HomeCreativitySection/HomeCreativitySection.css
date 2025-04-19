@@ -1,0 +1,53 @@
+.hero-content-h1 {
+  font-size: 8``````````````````````0px;
+  text-align: start;
+  padding-top: 140px;
+}
+
+.hero-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background: url("../../../../assets/imgs/IMG_0451.JPG") no-repeat center
+    center/cover;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.hero-content-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 110px;
+}
+
+.hero-content-box a {
+  font-size: 17px;
+  color: white;
+  padding-top: 20px;
+}
+
+.icoon {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.hero-content-p {
+  text-align: start;
+  font-size: 18px;
+  padding-right: 80px;
+  padding-top: 10px;
+}
+
+.social-links {
+  rotate: -90deg;
+  position: absolute;
+  left: 1400px;
+  top: 300px;
+  z-index: 11;
+}

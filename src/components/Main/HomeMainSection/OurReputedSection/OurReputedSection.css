@@ -1,0 +1,72 @@
+.running-text-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #181818;
+    padding: 20px;
+    padding-top: 70px;
+  }
+  
+
+
+  .running-text {
+    display: inline-block;
+    font-size: 100px;
+    color: #ffffff;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite; 
+    color: orange;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  .logoscanteiner{
+    width: 96%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+  }
+  
+
+  .loggggo1{
+    width: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .running-text {
+      font-size: 70px;  
+    }
+  
+    .logoscanteiner {
+      flex-direction: column;  
+      padding-top: 100px;
+    }
+  
+    .loggggo1 {
+      width: 120px;  
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .running-text {
+      font-size: 50px;  
+    }
+  
+    .logoscanteiner {
+      padding-top: 80px;
+      justify-content: center;  
+    }
+  
+    .loggggo1 {
+      width: 100px;  
+    }
+  }
