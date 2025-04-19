@@ -19,7 +19,7 @@ export default function Header2() {
         <nav className="navigation">
           <ul>
             <li>
-              <Link to="/">HOME</Link>
+              <Link>HOME</Link>
               <div className="forDeck"></div>
             </li>
             <li>
