@@ -1,0 +1,162 @@
+.highly-section {
+    --section-padding: clamp(5rem, 15vw, 500px);
+    --content-gap: clamp(2rem, 8vw, 120px);
+    
+    padding-top: var(--section-padding);
+    padding-bottom: 4rem;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    padding-top: 550px;
+  }
+  
+  .higly-kanteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--content-gap);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .higly-photobox {
+    width: clamp(300px, 40%, 466px);
+    background-color: #ff0000;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .higlyphoto {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: relative;
+    top: -60px;
+    left: -45px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .higly-textbox {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  
+  .higly-h3 {
+    font-size: clamp(0.875rem, 1.25vw, 1.125rem);
+    color: #999696;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .higly-h2 {
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    color: #FEFEFE;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .higly-p {
+    font-size: clamp(0.875rem, 1.75vw, 1rem);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    max-width: 60ch;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .higly-photobox {
+      margin-left: 0;
+    }
+    
+    .higlyphoto {
+      left: -30px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .higly-kanteiner {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .higly-photobox {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .higlyphoto {
+      top: -40px;
+      left: -30px;
+    }
+    
+    .higly-textbox {
+      text-align: center;
+      padding: 0 2rem;
+    }
+    
+    .higly-p {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .highly-section {
+      padding-top: clamp(3rem, 10vw, 8rem);
+    }
+    
+    .higly-photobox {
+      width: 90%;
+    }
+    
+    .higlyphoto {
+      top: -30px;
+      left: -20px;
+    }
+    
+    .higly-h2 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .higlyphoto {
+      top: -20px;
+      left: -15px;
+    }
+    
+    .higly-textbox {
+      padding: 0 1rem;
+    }
+    
+    .higly-h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Hover Effects */
+  @media (hover: hover) {
+    .higlyphoto:hover {
+      transform: scale(1.03);
+    }
+    
+    .higly-h3:hover {
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+  }
+  
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .higlyphoto {
+      transition: none;
+    }
+  }
