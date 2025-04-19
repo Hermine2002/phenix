@@ -1,0 +1,116 @@
+.ourpers {
+    /* padding-top: 200px; */
+}
+
+.fone-perspective {
+    width: 100%;
+    height: 650px;
+    background-image: url(./../../../../assets/imgs/blog_hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.home {
+    font-size: 16px;
+    color: #999696;
+    font-weight: 300;
+}
+
+.home:hover {
+    color: red;
+    transition: 0.6s;
+}
+
+.ss {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.pers {
+    font-size: 16px;
+    color: #999696;
+    font-weight: 300;
+}
+
+.pers:hover {
+    color: red;
+    transition: 0.6s;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .fone-perspective {
+        height: 550px;
+    }
+    
+    .main_text {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fone-perspective {
+        height: 450px;
+    }
+    
+    .main_text {
+        font-size: 36px;
+    }
+    
+    .ss {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fone-perspective {
+        height: 400px;
+    }
+    
+    .main_text {
+        font-size: 30px;
+    }
+    
+    .home, .pers {
+        font-size: 14px;
+    }
+    
+    .ss {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fone-perspective {
+        height: 350px;
+    }
+    
+    .main_text {
+        font-size: 24px;
+    }
+    
+    .ss {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .fone-perspective {
+        height: 300px;
+    }
+    
+    .main_text {
+        font-size: 20px;
+    }
+}
