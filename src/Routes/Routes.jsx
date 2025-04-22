@@ -7,7 +7,7 @@ import Curses from "../components/Pages/Curses/Curses";
 import Coin from "../components/Pages/Coin/Coin";
 import NotFound from "../components/NotFound/NotFound";
 import Layout from "../components/Layout/Layout";
-import Marketing from "../components/Pages/Marketing/Marketing";
+
 import WhatWeDo from "../components/Pages/WhatWeDo/WhatWeDo";
 
 export default function Routers() {
@@ -20,7 +20,6 @@ export default function Routers() {
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/curses" element={<Curses />} />
         <Route path="/coin" element={<Coin />} />
-        <Route path="/marketing" element={<Marketing />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

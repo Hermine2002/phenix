@@ -192,7 +192,7 @@ outline: none;
 
 
 .footer-button {
-  background-color: #ff4a17;
+  background-color: #570355;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -203,7 +203,7 @@ outline: none;
   position: absolute;
   z-index: 2;
   right: 0;
-top: 23px;
+
 transition: 0.5s linear;
 }
 
@@ -270,7 +270,7 @@ opacity: 0.6;
     width: 20%;
     height: 45px;
     font-size: 15px;
-    top: 20px;
+    top: 0;
   }
 
   .input-footer {
@@ -280,12 +280,11 @@ opacity: 0.6;
 }
 
 /* От 480px и меньше */
-@media (max-width: 480px) {
+@media (min-width: 380px) {
   .footer-button {
-    width: 30%;
+    width: 40%;
     height: 40px;
-    font-size: 14px;
-    top: 20px;
+ top: 0;
   }
 
   .input-footer {

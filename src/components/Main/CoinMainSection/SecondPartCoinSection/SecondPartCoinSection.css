@@ -1,0 +1,286 @@
+.second-section-coin-container{
+    width: 100%;
+    height: auto;
+    /* border:1px solid red; */
+    background-color: #222222;
+    padding-top: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-coin-container-child{
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 60px;
+}
+
+
+
+.section-coin-container-child-top{
+    width: 100%;
+ 
+    /* border:1px solid yellow; */
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+
+.price-container{
+  
+    border:1px solid rgba(7, 7, 7, 0.101);
+    background-color: #0c0b0ba1;
+    border-radius: 24px;
+    padding-bottom: 25px;
+}
+
+
+.price-container-title{
+    font-size: 30px;
+    color: #fff;
+    margin: 25px;
+}
+
+
+.price-container-child{
+    width:100%;
+    height: auto;
+    border-bottom: 1px solid #585858;
+    border-top: 1px solid #585858;
+}
+
+
+
+.price-container-child-amd{
+    font-size: 45px;
+    color: #fff;
+    margin-top: 40px;
+    margin-left:20px;
+    margin-bottom: 30px;
+}
+
+.price-container-child-text{
+    color: #84287d;
+    font-size: 18px;
+}
+
+.price-container-child-per{
+    font-size: 20px;
+    color: #898888;
+   margin-left: 20px;
+}
+
+
+
+.price-container-lists{
+    list-style: none;
+    font-size: 18px;
+    color: #898888;
+    /* margin: 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.price-container-lists-child{
+  margin: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.price-container-lists-child2{
+    font-size: 24px;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: #84287d;
+}
+
+
+.price-container-link{
+    color: #898888;
+    font-size: 16px;
+ 
+}
+
+
+.price-container-link:hover{
+    color: #84287d;
+
+}
+
+
+/* Базовые стили для больших экранов (больше 1000px) */
+.price-container {
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Стили при ширине до 1000px */
+
+
+  @media (max-width: 1200px) {
+    .price-container {
+      
+    }
+
+    .price-container-child-amd{
+        font-size: 25px;
+    }
+
+    .price-container-child-text{
+        font-size: 16px;
+    }
+
+    .price-container-child-per{
+        font-size: 16px;
+    }
+
+
+    .price-container-lists-child{
+        font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .price-container {
+     
+    }
+  }
+
+  @media (max-width: 850px) {
+    .price-container {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 826px) {
+    .price-container {
+
+    }
+  }
+
+  @media (max-width: 824px) {
+    .price-container {
+
+    }
+  }
+
+
+
+  @media (max-width: 823px) {
+    .price-container {
+
+    }
+  }
+  
+  /* Стили при ширине до 768px */
+  @media (max-width: 768px) {
+    .price-container {
+      width: 100%;
+    }
+
+    .section-coin-container-child-top{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .price-container-lists{
+        font-size: 14px;
+    }
+
+
+    .price-container-child-per{
+        font-size: 16px;
+    }
+
+
+    .section-coin-container-child-top,
+    .section-coin-container-child-bottom {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .section-coin-container-child {
+      height: auto;
+    }
+  }
+
+    
+  @media(max-width:575px){
+    .section-coin-container-child-top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+
+  @media (max-width: 354px) {
+    .price-container-lists {
+      /* padding: 10px; */
+      font-size: 12px;
+      margin-top: 0px;
+    }
+
+    .price-container-child-per{
+        font-size: 16px;
+    }
+
+
+    .price-container-child-amd{
+        font-size: 25px;
+    }
+  }
+
+
+
+  
+  @media (max-width: 347px) {
+    .price-container-lists {
+      /* padding: 10px; */
+      font-size: 12px;
+      margin-top: 0px;
+    }
+
+
+    .price-container-child-amd{
+        font-size: 25px;
+    }
+  }
+  
+
+
+
+  /* Стили при ширине до 374px (например, мобильные) */
+  @media (max-width: 320px) {
+    .price-container-lists {
+      /* padding: 10px; */
+      font-size: 12px;
+      margin-top: 0px;
+    }
+
+
+    .price-container-child-amd{
+        font-size: 25px;
+    }
+  }
+  
+  

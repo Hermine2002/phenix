@@ -8,14 +8,7 @@
   
 
 
-  .running-text {
-    display: inline-block;
-    font-size: 100px;
-    color: #ffffff;
-    white-space: nowrap;
-    animation: scrollText 10s linear infinite; 
-    color: orange;
-  }
+
   
   @keyframes scrollText {
     0% {

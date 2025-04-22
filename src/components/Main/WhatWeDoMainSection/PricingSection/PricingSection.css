@@ -3,69 +3,76 @@
 .pricing-container {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 38px;
     padding: 40px;
     font-family: 'Inter', sans-serif;
-    background-color: #f8fafc;
+    background-color: #1a1a1a;
+    /* border: 1px solid rgb(28, 233, 117); */
   }
   
   .pricing-card {
-    background: white;
+    background: #000;
     border-radius: 12px;
     padding: 32px;
-    width: 280px;
+    width: 380px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    /* border: 1px solid rgb(27, 185, 48); */
   }
   
-  .pricing-card.highlighted {
-    border: 2px solid #4A6BFF;
-    transform: translateY(-10px);
-  }
+  
   
   .plan-name {
     font-size: 20px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #fffafa;
     margin-bottom: 16px;
+    /* border: 1px solid rgb(33, 12, 188); */
   }
   
   .plan-price h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #fffbfb;
     margin: 0;
+    /* border: 1px solid rgb(162, 14, 188); */
   }
   
   .plan-price h3 span {
-    font-size: 16px;
+    font-size: 15px;
+   
     font-weight: 400;
-    color: #666;
+    color: #9817d4;
+    /* border: 1px solid rgb(252, 125, 28); */
+    margin-left: 10px;
   }
   
   .plan-price p {
     font-size: 14px;
-    color: #666;
+    color: #bebaba;
     margin: 8px 0 24px 0;
+    /* border: 1px solid rgb(180, 211, 1); */
   }
   
   .plan-features {
     list-style: none;
     padding: 0;
     margin: 0 0 24px 0;
+    /* border: 1px solid rgb(8, 187, 219); */
   }
   
   .plan-features li {
     font-size: 16px;
-    color: #333;
+    color: #dfdbdb;
     padding: 8px 0;
     position: relative;
     padding-left: 28px;
+    /* border: 1px solid rgb(34, 3, 60); */
   }
   
   .plan-features li:before {
     content: "✓";
-    color: #4A6BFF;
+    color: #8c05b2;
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -73,16 +80,15 @@
   
   .see-details {
     display: inline-block;
-    color: #4A6BFF;
+    color: #e3e4eb;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     margin-top: 16px;
   }
   
-  .see-details:after {
-    content: "→";
-    margin-left: 8px;
+  .see-details:hover{
+    color: #8c05b2;
   }
   
   @media (max-width: 900px) {

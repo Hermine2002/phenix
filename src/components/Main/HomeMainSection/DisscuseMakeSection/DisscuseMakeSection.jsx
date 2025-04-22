@@ -11,9 +11,14 @@ const DisscuseMakeSection = () => {
             Let’s disscuse make <br />
             something cool together
           </h2>
-          <p className="buuton">
+
+        <a href="/">
+        <p className="buuton">
             Apply for Metting <FaArrowRightLong className="icooon11" />
           </p>
+          
+          </a>  
+          
         </div>  
       </div>
     </div>

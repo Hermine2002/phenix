@@ -1,26 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../FirstPartAboutSection/FirstPartAboutSection.css";
 export default function FirstPartAboutSection() {
   return (
-    <div className="about-section-container">
-      <div className="about-section-text-box">
-        <h1>About</h1>
-        <div className="about-section-text-box-mini">
-          {" "}
-          <ol>
-            <li>
-              <a href="/" className="item-text">
-                Home
-              </a>
-            </li>
-            <li className="about-item">
-              <a href="/about" className="item-text">
-                About
-              </a>
-            </li>
-          </ol>
-        </div>
-      </div>
+    <section className="ourpers">
+    <div className="fone-about">     
+    <h2 className="main_text">
+     About
+      <br />
+      <Link className="home" to="/">HOME </Link>
+      <span className="ss"> | </span>
+      <Link className="pers" to="/about"> OUR About</Link>
+    </h2>
+    <div className="fakeShadow"></div>
     </div>
+  </section>
   );
 }

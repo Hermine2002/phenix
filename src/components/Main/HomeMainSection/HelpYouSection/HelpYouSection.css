@@ -2,11 +2,12 @@
   width: 100%;
   background-color: #181818;
   display: flex;
+padding-top: 150px;
 }
 
 .content-canteiner {
   width: 36%;
-  margin-top: 380px;
+  /* margin-top: 450px; */
   padding-left: 120px;
   display: flex;
   flex-direction: column;

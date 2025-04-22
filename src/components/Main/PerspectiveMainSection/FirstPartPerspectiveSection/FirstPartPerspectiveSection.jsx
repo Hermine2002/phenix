@@ -8,9 +8,9 @@ const FirstPartPerspectiveSection = () => {
       <h2 className="main_text">
         Our Perspective
         <br />
-        <Link className="home">HOME </Link>
+        <Link className="home" to="/">HOME </Link>
         <span className="ss"> | </span>
-        <Link className="pers"> OUR PERSPECTIVE</Link>
+        <Link className="pers" to="/perspective"> OUR PERSPECTIVE</Link>
       </h2>
       <div className="fakeShadow"></div>
       </div>
