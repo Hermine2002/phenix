@@ -1,0 +1,42 @@
+
+.case-study {
+  padding: 80px 0;
+  background: #1d1c22;
+  min-height: 100vh;
+}
+
+.case-study-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.case-study h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.case-study-content {
+  display: grid;
+  gap: 30px;
+}
+
+.study-item {
+  background: #2a2931;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.study-item h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #8b5cf6;
+}
+
+.study-item p {
+  color: #a1a1aa;
+  line-height: 1.6;
+}

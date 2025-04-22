@@ -7,6 +7,7 @@ import Curses from "../components/Pages/Curses/Curses";
 import Coin from "../components/Pages/Coin/Coin";
 import NotFound from "../components/NotFound/NotFound";
 import Layout from "../components/Layout/Layout";
+import CaseStudy from "../components/Pages/CaseStudy/CaseStudy"; // Added import for CaseStudy component
 
 import WhatWeDo from "../components/Pages/WhatWeDo/WhatWeDo";
 
@@ -20,6 +21,7 @@ export default function Routers() {
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/curses" element={<Curses />} />
         <Route path="/coin" element={<Coin />} />
+        <Route path="/case-study" element={<CaseStudy />} /> {/* Added route for CaseStudy */}
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
