@@ -8,11 +8,13 @@ const CaseStudy = () => {
   return (
     <div className="case-study">
       <div className="case-study-header">
-        <h1>Uber food app case study</h1>
-        <h2>Importance of storytelling and influencer marketing in social media marketing</h2>
+        <div className="header-content">
+          <h1>Uber food app case study</h1>
+          <h2>Importance of storytelling and influencer marketing in social media marketing</h2>
+        </div>
       </div>
 
-      <div className="case-study-section">
+      <div className="case-study-section overview">
         <h3>Case Study Overview</h3>
         <p>The social media marketing landscape has evolved significantly over the years, and influencer marketing has become a cornerstone of successful digital marketing strategies. This case study explores how storytelling and influencer partnerships can drive engagement and brand awareness.</p>
         <div className="image-grid">
@@ -21,7 +23,7 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      <div className="case-study-section">
+      <div className="case-study-section research">
         <h3>Case Study Research</h3>
         <div className="research-grid">
           <div className="research-item">
@@ -37,7 +39,7 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      <div className="case-study-section">
+      <div className="case-study-section results">
         <h3>Result of The Case Study</h3>
         <p>The implementation of our storytelling and influencer marketing strategy resulted in significant improvements in brand awareness, engagement rates, and conversion metrics. The authentic approach resonated with the target audience and created lasting impact.</p>
       </div>

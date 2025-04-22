@@ -1,6 +1,6 @@
 
 .case-study {
-  background: #1d1c22;
+  background: #111111;
   color: #fff;
   min-height: 100vh;
 }
@@ -8,55 +8,70 @@
 .case-study-header {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10%;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/src/assets/imgs/blog_hero_bg.jpeg');
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/src/assets/imgs/blog_hero_bg.jpeg');
   background-size: cover;
   background-position: center;
+  padding: 0 10%;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .case-study-header h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .case-study-header h2 {
-  font-size: 2rem;
-  max-width: 700px;
+  font-size: 2.5rem;
+  max-width: 800px;
   line-height: 1.4;
-  color: #8b5cf6;
+  color: #999;
+  font-weight: 400;
 }
 
 .case-study-section {
-  padding: 5rem 10%;
+  padding: 6rem 10%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .case-study-section h3 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #fff;
+  font-weight: 600;
 }
 
 .case-study-section p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #a1a1aa;
-  max-width: 800px;
+  color: #999;
+  max-width: 900px;
 }
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .grid-image {
-  height: 300px;
-  border-radius: 10px;
+  height: 350px;
+  border-radius: 15px;
   background-size: cover;
   background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-image:hover {
+  transform: scale(1.02);
 }
 
 .instagram {
@@ -70,23 +85,29 @@
 .research-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-  margin-top: 3rem;
+  gap: 6rem;
+  margin-top: 4rem;
 }
 
 .research-item h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #8b5cf6;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 .circle-image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   margin: 2rem 0;
   background-size: cover;
   background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.circle-image:hover {
+  transform: scale(1.05);
 }
 
 .strategy-image {
@@ -98,21 +119,27 @@
 }
 
 .discuss-section {
-  background: #2a2931;
-  padding: 4rem 10%;
+  background: #1a1a1a;
+  padding: 5rem 10%;
   text-align: center;
 }
 
+.discuss-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .discuss-content h3 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
 }
 
 .apply-button {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  background: #8b5cf6;
+  background: #ff4a17;
   color: white;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -122,7 +149,17 @@
 }
 
 .apply-button:hover {
-  background: #7c3aed;
+  background: #e63e10;
+}
+
+@media (max-width: 1200px) {
+  .case-study-header h1 {
+    font-size: 3.5rem;
+  }
+  
+  .case-study-header h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
