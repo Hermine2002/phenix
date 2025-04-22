@@ -14,6 +14,10 @@ const CaseStudy = () => {
         </div>
       </div>
 
+      <div className="full-width-image-block">
+        <img src="/src/assets/imgs/blog_hero_bg.jpeg" alt="Case Study Full Width" />
+      </div>
+
       <div className="case-study-section overview">
         <h3>Case Study Overview</h3>
         <p>The social media marketing landscape has evolved significantly over the years, and influencer marketing has become a cornerstone of successful digital marketing strategies. This case study explores how storytelling and influencer partnerships can drive engagement and brand awareness.</p>

@@ -35,6 +35,19 @@
   font-weight: 400;
 }
 
+.full-width-image-block {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.full-width-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .case-study-section {
   padding: 6rem 10%;
   max-width: 1400px;
