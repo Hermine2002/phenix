@@ -8,7 +8,7 @@ const Pricing = () => {
       <div className="pricing-card">
         <h2 className="plan-name">Standard</h2>
         <div className="plan-price">
-          <h3>$10<span>/monthly</span></h3>
+          <h3>$10/<span>monthly</span></h3>
           <p>Per subscriber per month</p>
         </div>
         <ul className="plan-features">
@@ -26,7 +26,7 @@ const Pricing = () => {
       <div className="pricing-card highlighted">
         <h2 className="plan-name">Professional</h2>
         <div className="plan-price">
-          <h3>$99<span>/monthly</span></h3>
+          <h3>$99/<span>monthly</span></h3>
           <p>Per subscriber per month</p>
         </div>
         <ul className="plan-features">
@@ -44,7 +44,7 @@ const Pricing = () => {
       <div className="pricing-card">
         <h2 className="plan-name">Ultimate</h2>
         <div className="plan-price">
-          <h3>$199<span>/monthly</span></h3>
+          <h3>$199/<span>monthly</span></h3>
           <p>Per subscriber per month</p>
         </div>
         <ul className="plan-features">

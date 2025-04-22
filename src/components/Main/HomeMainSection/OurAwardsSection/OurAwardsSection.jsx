@@ -37,7 +37,7 @@ const OurAwardsSection = () => {
             Desktop excellence
           </p>
         </div>
-        <div className="awards-list">
+        <div className="awards-list2">
           <h3 className="text001">2022</h3>
           <h2 className="text002">UI/UX design of the month</h2>
           <p className="text003">

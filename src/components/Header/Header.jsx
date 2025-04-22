@@ -6,15 +6,17 @@ import { IoIosPin, IoLogoFacebook } from "react-icons/io";
 import { ImLinkedin2 } from "react-icons/im";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
+import logoo from "../../assets/imgs/logo.png"
 
-import logo from "../../assets/imgs/logo.png";
+
+import logo from "../../assets/imgs/logo.png"
+
 
 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [headerData, setHeaderData] = useState({
-    logo: "",
     menu: [],
     phone: "",
     email: "",
@@ -38,7 +40,7 @@ const Header = () => {
           email: response.data.email || "infotech@arino.com",
           address:
             response.data.address ||
-            "50 Wall Street Suite, 44150 Ohio, United States",
+            "50 Wall Street Suite, 44150 Ohio, United ",
           socials: response.data.socials || {},
           isLoading: false,
         });
@@ -68,7 +70,7 @@ const Header = () => {
 
         <div className="header-logo">
         <img
-          src={headerData.logo}
+          src={logoo}
           alt="logo"
           className=""
           onError={(e) => {
@@ -95,12 +97,12 @@ const Header = () => {
         </ul>  */}
          <div className="menu-box"> 
           <ul className="nav-menu">
-            <li className="list">Home</li>
-            <li className="list">About</li>
-            <li className="list list2">what we do</li>
-            <li className="list">Perspective</li>
-            <li className="list">coin</li>
-            <li className="list">curses</li>
+         <li className="list" > <Link to='/' className="list"> Home</Link> </li>
+           <li className="list"> <Link to='/about' className="list">About </Link> </li>
+            <li className="list list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
+            <li className="list"><Link className="list" to="/perspective">Perspective</Link></li>
+            <li className="list" > <Link to="/coin" className="list">coin</Link></li>
+            <li className="list"> <Link to="/curses" className="list">curses</Link></li>
              </ul>
         </div> 
 
@@ -116,15 +118,8 @@ const Header = () => {
       </nav>
 
       <div className={`menu-overlay ${menuOpen ? "show" : ""}`}>
-
-        <div className="close-box">
-        <button className="close-btn" onClick={toggleMenu}>
-          ✖
-        </button>
-        </div>
-       
-        <div className="box11">
-          <img
+        <div className="mobile-logo-wrapper">
+        <img
             src={logo} 
             alt="logo"
             className="logo-icon"
@@ -133,6 +128,29 @@ const Header = () => {
               e.target.src = "/default-logo.png";
             }}
           />
+          <div className="close-box">
+        <button className="close-btn" onClick={toggleMenu}>
+          ✖
+        </button>
+        </div>
+        </div>
+        
+       
+        <div className="box11">
+          
+
+
+<div className="menu-box"> 
+          <ul className="nav-menu">
+         <li className="list" > <Link to='/' className="list"> Home</Link> </li>
+           <li className="list"> <Link to='/about' className="list">About </Link> </li>
+            <li className="list list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
+            <li className="list"><Link className="list" to="/perspective">Perspective</Link></li>
+            <li className="list" > <Link to="/coin" className="list">coin</Link></li>
+            <li className="list"> <Link to="/curses" className="list">curses</Link></li>
+             </ul>
+        </div>
+
           <h2 className="burger-h2">
             Do you have a project in your mind? Keep connect us.
           </h2>
@@ -141,21 +159,21 @@ const Header = () => {
             <p className="contactus-box-p">Contact Us</p>
             <div className="contact-item">
               <span className="icon">
-                <MdAddIcCall className="callll" />w edcjn wcn wc
+                <MdAddIcCall className="callll" />
               </span>
-              <a href={`tel:${headerData.phone}`}>{headerData.phone}</a>
+              <a href={`tel:${headerData.phone}`} className="icon-text">{headerData.phone}</a>
             </div>
             <div className="contact-item">
               <span className="icon">
-                <MdEmail className="callll" />w c wc jnw cn q
+                <MdEmail className="callll" />
               </span>
-              <a href={`mailto:${headerData.email}`}>{headerData.email}</a>
+              <a href={`mailto:${headerData.email}`} className="icon-text">{headerData.email}</a>
             </div>
             <div className="contact-item">
               <span className="icon">
-                <IoIosPin className="callll" /> cjw dkjcwk c
+                <IoIosPin className="callll" /> 
               </span>
-              <span>{headerData.address}</span>
+              <span className="icon-text">{headerData.address}</span>
             </div>
           </div>
 
@@ -169,10 +187,6 @@ const Header = () => {
               />
               <button type="submit">Send</button>
             </form>
-            <p className="subscribe-text">
-              At vero eos et accusamus et iusto odio as part dignissimos ducimus
-              qui blandit.
-            </p>
           </div>
 
           <div className="logosbox">

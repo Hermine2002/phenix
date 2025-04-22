@@ -10,8 +10,7 @@ const OurFunSection = () => {
               <h2 className="h2">Our fun fact</h2>
               <p className="p">
                 Sed ut perspiciatis unde omnis iste natus error voluptatem{" "}
-                <br />
-                accusantium doloremque laudantium, totam rem aperiam, <br />
+                accusantium doloremque laudantium, totam rem aperiam,
                 eaque ipsa quae ab illo inventore veritatis.
               </p>
             </div>
