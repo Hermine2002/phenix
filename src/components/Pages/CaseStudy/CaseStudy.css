@@ -1,42 +1,147 @@
 
 .case-study {
-  padding: 80px 0;
   background: #1d1c22;
+  color: #fff;
   min-height: 100vh;
 }
 
-.case-study-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.case-study-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/src/assets/imgs/blog_hero_bg.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
-.case-study h1 {
-  color: #fff;
-  font-size: 48px;
-  margin-bottom: 40px;
-  text-align: center;
+.case-study-header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
-.case-study-content {
-  display: grid;
-  gap: 30px;
-}
-
-.study-item {
-  background: #2a2931;
-  padding: 30px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-.study-item h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.case-study-header h2 {
+  font-size: 2rem;
+  max-width: 700px;
+  line-height: 1.4;
   color: #8b5cf6;
 }
 
-.study-item p {
+.case-study-section {
+  padding: 5rem 10%;
+}
+
+.case-study-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.case-study-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #a1a1aa;
-  line-height: 1.6;
+  max-width: 800px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.grid-image {
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.instagram {
+  background-image: url('/src/assets/imgs/I4WuYxUfcw0qEF2sL1iB8wtCcwOSzgjFs11uAj3H.jpg');
+}
+
+.strategy {
+  background-image: url('/src/assets/imgs/F4Y3e5bkteg5Ust1ZxuaiN3JWIeGSl1yjpiM8F4P.jpg');
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.research-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #8b5cf6;
+}
+
+.circle-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 2rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.strategy-image {
+  background-image: url('/src/assets/imgs/ma8RG4ft7uETf91LVGDdZXPDpg14Y0zemPJUSJ4B.jpg');
+}
+
+.branding-image {
+  background-image: url('/src/assets/imgs/W36HeJlhRELdASQcXhtyoO4EYd6cc7VNizphjWsO.jpg');
+}
+
+.discuss-section {
+  background: #2a2931;
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.discuss-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.apply-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: #8b5cf6;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.apply-button:hover {
+  background: #7c3aed;
+}
+
+@media (max-width: 768px) {
+  .case-study-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .case-study-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .image-grid,
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .circle-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
 }
