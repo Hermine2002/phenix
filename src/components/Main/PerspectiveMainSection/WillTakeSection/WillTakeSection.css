@@ -209,14 +209,199 @@
     border-radius: 5px;
   }
 
-  @media (max-width: 992px) {
-    .willtake-container {
-      flex-direction: column;
-      gap: 50px;
-      padding: 0 30px;
-    }
-    
-    .willtake-sidebar {
-      width: 100%;
-    }
+ 
+/* Media Queries for 1400px to 320px */
+
+/* Screens up to 1200px */
+@media (max-width: 1200px) {
+  .willtake-container {
+    flex-direction: column; /* Stack article and sidebar vertically */
+    padding: 0 50px; /* Reduce padding */
+    gap: 80px; /* Reduce gap */
   }
+
+  .willtake-article {
+    flex: none; /* Remove flex ratio */
+    padding-top: 50px; /* Reduce top padding */
+  }
+
+  .willtake-sidebar {
+    flex: none; /* Remove flex ratio */
+    padding-top: 40px; /* Reduce top padding */
+  }
+
+  .willtake-article-title {
+    font-size: clamp(2rem, 4vw, 2.5rem); /* Reduce title size */
+  }
+
+  .willtake-article-excerpt {
+    font-size: clamp(0.875rem, 1.5vw, 1rem); /* Reduce excerpt size */
+  }
+
+  .sidebar-title,
+  .recentpost-box-h4 {
+    font-size: clamp(1.5rem, 3vw, 2rem); /* Reduce sidebar title size */
+  }
+
+  .meta-link {
+    font-size: clamp(0.875rem, 1.5vw, 1rem); /* Reduce meta link size */
+  }
+
+  .meta-separator {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Reduce separator size */
+  }
+}
+
+/* Screens up to 768px (Tablet and smaller) */
+@media (max-width: 768px) {
+  .willtake-section {
+    padding: 50px 0 100px 0; /* Reduce section padding */
+  }
+
+  .willtake-container {
+    padding: 0 30px; /* Further reduce padding */
+    gap: 50px; /* Further reduce gap */
+  }
+
+  .willtake-article {
+    padding-top: 30px; /* Further reduce top padding */
+  }
+
+  .willtake-sidebar {
+    padding-top: 30px; /* Further reduce top padding */
+  }
+
+  .willtake-featured-image {
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .willtake-article-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem); /* Further reduce title size */
+  }
+
+  .willtake-article-excerpt {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller excerpt size */
+  }
+
+  .sidebar-title,
+  .recentpost-box-h4 {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* Smaller sidebar title */
+  }
+
+  .search-input {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller search input */
+  }
+
+  .search-icon {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Smaller search icon */
+  }
+
+  .category-icon {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Smaller category icon */
+  }
+
+  .category-link {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller category link */
+  }
+
+  .recentpost-box-photobox-text-h3 {
+    font-size: clamp(0.875rem, 1.5vw, 1rem); /* Smaller recent post title */
+  }
+
+  .recentpost-box-photobox-text-p {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller recent post text */
+  }
+
+  .recentpost-box-photobox-photo,
+  .recentpost-box-photobox-photo1,
+  .recentpost-box-photobox-photo2,
+  .recentpost-box-photobox-photo3 {
+    width: 50px; /* Smaller thumbnail size */
+    height: 50px;
+  }
+}
+
+/* Screens up to 320px (Small mobile devices) */
+@media (max-width: 320px) {
+  .willtake-section {
+    padding: 30px 0 80px 0; /* Minimal section padding */
+  }
+
+  .willtake-container {
+    padding: 0 15px; /* Minimal padding */
+    gap: 30px; /* Minimal gap */
+  }
+
+  .willtake-article {
+    padding-top: 20px; /* Minimal top padding */
+  }
+
+  .willtake-sidebar {
+    padding-top: 20px; /* Minimal top padding */
+  }
+
+  .willtake-featured-image {
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  .willtake-article-title {
+    font-size: clamp(1.5rem, 3vw, 1.875rem); /* Minimal title size */
+  }
+
+  .willtake-article-excerpt {
+    font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal excerpt size */
+  }
+
+  .sidebar-title,
+  .recentpost-box-h4 {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Minimal sidebar title */
+  }
+
+  .meta-link {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Minimal meta link size */
+  }
+
+  .meta-separator {
+    font-size: clamp(0.875rem, 1.75vw, 1rem); /* Minimal separator size */
+  }
+
+  .search-input {
+    font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal search input */
+  }
+
+  .search-icon {
+    font-size: clamp(0.875rem, 1.75vw, 1rem); /* Minimal search icon */
+  }
+
+  .category-icon {
+    font-size: clamp(0.875rem, 1.75vw, 1rem); /* Minimal category icon */
+  }
+
+  .category-link {
+    font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal category link */
+  }
+
+  .recentpost-box-photobox-text-h3 {
+    font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Minimal recent post title */
+  }
+
+  .recentpost-box-photobox-text-p {
+    font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal recent post text */
+  }
+
+  .recentpost-box-photobox-photo,
+  .recentpost-box-photobox-photo1,
+  .recentpost-box-photobox-photo2,
+  .recentpost-box-photobox-photo3 {
+    width: 40px; /* Minimal thumbnail size */
+    height: 40px;
+  }
+
+  .recentpost-box-photobox {
+    padding-top: 15px; /* Reduce padding */
+  }
+
+  .recentpost-box {
+    padding-top: 20px; /* Reduce padding */
+  }
+}

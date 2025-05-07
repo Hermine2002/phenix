@@ -9,7 +9,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/src/assets/imgs/blog_hero_bg.jpeg');
+  background-image:  url(../../../../assets/imgs/ChatGPT\ Image\ 21\ апр.\ 2025\ г.\,\ 12_28_06.png );
   background-size: cover;
   background-position: center;
   padding: 0 10%;
@@ -36,16 +36,16 @@
 }
 
 .full-width-image-block {
-  width: 100%;
-  height: 500px;
+width: 100%;
+  /* height: 500px; */
   overflow: hidden;
 }
 
 .full-width-image-block img {
-  width: 100%;
-  height: 100%;
+ width: 100%;
+  /* height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center; */
 }
 
 .case-study-section {
@@ -88,11 +88,11 @@
 }
 
 .instagram {
-  background-image: url('/src/assets/imgs/I4WuYxUfcw0qEF2sL1iB8wtCcwOSzgjFs11uAj3H.jpg');
+  background-image: url('/src/assets/imgs/Lma30aKRkNZzK8XiOyhYb7gRmDqGW1LR1NhHDTop.jpg');
 }
 
 .strategy {
-  background-image: url('/src/assets/imgs/F4Y3e5bkteg5Ust1ZxuaiN3JWIeGSl1yjpiM8F4P.jpg');
+  background-image: url('/src/assets/imgs/QI0VdSqi2Ts3WoFcOiezrdt57jBeN7BDpqd2Grs2.jpg');
 }
 
 .research-grid {
@@ -124,11 +124,11 @@
 }
 
 .strategy-image {
-  background-image: url('/src/assets/imgs/ma8RG4ft7uETf91LVGDdZXPDpg14Y0zemPJUSJ4B.jpg');
+  background-image: url('/src/assets/imgs/OnuCVJytuwiBlMp839z0viXqnnZdbk4M58YTVLQJ.png');
 }
 
 .branding-image {
-  background-image: url('/src/assets/imgs/W36HeJlhRELdASQcXhtyoO4EYd6cc7VNizphjWsO.jpg');
+  background-image: url('/src/assets/imgs/j11VLaIhUHkiazCPdcw2emuY01NiEjyZ6efsLrm2.png');
 }
 
 .discuss-section {
@@ -152,7 +152,7 @@
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  background: #ff4a17;
+  background: #76018e;
   color: white;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -162,7 +162,7 @@
 }
 
 .apply-button:hover {
-  background: #e63e10;
+  background: #40014f;
 }
 
 @media (max-width: 1200px) {
@@ -192,6 +192,7 @@
   .circle-image {
     width: 100%;
     max-width: 300px;
+    max-height: 300px;
     margin: 2rem auto;
   }
 }

@@ -1,5 +1,5 @@
 .hero-content-h1 {
-  font-size: 8``````````````````````0px;
+  font-size: 70px;
   text-align: start;
   padding-top: 140px;
 }
@@ -10,7 +10,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  background: url("../../../../assets/imgs/IMG_0451.JPG") no-repeat center
+  background: url("../../../../assets/imgs/photo_2025-04-22_12-02-05.jpg") no-repeat center
     center/cover;
   color: white;
   text-align: center;
@@ -21,14 +21,22 @@
 .hero-content-box {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-left: 110px;
+  /* padding-left: 110px; */
 }
 
 .hero-content-box a {
   font-size: 17px;
   color: white;
   padding-top: 20px;
+  text-align: start;
+}
+
+
+.hero-content-box a:hover{
+  color: blueviolet;
+
 }
 
 .icoon {
@@ -42,6 +50,7 @@
   font-size: 18px;
   padding-right: 80px;
   padding-top: 10px;
+  max-width: 70%;
 }
 
 .social-links {
@@ -50,4 +59,219 @@
   left: 1400px;
   top: 300px;
   z-index: 11;
+}
+
+
+
+
+/* Media Queries (1400px - 320px) */
+
+/* Large Desktops (1200px - 1400px) */
+@media (max-width: 1400px) {
+  .hero-content {
+    padding: 0 clamp(30px, 6vw, 60px);
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(34px, 7.5vw, 65px);
+    padding-top: clamp(70px, 12vw, 100px);
+  }
+
+ 
+
+  .hero-content-p {
+    padding-right: clamp(30px, 6vw, 60px);
+  }
+
+  .social-links {
+    left: clamp(900px, 85vw, 1200px);
+    top: clamp(180px, 25vw, 280px);
+  }
+}
+
+/* Medium Desktops (992px - 1200px) */
+@media (max-width: 1200px) {
+  .hero-content {
+    padding: 0 clamp(20px, 4vw, 40px);
+    height: 90vh; /* Slightly reduce height */
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(32px, 7vw, 60px);
+    padding-top: clamp(60px, 10vw, 90px);
+  }
+
+  .hero-content-box {
+    padding-left: clamp(0px, 4vw, 0px);
+    flex-direction: column; /* Stack items */
+    gap: clamp(15px, 2vw, 20px);
+  }
+
+  .hero-content-box a {
+    font-size: clamp(13px, 1.4vw, 16px);
+    padding-top: 0; /* Remove top padding */
+  }
+
+  .hero-content-p {
+    text-align: start;
+    font-size: clamp(13px, 1.6vw, 17px);
+    padding-right: clamp(20px, 4vw, 40px);
+  }
+
+  .social-links {
+    left: clamp(700px, 80vw, 1000px);
+    top: clamp(150px, 20vw, 250px);
+  }
+}
+
+/* Tablets (768px - 992px) */
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 0 clamp(15px, 3vw, 30px);
+    height: 80vh;
+   text-align: left; /* Align text consistently */
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(30px, 6.5vw, 55px);
+    padding-top: clamp(50px, 8vw, 80px);
+  }
+
+
+  .hero-content-box a {
+    font-size: clamp(12px, 1.3vw, 15px);
+  }
+
+  .hero-content-p {
+    font-size: clamp(12px, 1.5vw, 16px);
+    padding-right: clamp(15px, 3vw, 30px);
+  }
+
+  .icoon {
+    font-size: clamp(14px, 1.8vw, 18px);
+  }
+
+  .social-links {
+    left: clamp(500px, 75vw, 800px);
+    top: clamp(120px, 15vw, 200px);
+    font-size: clamp(12px, 1.3vw, 14px); /* Scale social links text */
+  }
+}
+
+/* Small Tablets (576px - 768px) */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 clamp(10px, 2vw, 20px);
+    height: 70vh;
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(28px, 6vw, 50px);
+    padding-top: clamp(40px, 6vw, 60px);
+  }
+
+  .hero-content-box {
+    /* padding-left: clamp(10px, 2vw, 30px); */
+    gap: clamp(10px, 1.5vw, 15px);
+  }
+
+  .hero-content-p {
+    font-size: clamp(11px, 1.4vw, 15px);
+    padding-right: clamp(10px, 2vw, 20px);
+  }
+
+  .social-links {
+    display: none; /* Hide social links due to positioning issues */
+  }
+}
+
+/* Mobile (480px - 576px) */
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 0 clamp(8px, 1.5vw, 15px);
+    height: 60vh;
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(24px, 5.5vw, 45px);
+    padding-top: clamp(30px, 5vw, 50px);
+  }
+/* 
+  .hero-content-box {
+    padding-left: clamp(8px, 1.5vw, 20px);
+  } */
+
+  .hero-content-box a {
+    font-size: clamp(11px, 1.2vw, 14px);
+  }
+
+  .hero-content-p {
+    font-size: clamp(10px, 1.3vw, 14px);
+    padding-right: clamp(8px, 1.5vw, 15px);
+  }
+
+  .icoon {
+    font-size: clamp(12px, 1.6vw, 16px);
+    top: clamp(2px, 0.4vw, 4px);
+  }
+}
+
+/* Extra Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0 clamp(5px, 1vw, 12px);
+    height: 55vh;
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(20px, 5vw, 40px);
+    padding-top: clamp(20px, 4vw, 40px);
+  }
+
+  .hero-content-box {
+    /* padding-left: clamp(5px, 1vw, 15px); */
+    gap: clamp(8px, 1.2vw, 12px);
+  }
+
+  .hero-content-box a {
+    font-size: clamp(10px, 1.1vw, 13px);
+  }
+
+  .hero-content-p {
+    font-size: clamp(9px, 1.2vw, 13px);
+    padding-right: clamp(5px, 1vw, 12px);
+  }
+
+  .icoon {
+    font-size: clamp(10px, 1.5vw, 14px);
+  }
+}
+
+/* Very Small Mobile (below 320px) */
+@media (max-width: 320px) {
+  .hero-content {
+    padding: 0 clamp(5px, 0.8vw, 10px);
+    height: 50vh;
+  }
+
+  .hero-content-h1 {
+    font-size: clamp(18px, 4.5vw, 36px);
+    padding-top: clamp(15px, 3vw, 30px);
+  }
+
+ 
+
+  .hero-content-box a {
+    font-size: clamp(9px, 1vw, 12px);
+  }
+
+  .hero-content-p {
+    font-size: clamp(8px, 1.1vw, 12px);
+    padding-top: clamp(5px, 0.8vw, 8px);
+  }
+
+  .icoon {
+    font-size: clamp(9px, 1.4vw, 12px);
+    top: clamp(1px, 0.3vw, 3px);
+  }
 }

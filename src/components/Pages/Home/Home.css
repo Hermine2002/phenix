@@ -1,8 +1,8 @@
-.custom-cursor {
+/* .custom-cursor {
   position: absolute;
   width: 45px;
   height: 45px;
-  border: 1px solid red;
+  border: 1px solid rgb(82, 2, 106);
   border-radius: 50%;
   pointer-events: none;
   transition: left 0.8s ease-out, top 0.8s ease-out;
@@ -12,8 +12,8 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: red;
+  background-color: rgb(71, 3, 86);
   border-radius: 50%;
   pointer-events: none;
   transition: left 1.2s ease-out, top 1.2s ease-out;
-}
+} */

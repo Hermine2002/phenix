@@ -10,17 +10,17 @@ const Top21Section = () => {
           <img src={top} alt="Artificial Intelligence" className="willtake-featured-image" />
           <div className="willtake-article-meta">
             <div className="meta-info">
-              <Link className="meta-link">Arino<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">Oct 28, 2023<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">No Comments</Link>
+             
+              <Link className="meta-link">Phenix shares experience to help growing agencies</Link>
             </div>
             <h2 className="willtake-article-title">
-            Top 21 Must-Read Blogs For Agencies
+            Insights based on real-world projects
             </h2>
             <p className="willtake-article-excerpt">
-              Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator...
+            We don't just create — we also educate.  
+            The Phenix blog is a valuable resource for the growth of agencies and startups.
+          Articles on digital marketing, design, and technology.
+          Your business growth starts with knowledge.
             </p>
           </div>
         </div>

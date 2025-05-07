@@ -44,108 +44,214 @@
   }
   
   button {
-    /* position: absolute;  */
-    top: 50%;
     /* transform: translateY(-50%);  */
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
   }
   
-  .prev {
-    left: 10px;
+  .prev-portfolio {
+   position:absolute;
+   top:40%;
+   left:2px;
+   font-size: 40px;
   }
   
-  .next {
-    right: 10px;
+  .next-portfolio {
+   position: absolute;
+  font-size: 40px;
+  top:40%;
+  right: 2px;
   }
 
+
+
+  /* Media Queries (1400px - 320px) */
+
+/* Large Desktops (1200px - 1400px) */
+@media (max-width: 1400px) {
+    .portfolio-section {
+      padding-top: clamp(70px, 12vw, 120px);
+      gap: clamp(18px, 2.5vw, 25px);
+    }
+  
+    .carousel {
+      max-width: clamp(550px, 75vw, 750px);
+    }
+  
+    .portfolioh2 {
+      font-size: clamp(30px, 4.5vw, 46px);
+    }
+  
+    button {
+      padding: clamp(7px, 1.2vw, 9px);
+    }
+  }
+  
+  /* Medium Desktops (992px - 1200px) */
   @media (max-width: 1200px) {
     .portfolio-section {
-        padding-top: 140px;
-        gap: 25px;
+      padding-top: clamp(60px, 10vw, 100px);
+      padding-bottom: clamp(30px, 6vw, 50px);
+      gap: clamp(15px, 2vw, 20px);
     }
-    .portfolioh2 {
-        font-size: 44px;
-    }
+  
     .carousel {
-        max-width: 700px;
+      max-width: clamp(500px, 70vw, 700px);
     }
-}
-
-@media (max-width: 992px) {
-    .portfolio-section {
-        padding-top: 120px;
-        gap: 20px;
-    }
-    .portfolioh2 {
-        font-size: 38px;
-    }
-    .carousel {
-        max-width: 600px;
-    }
-    button {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
-    .portfolio-section {
-        padding-top: 100px;
-        gap: 15px;
-    }
-    .portfolioh2 {
-        font-size: 32px;
-    }
-    .carousel {
-        max-width: 500px;
-    }
-    button {
-        font-size: 16px;
-        padding: 6px;
-    }
-}
-
-@media (max-width: 576px) {
-    .portfolio-section {
-        padding-top: 80px;
-        gap: 10px;
-    }
+  
     .portfolioh3 {
-        font-size: 16px;
+      font-size: clamp(13px, 1.6vw, 16px);
     }
+  
     .portfolioh2 {
-        font-size: 28px;
+      font-size: clamp(28px, 4vw, 42px);
     }
-    .carousel {
-        max-width: 400px;
-    }
+  
     button {
-        font-size: 14px;
-        padding: 5px;
+      font-size: clamp(14px, 1.8vw, 18px);
     }
-}
-
-@media (max-width: 400px) {
+  
+    .prev {
+      left: clamp(3px, 0.8vw, 8px);
+    }
+  
+    .next {
+      right: clamp(3px, 0.8vw, 8px);
+    }
+  }
+  
+  /* Tablets (768px - 992px) */
+  @media (max-width: 992px) {
     .portfolio-section {
-        padding-top: 60px;
-        gap: 8px;
+      padding-top: clamp(50px, 8vw, 80px);
+      gap: clamp(12px, 1.5vw, 15px);
     }
-    .portfolioh3 {
-        font-size: 14px;
-    }
-    .portfolioh2 {
-        font-size: 24px;
-    }
+  
     .carousel {
-        max-width: 320px;
+      max-width: clamp(450px, 65vw, 600px);
     }
+  
+    .portfolioh2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+    }
+  
     button {
-        font-size: 12px;
-        padding: 4px;
+      padding: clamp(6px, 1vw, 8px);
+      font-size: clamp(12px, 1.6vw, 16px);
     }
-}
+  }
+  
+  /* Small Tablets (576px - 768px) */
+  @media (max-width: 768px) {
+    .portfolio-section {
+      padding-top: clamp(40px, 6vw, 60px);
+      padding-bottom: clamp(20px, 4vw, 30px);
+    }
+  
+    .carousel {
+      max-width: clamp(400px, 90vw, 500px);
+    }
+  
+    .portfolioh3 {
+      font-size: clamp(12px, 1.4vw, 14px);
+    }
+  
+    .portfolioh2 {
+      font-size: clamp(24px, 3vw, 34px);
+    }
+  
+    button {
+      font-size: clamp(10px, 1.4vw, 14px);
+      padding: clamp(5px, 0.8vw, 6px);
+    }
+  
+    .prev {
+      left: clamp(2px, 0.5vw, 5px);
+    }
+  
+    .next {
+      right: clamp(2px, 0.5vw, 5px);
+    }
+  }
+  
+  /* Mobile (480px - 576px) */
+  @media (max-width: 576px) {
+    .portfolio-section {
+      padding-top: clamp(30px, 5vw, 50px);
+      gap: clamp(10px, 1.2vw, 12px);
+    }
+  
+    .carousel {
+      max-width: clamp(350px, 85vw, 450px);
+    }
+  
+    .portfolioh2 {
+      font-size: clamp(22px, 2.5vw, 30px);
+    }
+  
+    button {
+      font-size: clamp(9px, 1.2vw, 12px);
+    }
+  }
+  
+  /* Extra Small Mobile (320px - 480px) */
+  @media (max-width: 480px) {
+    .portfolio-section {
+      padding-top: clamp(20px, 4vw, 40px);
+      padding-bottom: clamp(15px, 3vw, 20px);
+    }
+  
+    .carousel {
+      max-width: clamp(300px, 90vw, 400px);
+    }
+  
+    .portfolioh3 {
+      font-size: clamp(11px, 1.3vw, 13px);
+    }
+  
+    .portfolioh2 {
+      font-size: clamp(20px, 2vw, 28px);
+    }
+  
+    button {
+      padding: clamp(4px, 0.6vw, 5px);
+      font-size: clamp(8px, 1vw, 10px);
+    }
+  
+    .prev {
+      left: clamp(1px, 0.3vw, 3px);
+    }
+  
+    .next {
+      right: clamp(1px, 0.3vw, 3px);
+    }
+  }
+  
+  /* Very Small Mobile (below 320px) */
+  @media (max-width: 320px) {
+    .portfolio-section {
+      padding-top: clamp(15px, 3vw, 30px);
+      gap: clamp(8px, 1vw, 10px);
+    }
+  
+    .carousel {
+      max-width: clamp(280px, 95vw, 350px);
+    }
+  
+    .portfolioh2 {
+      font-size: clamp(18px, 1.8vw, 26px);
+    }
+  
+    .portfolioh3 {
+      font-size: clamp(10px, 1.2vw, 12px);
+    }
+  
+    button {
+      font-size: clamp(7px, 0.9vw, 9px);
+      padding: clamp(3px, 0.5vw, 4px);
+    }
+  }

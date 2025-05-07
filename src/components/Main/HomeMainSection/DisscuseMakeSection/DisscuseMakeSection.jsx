@@ -8,8 +8,7 @@ const DisscuseMakeSection = () => {
       <div className="banner">
         <div className="fonne1">
           <h2 className="fonneh2">
-            Let’s disscuse make <br />
-            something cool together
+          Sign up on our website for offers
           </h2>
 
         <a href="/">

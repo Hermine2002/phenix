@@ -10,17 +10,19 @@ const CreativestudioSection = () => {
           <img src={studio} alt="Artificial Intelligence" className="willtake-featured-image" />
           <div className="willtake-article-meta">
             <div className="meta-info">
-              <Link className="meta-link">Arino<span className="meta-separator"> | </span></Link>
+              <Link className="meta-link">Phenix Creative Studio <span className="meta-separator"> | </span></Link>
               
-              <Link className="meta-link">Oct 10, 2023<span className="meta-separator"> | </span></Link>
               
-              <Link className="meta-link">7 Comments</Link>
+              
+              <Link className="meta-link">– to tell your business story the right way</Link>
             </div>
             <h2 className="willtake-article-title">
-            Creative studio programm coming soon
+            Multimedia content to showcase your brand’s story <br/>
+            Professional support for social media and ad campaigns
             </h2>
             <p className="willtake-article-excerpt">
-              Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator...
+            We are building a new platform for collaboration between businesses, designers, and marketers.  
+            Here, technology meets creativity.Phenix is building a platform designed to create impact.
             </p>
           </div>
         </div>

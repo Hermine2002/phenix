@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./AvtoSliderSection.css";
-
 import { FaArrowRightLong } from "react-icons/fa6";
-
 import { Link } from "react-router-dom";
 
 const blogPosts = [
@@ -58,30 +56,39 @@ const blogPosts = [
 ];
 
 const AvtoSliderSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const visibleCards = 3; 
+  const [currentSlide, setCurrentSlide] = useState(0); // Start at the first real slide
+  const visibleCards = 3;
+  const totalSlides = blogPosts.length;
+  const extendedPosts = [
+    ...blogPosts.slice(-visibleCards), // Clone last slides for start
+    ...blogPosts, // Original slides
+    ...blogPosts.slice(0, visibleCards), // Clone first slides for end
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => {
-        if (prev < blogPosts.length - visibleCards) {
-          return prev + 1;
-        }
-        return 0;
+        return prev + 1;
       });
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
+  // Handle transition end to reset the slide position without animation
+  const handleTransitionEnd = () => {
+    if (currentSlide >= totalSlides) {
+      setCurrentSlide(0); // Reset to the first real slide
+    }
+  };
+
   return (
     <div className="avtoslider-section">
-    
       <div className="blog-header">
         <h3>Our Blog</h3>
         <h2>Explore recent publication</h2>
-        <Link href="/" className="blog-link">
-          View More Blog <FaArrowRightLong className="rightvieww"/>
+        <Link to="/" className="blog-link">
+          View More Blog <FaArrowRightLong className="rightvieww" />
         </Link>
         <div className="circle1"></div>
         <div className="circle"></div>
@@ -89,10 +96,17 @@ const AvtoSliderSection = () => {
       <div className="blog-slider">
         <div
           className="slider-inner"
-          style={{ transform: `translateX(-${currentSlide * 320}px)` }}
+          style={{
+            transform: `translateX(-${currentSlide * 320}px)`,
+            transition: currentSlide === 0 ? 'none' : 'transform 0.5s ease',
+          }}
+          onTransitionEnd={handleTransitionEnd}
         >
-          {blogPosts.map((post) => (
-            <div className="card" key={post.id}>
+          {extendedPosts.map((post, index) => (
+            <div
+              className={`card ${index < visibleCards || index >= totalSlides + visibleCards ? 'cloned' : ''}`}
+              key={`${post.id}-${index}`}
+            >
               <img src={post.image} alt={post.title} />
               <div className="card-info">
                 <span className="card-date">{post.date}</span>

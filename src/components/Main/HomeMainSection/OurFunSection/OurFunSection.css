@@ -8,32 +8,56 @@
   /* position: absolute; */
 }
 
-.fun-fact {
-  width: 85%;
-  /* margin: 40px auto; */
+.p{
+  font-size: 16px;
+  
+}
+
+
+.contentbox-p{
+  font-size: 16px;
+}
+
+.fun-fact-home {
+  width: 90%;
   padding: 60px;
   display: flex;
-
-  position: absolute;
   background: linear-gradient(135deg, #1a1a1a, #0b0b0b);
   border-radius: 15px;
   color: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  /* margin-top: -100px; */
-  z-index: 99;
-  /* margin-left: 120px; */
+  z-index: 2;
+  margin-left: 120px;
+  margin-top: -115px;
+  position: relative;
+  margin-bottom: 0;
 }
 
 .h3 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .fun-fact-stats {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 20px;
+  /* border: 1px solid red; */
+  width: 60%;
+
 }
+
+
+.fun-fact-content-home{
+  width: 40%;
+  /* border:1px solid palevioletred; */
+}
+
+.container-home{
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+
 
 span {
   font-size: 30px;
@@ -43,6 +67,8 @@ span {
 
 .contentbox {
   margin-top: 7px;
+  /* border:1px solid red; */
+  width: 70%;
 }
 
 .stat {
@@ -52,11 +78,22 @@ span {
 .box {
   display: flex;
   gap: 10px;
+  /* border:1px solid green; */
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
-.container {
-  /* display: flex; */
-  justify-content: space-around;
+.container-home {
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+  /* border:1px solid yellow; */
+}
+@media(max-width:575px) {
+  .container-home {
+    display: block;
+  }
 }
 .fun-fact-left {
   width: 40%;
@@ -75,12 +112,13 @@ span {
   line-height: 1.5;
 }
 
-.h2 {
+.h2-home {
   font-size: 50px;
 }
 
 .p {
   color: #ffffffb2;
+  font-size: 14px;
 }
 
 .fun-fact-right {
@@ -119,82 +157,363 @@ span {
   margin-top: 5px;
 }
 
-@media (max-width: 1200px) {
-  .fun-fact {
-      width: 90%;
-      padding: 50px;
-      /* margin-left: 60px; */
+
+
+/* Media Queries (1400px - 320px) */
+
+/* Large Desktops (1200px - 1400px) */
+@media (max-width: 1400px) {
+  .fun-fact-home {
+    width: clamp(82%, 87%, 92%);
+    padding: clamp(25px, 5vw, 40px);
+    margin-top: clamp(-70px, -8vw, -80px);
+    margin-left: clamp(50px, 8vw, 90px);
   }
+
   .fun-fact-left {
-      width: 45%;
+    width: clamp(38%, 43%, 48%);
   }
+
   .fun-fact-right {
-      width: 50%;
+    width: clamp(52%, 57%, 62%);
   }
-  .h2, .h3 {
-      font-size: 42px;
-  }
+
   .stat-item {
-      font-size: 30px;
+    width: clamp(42%, 47%, 49%);
+  }
+
+  .h2-home {
+    font-size: clamp(30px, 4.5vw, 46px);
   }
 }
 
+/* Medium Desktops (992px - 1200px) */
+@media (max-width: 1200px) {
+  .fun-fact-home {
+    flex-direction: column; /* Stack vertically */
+    width: clamp(85%, 90%, 95%);
+    margin-top: 0; /* Remove negative margin */
+    margin-left: 0;
+    padding: clamp(20px, 4vw, 30px);
+  }
+
+  .fun-fact-left {
+    width: 100%;
+    text-align: center;
+    padding: clamp(12px, 1.5vw, 15px);
+  }
+
+  .fun-fact-right {
+    width: 100%;
+    justify-content: center;
+    gap: clamp(20px, 3vw, 30px);
+    padding: clamp(12px, 1.5vw, 15px);
+  }
+
+  .stat-item {
+    width: clamp(45%, 48%, 100%); /* Allow full width if needed */
+    text-align: center;
+  }
+
+  .h3 {
+    font-size: clamp(26px, 3.5vw, 36px);
+  }
+
+  .fun-fact-left h2 {
+    font-size: clamp(26px, 3.5vw, 34px);
+  }
+
+  .h2-home {
+    font-size: clamp(28px, 4vw, 42px);
+  }
+}
+
+/* Tablets (768px - 992px) */
 @media (max-width: 992px) {
-  .fun-fact {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      /* margin-left: 0; */
-      padding: 40px;
-      position: relative;
+  .ourfunconteiner {
+    padding-bottom: clamp(30px, 6vw, 50px);
   }
-  .fun-fact-left, .fun-fact-right {
-      width: 100%;
-      padding: 0;
-  }
-  .h2, .h3 {
-      font-size: 36px;
-  }
-  .stat-item {
-      font-size: 28px;
-  }
-}
 
-@media (max-width: 768px) {
-  .fun-fact {
-      padding: 30px;
+  .fun-fact-home {
+    width: clamp(90%, 95%, 98%);
+    padding: clamp(15px, 3vw, 25px);
+    border-radius: clamp(8px, 1.2vw, 12px);
   }
-  .h2, .h3 {
-      font-size: 30px;
+
+  .fun-fact-stats {
+    gap: clamp(12px, 1.5vw, 15px);
   }
+
+  .fun-fact-left p {
+    font-size: clamp(13px, 1.4vw, 15px);
+  }
+
+  .h2-home {
+    font-size: clamp(26px, 3.5vw, 38px);
+  }
+
+  .p {
+    font-size: clamp(11px, 1.2vw, 13px);
+  }
+
   .stat-item {
-      font-size: 24px;
+    font-size: clamp(22px, 3vw, 30px);
   }
+
+  .stat-item::after {
+    font-size: clamp(16px, 1.8vw, 22px);
+  }
+
   .stat-desc {
-      font-size: 12px;
+    font-size: clamp(11px, 1.2vw, 13px);
+  }
+
+  span {
+    font-size: clamp(20px, 2.8vw, 28px);
+    margin-top: clamp(50px, 8vw, 80px);
   }
 }
 
+/* Small Tablets (576px - 768px) */
+@media (max-width: 768px) {
+  .ourfunconteiner {
+    padding-bottom: clamp(20px, 4vw, 30px);
+  }
+
+  .fun-fact-home {
+    width: 100%;
+    padding: clamp(12px, 2.5vw, 20px);
+  }
+
+  .fun-fact-left {
+    padding: clamp(10px, 1.5vw, 12px);
+  }
+
+  .fun-fact-right {
+    gap: clamp(15px, 2.5vw, 25px);
+  }
+
+  .h3 {
+    font-size: clamp(24px, 3vw, 32px);
+  }
+
+  .fun-fact-left h2 {
+    font-size: clamp(24px, 3vw, 30px);
+  }
+
+  .h2-home {
+    font-size: clamp(24px, 3vw, 34px);
+   
+  }
+  .box {
+    flex-direction: column;
+    gap:5px;
+   
+  }
+
+  .container-home{
+    flex-direction: column;
+  }
+
+
+  .fun-fact-content-home{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+
+  .contentbox-p{
+    text-align: center;
+  }
+
+  .stat-item {
+    font-size: clamp(20px, 2.5vw, 28px);
+    width: 100%; /* Full width for clarity */
+  }
+
+  .stat-item::after {
+    font-size: clamp(14px, 1.6vw, 20px);
+  }
+}
+
+/* Mobile (480px - 576px) */
 @media (max-width: 576px) {
-  .fun-fact {
-      padding: 20px;
+  .ourfunconteiner {
+    padding-bottom: clamp(15px, 3vw, 25px);
   }
-  .h2, .h3 {
-      font-size: 30px;
+
+  .fun-fact-home {
+    padding: clamp(10px, 2vw, 15px);
+    margin: clamp(15px, 3vw, 20px) auto;
+    justify-content: center;
   }
+
+  .fun-fact-stats {
+    gap: clamp(10px, 1.2vw, 12px);
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .h2-home{
+    text-align: center;
+     }
+
+.p{
+  text-align: center;
+}
+
+  .fun-fact-left p {
+    font-size: clamp(12px, 1.3vw, 14px);
+  }
+
+  .h3 {
+    font-size: clamp(22px, 2.5vw, 28px);
+  }
+
+  .fun-fact-left h2 {
+    font-size: clamp(22px, 2.5vw, 28px);
+  }
+
+  .h2-home {
+    font-size: clamp(22px, 2.5vw, 30px);
+  }
+
+  .p {
+    font-size: clamp(10px, 1.1vw, 12px);
+  }
+
   .stat-item {
-      font-size: 22px;
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .stat-desc {
+    font-size: clamp(10px, 1.1vw, 12px);
+  }
+
+  span {
+    font-size: clamp(20px, 2.5vw, 26px);
+    margin-top: clamp(40px, 6vw, 60px);
+  }
+
+  .contentbox {
+    margin-top: clamp(3px, 0.5vw, 5px);
   }
 }
 
-@media (max-width: 400px) {
-  .fun-fact {
-      padding: 15px;
+/* Extra Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .ourfunconteiner {
+    padding-bottom: clamp(12px, 2.5vw, 20px);
   }
-  .h2, .h3 {
-      font-size: 30px;
+
+  .fun-fact-home {
+    padding: clamp(8px, 1.5vw, 12px);
+    margin: clamp(10px, 2vw, 15px) auto;
+    border-radius: clamp(6px, 1vw, 10px);
   }
+
+  .fun-fact-left {
+    padding: clamp(8px, 1.2vw, 10px);
+  }
+
+  .fun-fact-right {
+    padding: clamp(8px, 1.2vw, 10px);
+    gap: clamp(12px, 2vw, 20px);
+  }
+
+  .h3 {
+    font-size: clamp(20px, 2vw, 26px);
+  }
+
+  .fun-fact-left h2 {
+    font-size: clamp(20px, 2vw, 26px);
+  }
+
+  .h2-home {
+    font-size: clamp(20px, 2vw, 28px);
+  }
+
   .stat-item {
-      font-size: 20px;
+    font-size: clamp(16px, 1.8vw, 24px);
+  }
+
+  .stat-item::after {
+    font-size: clamp(12px, 1.4vw, 18px);
+  }
+
+  .stat-desc {
+    font-size: clamp(9px, 1vw, 11px);
+  }
+
+  span {
+    font-size: clamp(18px, 2.2vw, 24px);
+  }
+}
+
+/* Very Small Mobile (below 320px) */
+@media (max-width: 320px) {
+  .ourfunconteiner {
+    padding-bottom: clamp(10px, 2vw, 15px);
+  }
+
+  .fun-fact-home {
+    padding: clamp(5px, 1vw, 10px);
+    margin: clamp(8px, 1.5vw, 12px) auto;
+    border-radius: clamp(5px, 0.8vw, 8px);
+    justify-content: center;
+  }
+
+  .h2-home{
+ text-align: center;
+  }
+
+  .fun-fact-stats {
+    gap: clamp(8px, 1vw, 10px);
+    justify-content: center;
+  }
+
+  .fun-fact-left p {
+    font-size: clamp(11px, 1.2vw, 13px);
+  }
+
+  .h3 {
+    font-size: clamp(18px, 1.8vw, 24px);
+  }
+
+  .fun-fact-left h2 {
+    font-size: clamp(18px, 1.8vw, 24px);
+  }
+
+  .h2-home {
+    font-size: clamp(18px, 1.8vw, 26px);
+  }
+
+  .p {
+    font-size: clamp(9px, 1vw, 11px);
+  }
+
+  .stat-item {
+    font-size: clamp(14px, 1.6vw, 22px);
+  }
+
+  .stat-item::after {
+    font-size: clamp(10px, 1.2vw, 16px);
+  }
+
+  .stat-desc {
+    font-size: clamp(8px, 0.9vw, 10px);
+  }
+
+  span {
+    font-size: clamp(16px, 2.2vw, 22px);
+    margin-top: clamp(30px, 5vw, 50px);
+  }
+}
+
+@media(max-width:575px) {
+  .fun-fact-home {
+    margin: 0;
+    position: unset;
   }
 }

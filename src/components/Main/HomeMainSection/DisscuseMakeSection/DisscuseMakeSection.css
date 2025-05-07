@@ -37,7 +37,7 @@
 
 .buuton:hover {
   color: rgb(84, 5, 112);
-  border-bottom: 1px solid rgb(255, 153, 0);
+ border-bottom: none;
 }
 
 .icooon11 {
@@ -47,50 +47,200 @@
   left: 5px;
 }
 
-@media (max-width: 768px) {
+/* Media Queries (1400px - 320px) */
+
+/* Large Desktops (1200px - 1400px) */
+@media (max-width: 1400px) {
   .banner {
-    width: 90%;
-    padding-top: 60px;
+    width: clamp(82%, 86%, 92%);
   }
 
   .fonne1 {
-    height: 300px;
-    gap: 40px;
+    height: clamp(300px, 45vw, 360px);
+    gap: clamp(25px, 4vw, 50px);
   }
 
   .fonneh2 {
-    font-size: 40px;
-  }
-
-  .buuton {
-    font-size: 14px;
-  }
-
-  .icooon11 {
-    font-size: 20px;
+    font-size: clamp(26px, 4.5vw, 46px);
   }
 }
 
-@media (max-width: 480px) {
+/* Medium Desktops (992px - 1200px) */
+@media (max-width: 1200px) {
+  .disscusemake-section {
+    padding-bottom: clamp(60px, 12vw, 100px);
+  }
+
   .banner {
-    width: 100%;
-    padding-top: 40px;
+    width: clamp(85%, 90%, 95%);
+    padding-top: clamp(40px, 8vw, 60px);
   }
 
   .fonne1 {
-    height: 250px;
-    gap: 30px;
+    height: clamp(280px, 40vw, 340px);
+    gap: clamp(20px, 3.5vw, 40px);
   }
 
   .fonneh2 {
-    font-size: 30px;
+    font-size: clamp(24px, 4vw, 42px);
   }
 
   .buuton {
-    font-size: 12px;
+    font-size: clamp(13px, 1.8vw, 15px);
   }
 
   .icooon11 {
-    font-size: 18px;
+    font-size: clamp(16px, 2.5vw, 22px);
+  }
+}
+
+/* Tablets (768px - 992px) */
+@media (max-width: 992px) {
+  .disscusemake-section {
+    padding-bottom: clamp(50px, 10vw, 80px);
+  }
+
+  .banner {
+    width: clamp(90%, 95%, 98%);
+    padding-top: clamp(30px, 6vw, 50px);
+  }
+
+  .fonne1 {
+    height: clamp(240px, 35vw, 300px);
+    gap: clamp(15px, 3vw, 35px);
+    border-radius: clamp(8px, 1.5vw, 12px);
+  }
+
+  .fonneh2 {
+    font-size: clamp(22px, 3.5vw, 38px);
+  }
+
+  .buuton {
+    font-size: clamp(12px, 1.6vw, 14px);
+  }
+
+  .icooon11 {
+    font-size: clamp(14px, 2vw, 20px);
+    top: clamp(4px, 0.6vw, 6px);
+  }
+}
+
+/* Small Tablets (576px - 768px) */
+@media (max-width: 768px) {
+  .disscusemake-section {
+    padding-bottom: clamp(40px, 8vw, 60px);
+  }
+
+  .banner {
+    width: 100%; /* Full width */
+    padding-top: clamp(25px, 5vw, 40px);
+  }
+
+  .fonne1 {
+    height: clamp(200px, 30vw, 260px);
+    gap: clamp(12px, 2.5vw, 30px);
+  }
+
+  .fonneh2 {
+    font-size: clamp(20px, 3vw, 34px);
+  }
+
+  .buuton {
+    font-size: clamp(11px, 1.5vw, 13px);
+  }
+
+  .icooon11 {
+    font-size: clamp(12px, 1.8vw, 18px);
+    top: clamp(3px, 0.5vw, 5px);
+    left: clamp(2px, 0.4vw, 4px);
+  }
+}
+
+/* Mobile (480px - 576px) */
+@media (max-width: 576px) {
+  .disscusemake-section {
+    padding-bottom: clamp(30px, 6vw, 50px);
+  }
+
+  .banner {
+    padding-top: clamp(20px, 4vw, 30px);
+  }
+
+  .fonne1 {
+    height: clamp(180px, 25vw, 220px);
+    gap: clamp(10px, 2vw, 25px);
+    border-radius: clamp(6px, 1vw, 10px);
+  }
+
+  .fonneh2 {
+    font-size: clamp(18px, 2.5vw, 30px);
+  }
+
+  .buuton {
+    font-size: clamp(10px, 1.4vw, 12px);
+  }
+
+  .icooon11 {
+    font-size: clamp(10px, 1.6vw, 16px);
+    top: clamp(2px, 0.4vw, 4px);
+  }
+}
+
+/* Extra Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .disscusemake-section {
+    padding-bottom: clamp(25px, 5vw, 40px);
+  }
+
+  .banner {
+    padding-top: clamp(15px, 3vw, 25px);
+  }
+
+  .fonne1 {
+    height: clamp(160px, 22vw, 200px);
+    gap: clamp(8px, 1.5vw, 20px);
+  }
+
+  .fonneh2 {
+    font-size: clamp(16px, 2vw, 26px);
+  }
+
+  .buuton {
+    font-size: clamp(9px, 1.3vw, 11px);
+  }
+
+  .icooon11 {
+    font-size: clamp(9px, 1.5vw, 14px);
+    top: clamp(1px, 0.3vw, 3px);
+    left: clamp(1px, 0.3vw, 3px);
+  }
+}
+
+/* Very Small Mobile (below 320px) */
+@media (max-width: 320px) {
+  .disscusemake-section {
+    padding-bottom: clamp(20px, 4vw, 30px);
+  }
+
+  .banner {
+    padding-top: clamp(10px, 2vw, 20px);
+  }
+
+  .fonne1 {
+    height: clamp(140px, 20vw, 180px);
+    gap: clamp(6px, 1.2vw, 15px);
+    border-radius: clamp(5px, 0.8vw, 8px);
+  }
+
+  .fonneh2 {
+    font-size: clamp(14px, 1.8vw, 24px);
+  }
+
+  .buuton {
+    font-size: clamp(8px, 1.2vw, 10px);
+  }
+
+  .icooon11 {
+    font-size: clamp(8px, 1.4vw, 12px);
   }
 }

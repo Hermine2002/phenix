@@ -7,7 +7,7 @@ import Curses from "../components/Pages/Curses/Curses";
 import Coin from "../components/Pages/Coin/Coin";
 import NotFound from "../components/NotFound/NotFound";
 import Layout from "../components/Layout/Layout";
-import CaseStudy from "../components/Pages/CaseStudy/CaseStudy"; // Added import for CaseStudy component
+import CaseStudy from "../components/Main/WhatWeDoMainSection/CaseStudy/CaseStudy"; // Added import for CaseStudy component
 
 import WhatWeDo from "../components/Pages/WhatWeDo/WhatWeDo";
 

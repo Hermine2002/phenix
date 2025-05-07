@@ -48,6 +48,16 @@
   border-radius: 10px;
 }
 
+.slick-arrow.slick-next {
+  right: 50px;
+}
+
+.slick-arrow.slick-prev{
+left:-70px
+
+}
+
+
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -82,67 +92,287 @@
 
 
 
+/* Media Queries (1400px - 320px) */
+
+/* Large Desktops (1200px - 1400px) */
+@media (max-width: 1400px) {
+  .teamcarousel-section {
+    padding-top: clamp(50px, 8vw, 70px);
+    padding-bottom: clamp(70px, 12vw, 100px);
+    padding-left: clamp(3%, 5vw, 7%);
+  }
+
+  .carouselll-container {
+    width: clamp(87%, 92%, 96%);
+    padding-left: clamp(4%, 7vw, 9%);
+  }
+
+  .teammh2 {
+    font-size: clamp(30px, 4.5vw, 46px);
+  }
+
+  .carousel-item {
+    min-width: clamp(22%, 27%, 32%);
+  }
+
+  .carousel-item img {
+    height: clamp(180px, 28vw, 320px);
+  }
+
+  .nav-btn {
+    font-size: clamp(18px, 2.8vw, 28px);
+  }
+}
+
+/* Medium Desktops (992px - 1200px) */
 @media (max-width: 1200px) {
+  .teamcarousel-section {
+    padding-top: clamp(40px, 6vw, 60px);
+    padding-bottom: clamp(60px, 10vw, 80px);
+    padding-left: clamp(2%, 4vw, 6%);
+    gap: clamp(12px, 1.5vw, 15px);
+  }
+
   .carouselll-container {
-    width: 85%;
-    padding-left: 5%;
+    width: clamp(90%, 94%, 98%);
+    padding-left: clamp(3%, 6vw, 8%);
+  }
+
+  .teammh3 {
+    font-size: clamp(13px, 1.6vw, 16px);
   }
 
   .teammh2 {
-    font-size: 40px; 
+    font-size: clamp(28px, 4vw, 42px);
+  }
+
+  .carousel-item {
+    min-width: clamp(25%, 30%, 35%);
   }
 
   .carousel-item img {
-    height: 350px; 
+    height: clamp(160px, 25vw, 300px);
   }
 
   .nav-btn {
-    font-size: 24px;
+    font-size: clamp(16px, 2.5vw, 26px);
+    padding: clamp(6px, 1.2vw, 8px);
+  }
+
+  .nav-btn.left {
+    left: clamp(3px, 0.8vw, 8px);
+  }
+
+  .nav-btn.right {
+    right: clamp(3px, 0.8vw, 8px);
+  }
+
+  .buttooonbox {
+    width: clamp(70px, 9vw, 90px);
+    height: clamp(35px, 4.5vw, 45px);
   }
 }
 
+/* Tablets (768px - 992px) */
+@media (max-width: 992px) {
+  .teamcarousel-section {
+    padding-top: clamp(30px, 5vw, 50px);
+    padding-bottom: clamp(50px, 8vw, 60px);
+    padding-left: clamp(1%, 3vw, 5%);
+  }
+
+  .carouselll-container {
+    width: clamp(92%, 96%, 100%);
+    padding-left: clamp(2%, 5vw, 7%);
+  }
+
+  .teammh2 {
+    font-size: clamp(26px, 3.5vw, 38px);
+  }
+
+  .carousel-item {
+    min-width: clamp(30%, 35%, 40%);
+  }
+
+  .carousel-item img {
+    height: clamp(140px, 22vw, 280px);
+    border-radius: clamp(5px, 0.8vw, 8px);
+  }
+
+  .nav-btn {
+    font-size: clamp(14px, 2vw, 24px);
+  }
+
+  .buttooonbox {
+    width: clamp(60px, 8vw, 80px);
+    height: clamp(30px, 4vw, 40px);
+  }
+}
+
+/* Small Tablets (576px - 768px) */
 @media (max-width: 768px) {
+  .teamcarousel-section {
+    padding-top: clamp(25px, 4vw, 40px);
+    padding-bottom: clamp(40px, 6vw, 50px);
+    padding-left: 0; /* Center content */
+    display: block;
+    text-align: center;
+  }
+
+  .teamcarousel-section .slider-container {
+    margin-top: 15px;
+  }
+
+  .slick-slide h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots li button:before {
+    color: #fff;
+    font-size: 11px;
+  }
+
   .carouselll-container {
     width: 100%;
     padding-left: 0;
   }
 
+  .teammh3 {
+    font-size: clamp(12px, 1.4vw, 14px);
+  }
+
   .teammh2 {
-    font-size: 30px; 
+    font-size: clamp(24px, 3vw, 34px);
   }
 
   .carousel-item {
-    min-width: 80%; 
+    min-width: clamp(40%, 45%, 50%); /* Show fewer items */
   }
 
   .carousel-item img {
-    height: 250px; 
+    height: clamp(120px, 20vw, 250px);
   }
 
   .nav-btn {
-    font-size: 20px; 
+    font-size: clamp(12px, 1.8vw, 22px);
+    padding: clamp(5px, 1vw, 6px);
+  }
+
+  .nav-btn.left {
+    left: clamp(2px, 0.5vw, 5px);
+  }
+
+  .nav-btn.right {
+    right: clamp(2px, 0.5vw, 5px);
+  }
+
+  .buttooonbox {
+    width: clamp(50px, 7vw, 70px);
+    height: clamp(25px, 3.5vw, 35px);
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile (480px - 576px) */
+@media (max-width: 576px) {
+  .teamcarousel-section {
+    padding-top: clamp(20px, 3vw, 30px);
+    padding-bottom: clamp(30px, 5vw, 40px);
+    gap: clamp(10px, 1.2vw, 12px);
+  }
+
   .carouselll-container {
     width: 100%;
-    padding-left: 0;
   }
 
   .teammh2 {
-    font-size: 24px; 
+    font-size: clamp(22px, 2.5vw, 30px);
   }
 
   .carousel-item {
-    min-width: 100%; 
+    min-width: clamp(50%, 60%, 70%); /* Show one item at a time */
   }
 
   .carousel-item img {
-    height: 200px; 
+    height: clamp(100px, 18vw, 220px);
   }
 
   .nav-btn {
-    font-size: 18px; 
+    font-size: clamp(10px, 1.6vw, 20px);
+  }
+
+  .buttooonbox {
+    width: clamp(45px, 6vw, 60px);
+    height: clamp(20px, 3vw, 30px);
+  }
+}
+
+/* Extra Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .teamcarousel-section {
+    padding-top: clamp(15px, 2.5vw, 25px);
+    padding-bottom: clamp(40px, 4vw, 30px);
+  }
+
+  .teammh3 {
+    font-size: clamp(11px, 1.3vw, 13px);
+  }
+
+  .teammh2 {
+    font-size: clamp(20px, 2vw, 28px);
+  }
+
+  .carousel-item {
+    min-width: clamp(70%, 80%, 90%);
+  }
+
+  .carousel-item img {
+    height: clamp(80px, 16vw, 200px);
+    border-radius: clamp(4px, 0.6vw, 6px);
+  }
+
+  .nav-btn {
+    font-size: clamp(9px, 1.4vw, 18px);
+    padding: clamp(4px, 0.8vw, 5px);
+  }
+
+  .buttooonbox {
+    width: clamp(40px, 5vw, 50px);
+    height: clamp(18px, 2.5vw, 25px);
+  }
+}
+
+/* Very Small Mobile (below 320px) */
+@media (max-width: 320px) {
+  .teamcarousel-section {
+    padding-top: clamp(10px, 2vw, 20px);
+    padding-bottom: clamp(15px, 3vw, 20px);
+    gap: clamp(8px, 1vw, 10px);
+  }
+
+  .teammh2 {
+    font-size: clamp(18px, 1.8vw, 26px);
+  }
+
+  .teammh3 {
+    font-size: clamp(10px, 1.2vw, 12px);
+  }
+
+  .carousel-item {
+    min-width: 100%; /* Show one item fully */
+  }
+
+  .carousel-item img {
+    height: clamp(70px, 14vw, 180px);
+  }
+
+  .nav-btn {
+    font-size: clamp(8px, 1.2vw, 16px);
+    padding: clamp(3px, 0.6vw, 4px);
+  }
+
+  .buttooonbox {
+    width: clamp(35px, 4vw, 45px);
+    height: clamp(15px, 2vw, 20px);
   }
 }

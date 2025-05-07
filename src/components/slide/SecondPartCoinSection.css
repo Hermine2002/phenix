@@ -1,0 +1,381 @@
+.second-section-coin-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #181818;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 90px 0;
+  }
+  
+  .content-container {
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenth3 {
+    color: #999696;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contenth2 {
+    color: #fefefe;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding-right: 45%;
+  }
+  
+  .slide-image {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 25px;
+    opacity: 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Initial state for bottom-to-top (bottom left to top right) */
+  .slide-container.direction-bottom-to-top .slide-image-0,
+  .slide-container.direction-bottom-to-top .slide-image-1,
+  .slide-container.direction-bottom-to-top .slide-image-2,
+  .slide-container.direction-bottom-to-top .slide-image-3 {
+    opacity: 0;
+    transform: translate(-200px, 200px) scale(0.8) rotateY(30deg);
+  }
+  
+  /* Initial state for top-to-bottom (top right to bottom left) */
+  .slide-container.direction-top-to-bottom .slide-image-0,
+  .slide-container.direction-top-to-bottom .slide-image-1,
+  .slide-container.direction-top-to-bottom .slide-image-2,
+  .slide-container.direction-top-to-bottom .slide-image-3 {
+    opacity: 0;
+    transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+  }
+  
+  /* Active state with synchronized sliding animation */
+  .slide-container.active .slide-image-0 {
+    animation: slide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 0s;
+  }
+  
+  .slide-container.active .slide-image-1 {
+    animation: slide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 2s;
+  }
+  
+  .slide-container.active .slide-image-2 {
+    animation: slide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 4s;
+  }
+  
+  .slide-container.active .slide-image-3 {
+    animation: slide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 6s;
+  }
+  
+  /* Pause animation on hover */
+  .slide-container:hover .slide-image {
+    animation-play-state: paused;
+  }
+  
+  .ket {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: red;
+  }
+  
+  .helph3 {
+    font-size: 23px;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  /* Keyframes for bottom-to-top (bottom left to top right) */
+  .slide-container.direction-bottom-to-top .slide-image {
+    animation-name: slide-bottom-to-top;
+  }
+  
+  /* Keyframes for top-to-bottom (top right to bottom left) */
+  .slide-container.direction-top-to-bottom .slide-image {
+    animation-name: slide-top-to-bottom;
+  }
+  
+  @keyframes slide-bottom-to-top {
+    0% {
+      transform: translate(-200px, 200px) scale(0.8) rotateY(30deg);
+      opacity: 0;
+    }
+    9.52% {
+      transform: translate(-
+  
+  150px, 150px) scale(0.9) rotateY(20deg);
+      opacity: 0.6;
+    }
+    19.05% {
+      transform: translate(-75px, 75px) scale(0.95) rotateY(10deg);
+      opacity: 0.8;
+    }
+    28.57% {
+      transform: translate(0, 0) scale(1) rotateY(0deg);
+      opacity: 1;
+    }
+    38.1% {
+      transform: translate(75px, -75px) scale(0.95) rotateY(-10deg);
+      opacity: 0.8;
+    }
+    47.62% {
+      transform: translate(150px, -150px) scale(0.9) rotateY(-20deg);
+      opacity: 0.6;
+    }
+    57.14% {
+      transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-200px, 200px) scale(0.8) rotateY(30deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slide-top-to-bottom {
+    0% {
+      transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+      opacity: 0;
+    }
+    9.52% {
+      transform: translate(150px, -150px) scale(0.9) rotateY(-20deg);
+      opacity: 0.6;
+    }
+    19.05% {
+      transform: translate(75px, -75px) scale(0.95) rotateY(-10deg);
+      opacity: 0.8;
+    }
+    28.57% {
+      transform: translate(0, 0) scale(1) rotateY(0deg);
+      opacity: 1;
+    }
+    38.1% {
+      transform: translate(-75px, 75px) scale(0.95) rotateY(10deg);
+      opacity: 0.8;
+    }
+    47.62% {
+      transform: translate(-150px, 150px) scale(0.9) rotateY(20deg);
+      opacity: 0.6;
+    }
+    57.14% {
+      transform: translate(-200px, 200px) scale(0.8) rotateY(30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+      opacity: 0;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 1400px) {
+    .second-section-coin-container {
+      padding: 0px 0; /* Reduce padding for smaller screens */
+      gap: 20px; /* Slightly reduce gap between elements */
+      justify-content: space-between;
+    }
+  
+  
+
+
+    .content-container {
+      margin-bottom: 30px; /* Reduce margin for compact layout */
+    }
+  
+    .contenth2 {
+      font-size: clamp(24px, 5vw, 36px); /* Scale font size responsively */
+       max-width: 500px;
+       padding: 20px;
+    }
+  
+    .contenth3 {
+      font-size: clamp(16px, 3vw, 18px); /* Adjust subtitle size */
+    }
+  
+    .slide-container {
+      max-width: 250px; /* Reduce max-width for smaller screens */
+      height: 350px; /* Adjust height */
+      padding-left: 150px; /* Remove right padding to center content */
+    }
+  
+    .slide-image {
+      width: clamp(300px, 80%, 220px); /* Responsive width */
+      height: clamp(350px, 80%, 320px); /* Responsive height */
+      padding: 20px; /* Slightly reduce padding */
+      font-size: clamp(14px, 2.5vw, 16px); /* Responsive font size */
+      border-radius: 10px; /* Slightly smaller border radius */
+    }
+  
+    .helph3 {
+      font-size: clamp(13px, 3vw, 18px); /* Responsive font size for helph3 */
+    }
+  
+    /* Adjust initial states for animations */
+    .slide-container.direction-bottom-to-top .slide-image-0,
+    .slide-container.direction-bottom-to-top .slide-image-1,
+    .slide-container.direction-bottom-to-top .slide-image-2,
+    .slide-container.direction-bottom-to-top .slide-image-3 {
+      transform: translate(-150px, 150px) scale(0.85) rotateY(25deg); /* Scale down animation range */
+    }
+  
+    .slide-container.direction-top-to-bottom .slide-image-0,
+    .slide-container.direction-top-to-bottom .slide-image-1,
+    .slide-container.direction-top-to-bottom .slide-image-2,
+    .slide-container.direction-top-to-bottom .slide-image-3 {
+      transform: translate(150px, -150px) scale(0.85) rotateY(-25deg); /* Scale down animation range */
+    }
+  
+    /* Adjust keyframes for bottom-to-top animation */
+    @keyframes slide-bottom-to-top {
+      0% {
+        transform: translate(-150px, 150px) scale(0.85) rotateY(25deg);
+        opacity: 0;
+      }
+      9.52% {
+        transform: translate(-100px, 100px) scale(0.9) rotateY(15deg);
+        opacity: 0.6;
+      }
+      19.05% {
+        transform: translate(-50px, 50px) scale(0.95) rotateY(7.5deg);
+        opacity: 0.8;
+      }
+      28.57% {
+        transform: translate(0, 0) scale(1) rotateY(0deg);
+        opacity: 1;
+      }
+      38.1% {
+        transform: translate(50px, -50px) scale(0.95) rotateY(-7.5deg);
+        opacity: 0.8;
+      }
+      47.62% {
+        transform: translate(100px, -100px) scale(0.9) rotateY(-15deg);
+        opacity: 0.6;
+      }
+      57.14% {
+        transform: translate(150px, -150px) scale(0.85) rotateY(-25deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-150px, 150px) scale(0.85) rotateY(25deg);
+        opacity: 0;
+      }
+    }
+  
+    /* Adjust keyframes for top-to-bottom animation */
+    @keyframes slide-top-to-bottom {
+      0% {
+        transform: translate(150px, -150px) scale(0.85) rotateY(-25deg);
+        opacity: 0;
+      }
+      9.52% {
+        transform: translate(100px, -100px) scale(0.9) rotateY(-15deg);
+        opacity: 0.6;
+      }
+      19.05% {
+        transform: translate(50px, -50px) scale(0.95) rotateY(-7.5deg);
+        opacity: 0.8;
+      }
+      28.57% {
+        transform: translate(0, 0) scale(1) rotateY(0deg);
+        opacity: 1;
+      }
+      38.1% {
+        transform: translate(-50px, 50px) scale(0.95) rotateY(7.5deg);
+        opacity: 0.8;
+      }
+      47.62% {
+        transform: translate(-100px, 100px) scale(0.9) rotateY(15deg);
+        opacity: 0.6;
+      }
+      57.14% {
+        transform: translate(-150px, 150px) scale(0.85) rotateY(25deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(150px, -150px) scale(0.85) rotateY(-25deg);
+        opacity: 0;
+      }
+    }
+  }
+
+
+@media (max-width: 575px) {
+    
+   .slide-container, .active ,.direction-top-to-bottom{
+    width: 300px;
+    height: 300px;
+   }
+}
+
+@media (max-width: 767px) {
+    
+    .slide-container, .active ,.direction-top-to-bottom{
+     width: 300px;
+     height: 300px;
+    }
+ }
+
+  /* Nested media query for 767px to 320px */
+  @media (min-width: 320px) and (max-width: 767px) {
+    .second-section-coin-container {
+      flex-direction: column; /* Change to column layout */
+    justify-content: center;
+      padding: 20px 0; /* Adjust padding for better spacing */
+      gap: 30px; /* Increase gap for clarity */
+    }
+
+    .slide-container {
+      padding-left: 0; /* Remove padding to center slide container */
+      padding-right: 0; /* Remove right padding for consistency */
+      max-width: 300px; /* Slightly larger max-width for better visibility */
+      height: 300px; /* Adjust height for compact layout */
+
+    }
+
+   .slide-container, .active ,.direction-top-to-bottom{
+    width: 250px;
+    height: 250px;
+   }
+
+    .slide-image {
+      width: clamp(200px, 90%, 200px); /* Adjust width for smaller screens */
+      height: clamp(230px, 90%, 230px); /* Adjust height */
+    
+    }
+  }
+
+    

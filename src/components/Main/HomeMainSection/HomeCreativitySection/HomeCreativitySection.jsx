@@ -11,11 +11,12 @@ const HomeCreativitySection = () => {
     const fetchHeaderText = async () => {
       try {
         const response = await axios.get("http://localhost:8000/api/home");
-        setHeaderText(response.data.title);
+        //setHeaderText(response.data.title);
+        setHeaderText("Phenix");
         console.log(response.data);
       } catch (error) {
         console.error("Error fetching header text:", error);
-        setHeaderText("Default Header");
+        setHeaderText("Phenix");
       }
     };
 
@@ -25,15 +26,15 @@ const HomeCreativitySection = () => {
     <div className="hero-content">
       <h1 className="hero-content-h1">{headerText}</h1>
       <div className="hero-content-box">
+
+        <p className="hero-content-p">
+        Phenix is more than a company. It's the power behind successful IT projects.
+         We don’t look for clients — we build partners who change the rules of the game.
+          If you're ready to lead, welcome to the place where leaders are made.
+        </p>
         <a href="/" className="cta">
           Get a Quote <LuMoveRight className="icoon" />
         </a>
-
-        <p className="hero-content-p">
-          We deliver best problem solving solution for our client and provide
-          finest <br />
-          finishing product in present and upcoming future.
-        </p>
       </div>
     </div>
   );

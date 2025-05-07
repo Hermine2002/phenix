@@ -30,6 +30,7 @@ export default function Home() {
   }, []);
   return (
     <>
+
       <HomeCreativitySection />
       <OurFunSection />
       <HelpYouSection />
@@ -41,14 +42,15 @@ export default function Home() {
       <AvtoSliderSection />
       <OurReputedSection />
       <DisscuseMakeSection />
-      <div
+    
+      {/* <div
         className="custom-cursor"
         style={{ left: `${position.x - 29}px`, top: `${position.y - 29}px` }}
       ></div>
       <div
         className="custom-cursor1"
         style={{ left: `${position.x - 12}px`, top: `${position.y - 10}px` }}
-      ></div>
+      ></div> */}
     </>
   );
 }

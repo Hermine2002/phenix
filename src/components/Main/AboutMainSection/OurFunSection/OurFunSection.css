@@ -1,91 +1,102 @@
-.ourfunconteiner{
+.ourfunconteiner-about{
     width: 100%;
     background-color: #181818;
-    /* padding-top: 50px; */
+    /* border: 1px solid red; */
   }
   
-  .ourfun-section{
+  .ourfun-section-about{
     width: 100%;
-    /* position: absolute; */
+    /* border: 1px solid rgb(3, 3, 3); */
+
   }
+
+@media (min-width:1050px) {
+    .fun-fact-content-about{
+    width: 50%;
+}
+}
+
+
   
-  .fun-fact {
+  .fun-fact-about {
     width: 85%;
-    /* margin: 40px auto; */
-    padding: 60px;
+     margin: 0px auto; 
+     padding: 60px; 
     display: flex;
-  
-    position: absolute;
     background: linear-gradient(135deg, #1a1a1a, #0b0b0b);
     border-radius: 15px;
     color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    /* margin-top: -80px; */
-    /* z-index: 9999; */
-    /* margin-left: 120px; */
+  
   }
   
-  .h3 {
+  .h3-about {
     font-size: 50px;
+    /* border:1px solid red; */
   }
   
-  .fun-fact-stats {
+  .fun-fact-stats-about {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+     /* border:1px solid grey */
   }
   
   span {
     font-size: 20px;
     color: #ac1cbf;
     margin-top: 112px;
+    /* border: 1px solid white; */
   }
   
-  .contentbox {
+  .contentbox-about {
     margin-top: 7px;
+    /* border: 1px solid yellow; */
   }
   
-  .stat {
+  .stat-about {
     display: flex;
+    /* border:1px solid red; */
   }
   
-  .box {
+  .box-about {
     display: flex;
     gap: 10px;
   }
   
-  .container {
-    /* display: flex; */
+  .container-about {
+    display: flex;
     justify-content: space-around;
+    gap:10px;
   }
-  .fun-fact-left {
+  .fun-fact-left-about {
     width: 40%;
     padding: 20px;
   }
   
-  .fun-fact-left h2 {
+  .fun-fact-left-about h2 {
     font-size: 38px;
     font-weight: bold;
-    margin-bottom: 10px;
+   
   }
   
-  .fun-fact-left p {
+  .fun-fact-left-about p {
     font-size: 16px;
     color: #bbb;
     line-height: 1.5;
   }
   
-  .h22 {
+  .h22-about {
     font-size: 50px;
     /* text-align: start; */
   }
   
-  .p {
+  .p-about {
     color: #ffffffb2;
   }
   
-  .fun-fact-right {
+  .fun-fact-right-about {
     width: 55%;
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +105,7 @@
     padding: 20px;
   }
   
-  .stat-item {
+  .stat-item-about {
     width: 45%;
     text-align: right;
     font-size: 34px;
@@ -104,118 +115,174 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .stat-item:hover {
+  .stat-item-about:hover {
     transform: scale(1.1);
   }
   
-  .stat-item::after {
+  .stat-item-about::after {
     content: '+';
     color: red;
     font-size: 24px;
     margin-left: 5px;
   }
   
-  .stat-desc {
+  .stat-desc-about {
     font-size: 14px;
     color: #bbb;
     margin-top: 5px;
   }
   
-  @media (max-width: 1200px) {
-    .fun-fact {
-        width: 90%;
-        padding: 50px;
-        margin-left: 60px;
+ /* Media Queries for 1200px to 320px */
+
+/* Screens up to 1200px */
+@media (max-width: 1200px) {
+    .fun-fact-about {
+      width: 90%; /* Slightly wider to use available space */
+      padding: 40px; /* Reduce padding */
+      flex-direction: column; /* Stack left and right sections vertically */
     }
-    .fun-fact-left {
-        width: 45%;
+  
+    .fun-fact-left-about {
+      width: 100%; /* Full width for left section */
+      text-align: center; /* Center text */
     }
-    .fun-fact-right {
-        width: 50%;
+  
+    .fun-fact-right-about {
+      width: 100%; /* Full width for right section */
+      justify-content: center; /* Center stat items */
     }
-    .h22, .h3 {
-        font-size: 42px;
+  
+    .stat-item-about {
+      width: 48%; /* Slightly wider stat items */
+      text-align: center; /* Center-align text */
     }
-    .stat-item {
-        font-size: 30px;
+  
+    .h3-about,
+    .h22-about {
+      font-size: clamp(2rem, 4vw, 2.5rem); /* Reduce heading size */
+    }
+  
+    .fun-fact-left-about h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem); /* Smaller h2 */
+    }
+  
+    .fun-fact-left-about p {
+      font-size: clamp(0.875rem, 1.5vw, 1rem); /* Smaller paragraph */
     }
   }
   
-  @media (max-width: 996px) {
-    .fun-fact {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 0;
-        /* margin-top: 50PX; */
-        padding: 40px;
-        position: relative;
-        width: auto;
-    }
-    .fun-fact-left, .fun-fact-right {
-        width: 100%;
-        padding: 0;
-    }
-    .h22, .h3 {
-        font-size: 30px;
-    }
-    .stat-item {
-        font-size: 25px;
-    }
-  }
-  
+  /* Screens up to 768px (Tablet and smaller) */
   @media (max-width: 768px) {
-    .fun-fact {
-        padding: 30px;
-
-        background-color: #181818;
+    .fun-fact-about {
+      padding: 30px; /* Further reduce padding */
+      border-radius: 10px; /* Slightly smaller border radius */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
     }
-    .h22, .h3 {
-        font-size: 30px;
-    }
-    .stat-item {
-        font-size: 24px;
-    }
-    .stat-desc {
-        font-size: 12px;
-    }
-  }
   
-  @media (max-width: 576px) {
-    .fun-fact {
-        padding: 20px;
+    .fun-fact-stats-about {
+      gap: 15px; /* Reduce gap between stats */
     }
-    .h22, .h3 {
-        font-size: 30px;
-    }
-    .stat-item {
-        font-size: 22px;
-    }
-  }
   
-  @media (max-width: 400px) {
-    .fun-fact {
-        padding: 15px;
+    .stat-item-about {
+      width: 100%; /* Full width for stat items */
+      font-size: clamp(1.5rem, 3vw, 2rem); /* Smaller stat font */
     }
-    .h22, .h3 {
-        font-size: 30px;
+  
+    .stat-item-about::after {
+      font-size: clamp(1rem, 2vw, 1.25rem); /* Smaller '+' symbol */
     }
-    .stat-item {
-        font-size: 20px;
+  
+    .stat-desc-about {
+      font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller description */
+    }
+  
+    .h3-about,
+    .h22-about {
+      font-size: clamp(1.75rem, 3.5vw, 2rem); /* Further reduce heading size */
+    }
+  
+    .fun-fact-left-about h2 {
+      font-size: clamp(1.5rem, 3vw, 1.875rem); /* Further reduce h2 */
+    }
+  
+    .fun-fact-left-about p {
+      font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Smaller paragraph */
+    }
+  
+    span {
+      font-size: clamp(0.875rem, 1.5vw, 1rem); /* Smaller span text */
+      margin-top: 80px; /* Adjust margin */
     }
   }
 
 
+@media (max-width:575px){
+    .container-about{
+    display: block;
+    }
+
+    .h22-about{
+        font-size: 30px;
+    }
 
 
+.fun-fact-stats-about{
+    justify-content: flex-start;
+}
+
+    .p-about{
+        font-size: 13px;
+    }
+}
+
+  
+  /* Screens up to 320px (Small mobile devices) */
   @media (max-width: 320px) {
-    .fun-fact {
-        /* padding: 15px; */
+    .fun-fact-about {
+      width: 95%; /* Maximize width */
+      padding: 20px; /* Minimal padding */
+      border-radius: 8px; /* Smaller border radius */
     }
-    .h22,.h3 {
-        font-size: 35px;
+  
+    .fun-fact-stats-about {
+      gap: 10px; /* Minimal gap */
     }
-    .stat-item {
-        font-size: 16px;
+  
+    .fun-fact-left-about {
+      padding: 10px; /* Minimal padding */
+    }
+  
+    .fun-fact-right-about {
+      padding: 10px; /* Minimal padding */
+    }
+  
+    .stat-item-about {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* Minimal stat font */
+    }
+  
+    .stat-item-about::after {
+      font-size: clamp(0.875rem, 1.75vw, 1rem); /* Minimal '+' symbol */
+    }
+  
+    .stat-desc-about {
+      font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal description */
+    }
+  
+    .h3-about,
+    .h22-about {
+      font-size: clamp(1.5rem, 3vw, 1.75rem); /* Minimal heading size */
+    }
+  
+    .fun-fact-left-about h2 {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* Minimal h2 */
+    }
+  
+    .fun-fact-left-about p {
+      font-size: clamp(0.625rem, 1vw, 0.75rem); /* Minimal paragraph */
+    }
+  
+    span {
+      font-size: clamp(0.75rem, 1.25vw, 0.875rem); /* Minimal span text */
+      margin-top: 60px; /* Further adjust margin */
     }
   }

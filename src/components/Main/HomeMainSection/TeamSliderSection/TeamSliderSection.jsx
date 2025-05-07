@@ -8,21 +8,21 @@ import './TeamSliderSection.css'
 
 const testimonials = [
     {
-      text: "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
+      text: "1. I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
       author: "Ahon Monsery",
       position: "CEO AT TECH",
       rating: 4,
       image: "https://arino-laravel.laralink.com/storage/testimonial/b973SUptilZkJiwhJZAXsPlGmqngXy8b66ZbIHmZ.jpg",
     },
     {
-      text: "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
+      text: "2. I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
       author: "Jane Doe",
       position: "CEO AT TECH",
       rating: 5,
       image: "https://arino-laravel.laralink.com/storage/testimonial/tO9O78qrxmMUZQOciEGst2MOqarosQkqdNJufOJ9.jpg",
     },
     {
-      text: "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
+      text: "3. I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
       author: "John Smith",
       position: "CEO AT TECH",
       rating: 3,

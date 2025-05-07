@@ -1,255 +1,214 @@
-.helpyou-Section {
+.help .second-section-coin-container {
+  position: relative;
   width: 100%;
-  background-color: #181818;
+  min-height: 100vh;
+  background:#181818;
+  overflow: hidden;
   display: flex;
-padding-top: 150px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 90px 0;
 }
 
-.content-canteiner {
-  width: 36%;
-  /* margin-top: 450px; */
-  padding-left: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.help .content-container {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.contenth3 {
+.help .contenth3 {
   color: #999696;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.contenth2 {
+.help .contenth2 {
   color: #fefefe;
   font-size: 50px;
+  line-height: 1.2;
 }
 
-.cta {
-  font-size: 16px;
-  color: white;
-  transition: 1s;
-}
-
-.cta:hover {
-  color: red;
-  transition: 1s;
-  border-bottom: 1px solid red;
-}
-
-.photo-canteiner {
-  width: 57%;
-  /* border: 1px solid red; */
-  margin-top: 380px;
-}
-
-.photobox1 {
+.help .slide-container {
+  position: relative;
   width: 100%;
-  display: flex;
-  justify-content: end;
-  /* border: 1px solid blue; */
-  gap: 250px;
-}
-
-.photo1 {
-  width: 21%;
-  /* height: 100px; */
-  /* border: 1px solid yellow; */
-}
-
-.card1 {
-  width: 100%;
-  height: 190px;
-  background: url("../../../../assets/imgs/card1.png") no-repeat center
-    center/cover;
-  border-radius: 15px;
-  cursor: pointer;
+  height: 400px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  padding-left: 30px;
+  align-items: center;
+  max-width: 300px;
+  padding-right: 45%;
 }
 
-.ket {
+.help .slide-image {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  opacity: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+/* Initial state before animation */
+.help .slide-image-0,
+.help .slide-image-1,
+.help .slide-image-2,
+.help .slide-image-3 {
+  opacity: 0;
+  transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+}
+
+/* Active state with synchronized sliding animation */
+.help .slide-container.active .slide-image-0 {
+  animation: helpslide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 0s;
+}
+
+.help .slide-container.active .slide-image-1 {
+  animation: helpslide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 2s;
+}
+
+.help .slide-container.active .slide-image-2 {
+  animation: helpslide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 4s;
+}
+
+.help .slide-container.active .slide-image-3 {
+  animation: helpslide 10.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 6s;
+}
+
+/* Pause animation on hover */
+.help .slide-container:hover .slide-image {
+  animation-play-state: paused;
+}
+
+.help .ket {
   width: 15px;
   height: 15px;
   border-radius: 100%;
   background-color: red;
 }
 
-.helph3 {
+.help .helph3 {
   font-size: 23px;
   color: white;
+  line-height: 1.2;
+  margin: 0;
 }
 
-.card2 {
-  width: 100%;
-  height: 190px;
-  background: url("../../../../assets/imgs/card2.png") no-repeat center
-    center/cover;
-  border-radius: 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  padding-left: 30px;
-}
-
-.card3 {
-  width: 100%;
-  height: 190px;
-  background: url("../../../../assets/imgs/card3..png") no-repeat center
-    center/cover;
-  border-radius: 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  padding-left: 30px;
-}
-
-.card4 {
-  width: 100%;
-  height: 190px;
-  background: url("../../../../assets/imgs/card4.png") no-repeat center
-    center/cover;
-  border-radius: 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  padding-left: 30px;
-}
-
-.photobox2 {
-  width: 100%;
-  display: flex;
-  /* justify-content: end; */
-  /* border: 1px solid blue; */
-  gap: 260px;
-}
-
-.photo2 {
-  width: 21%;
-  /* height: 100px; */
-  /* border: 1px solid yellow; */
-  margin-left: 30px;
-}
-
-@media (max-width: 1200px) {
-  .content-canteiner {
-    width: 40%;
-    margin-top: 300px;
-    padding-left: 80px;
+/* Keyframes for sliding from top right to bottom left with -0.5s wait (overlap) */
+@keyframes slide {
+  0% {
+    transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+    opacity: 0;
   }
-  .photo-canteiner {
-    width: 55%;
-    margin-top: 300px;
+  9.52% {
+    transform: translate(150px, -150px) scale(0.9) rotateY(-20deg);
+    opacity: 0.6;
   }
-  .photobox1,
-  .photobox2 {
-    gap: 180px;
+  19.05% {
+    transform: translate(75px, -75px) scale(0.95) rotateY(-10deg);
+    opacity: 0.8;
   }
-  .photo1,
-  .photo2 {
-    width: 25%;
+  28.57% {
+    transform: translate(0, 0) scale(1) rotateY(0deg);
+    opacity: 1;
   }
-  .contenth2 {
-    font-size: 44px;
+  38.1% {
+    transform: translate(-75px, 75px) scale(0.95) rotateY(10deg);
+    opacity: 0.8;
   }
-}
-
-@media (max-width: 992px) {
-  .helpyou-Section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  47.62% {
+    transform: translate(-150px, 150px) scale(0.9) rotateY(20deg);
+    opacity: 0.6;
   }
-  .content-canteiner {
-    width: 90%;
-    margin-top: 100px;
-    padding-left: 0;
+  57.14% {
+    transform: translate(-200px, 200px) scale(0.8) rotateY(30deg);
+    opacity: 0;
   }
-  .photo-canteiner {
-    width: 90%;
-    margin-top: 50px;
-  }
-  .photobox1,
-  .photobox2 {
-    justify-content: center;
-    gap: 100px;
-  }
-  .photo1,
-  .photo2 {
-    width: 30%;
-  }
-  .contenth2 {
-    font-size: 38px;
+  100% {
+    transform: translate(200px, -200px) scale(0.8) rotateY(-30deg);
+    opacity: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .content-canteiner {
-    width: 100%;
-    margin-top: 80px;
-    gap: 20px;
+  .help .slide-container {
+    height: 400px;
   }
-  .photo-canteiner {
-    width: 100%;
-    margin-top: 40px;
+
+  .help .slide-image {
+    width: 200px;
+    height: 300px;
   }
-  .photobox1,
-  .photobox2 {
-    gap: 60px;
+
+  /* Initial state for smaller screens */
+  .help .slide-image-0,
+  .help .slide-image-1,
+  .help .slide-image-2,
+  .help .slide-image-3 {
+    opacity: 0;
+    transform: translate(100px, -100px) scale(0.8) rotateY(-30deg);
   }
-  .photo1,
-  .photo2 {
-    width: 40%;
+
+  @keyframes helpslide {
+    0% {
+      transform: translate(100px, -100px) scale(0.8) rotateY(-30deg);
+      opacity: 0;
+    }
+    9.52% {
+      transform: translate(75px, -75px) scale(0.9) rotateY(-20deg);
+      opacity: 0.6;
+    }
+    19.05% {
+      transform: translate(37.5px, -37.5px) scale(0.95) rotateY(-10deg);
+      opacity: 0.8;
+    }
+    28.57% {
+      transform: translate(0, 0) scale(1) rotateY(0deg);
+      opacity: 1;
+    }
+    38.1% {
+      transform: translate(-37.5px, 37.5px) scale(0.95) rotateY(10deg);
+      opacity: 0.8;
+    }
+    47.62% {
+      transform: translate(-75px, 75px) scale(0.9) rotateY(20deg);
+      opacity: 0.6;
+    }
+    57.14% {
+      transform: translate(-100px, 100px) scale(0.8) rotateY(30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(100px, -100px) scale(0.8) rotateY(-30deg);
+      opacity: 0;
+    }
   }
-  .contenth2 {
+
+  .help .contenth2 {
     font-size: 32px;
   }
 }
 
 @media (max-width: 576px) {
-  .content-canteiner {
-    margin-top: 60px;
-    gap: 15px;
+  .help .slide-image {
+    width: 150px;
+    height: 200px;
   }
-  .photo-canteiner {
-    margin-top: 30px;
-  }
-  .photobox1,
-  .photobox2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .photo1,
-  .photo2 {
-    width: 80%;
-  }
-  .contenth2 {
-    font-size: 28px;
-  }
-}
 
-@media (max-width: 400px) {
-  .content-canteiner {
-    margin-top: 50px;
-    gap: 10px;
-  }
-  .photo-canteiner {
-    margin-top: 20px;
-  }
-  .photo1,
-  .photo2 {
-    width: 90%;
-  }
-  .contenth2 {
+  .help .contenth2 {
     font-size: 24px;
   }
 }

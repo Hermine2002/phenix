@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.perspectivephoto1,
+/* .perspectivephoto1,
 .perspectivephoto2 {
   border-radius: 15px;
   width: 100%;
@@ -34,7 +34,7 @@
   aspect-ratio: 16/9;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-}
+} */
 
 .kanteiner-textboxx {
   display: flex;
@@ -65,11 +65,100 @@
   max-width: 60ch;
 }
 
+
+/* .photo-photo{
+  display: flex;
+   gap: 30px;
+}
+
+
 .kanteiner-photobox {
   display: flex;
-  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap; 
   gap: 1.25rem;
   width: 100%;
+  
+
+}
+
+
+.flip-card-front{
+  display: flex;
+  /* flex-wrap: wrap; 
+  gap: 1.25rem;
+ 
+
+}
+
+
+.kanteiner-photobox:hover{
+  transform: rotateY(180deg);
+} */
+
+
+.photo-photo {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.kanteiner-photobox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flip Card Style */
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 390px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, 
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-front {
+  background-color: #bbb;
+}
+
+.flip-card-back {
+  background-color: #05050586;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  line-height: 30px; 
+}
+
+.perspectivephoto2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -83,25 +172,108 @@
 .kanteiner-textboxx > *:nth-child(3) { animation-delay: 0.5s; }
 
 
-@media (max-width: 1430px) {
-  .kanteiner-photobox {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .kanteiner-photobox img {
-    flex: 1 1 calc(50% - 1.25rem);
-    min-width: 250px;
-    max-width: 100%;
-    animation: slideDown 0.8s ease-out forwards;
-  }
-  
 
-  .kanteiner-photobox img:nth-child(1) { animation-delay: 0.1s; }
-  .kanteiner-photobox img:nth-child(2) { animation-delay: 0.3s; }
-  .kanteiner-photobox img:nth-child(3) { animation-delay: 0.5s; }
-  .kanteiner-photobox img:nth-child(4) { animation-delay: 0.7s; }
+
+/* Media Queries for 1200px to 320px */
+
+/* Screens up to 1200px */
+@media (max-width: 1200px) {
+  .kanteiner-perpective {
+    padding: 0 3rem; /* Reduce padding for smaller screens */
+  }
+
+  .text-photo {
+    gap: clamp(1.5rem, 8vw, 8rem); /* Reduce gap between text and photo */
+    flex-direction: column; /* Stack text and photo vertically */
+    align-items: center;
+  }
+
+  .kanteiner-textboxx {
+    min-width: 100%; /* Allow text box to take full width */
+    align-items: center; /* Center text content */
+    text-align: center; /* Center-align text */
+  }
+
+  .kanteiner-photobox {
+    flex-direction: column; /* Stack photos vertically */
+    align-items: center;
+  }
+
+  .perspectivephoto1,
+  .perspectivephoto2 {
+    max-width: 100%; /* Ensure photos don’t overflow */
+  }
 }
+
+/* Screens up to 768px (Tablet and smaller) */
+@media (max-width: 768px) {
+  .perspective_section {
+    --section-padding: clamp(2rem, 5vw, 6rem); /* Reduce section padding */
+    --text-gap: clamp(1rem, 2.5vw, 2rem); /* Reduce text gap */
+  }
+
+  .kanteiner-perpective {
+    padding: 0 1.5rem; /* Further reduce padding */
+  }
+
+  .text-photo {
+    gap: clamp(1rem, 6vw, 6rem); /* Further reduce gap */
+  }
+
+  .kanteiner-textboxx-h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Smaller heading size */
+  }
+
+  .kanteiner-textboxx-p {
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem); /* Smaller paragraph size */
+    max-width: 100%; /* Allow text to use full width */
+  }
+
+  .kanteiner-textboxx-h3 {
+    font-size: clamp(0.75rem, 1.25vw, 1rem); /* Smaller subheading size */
+  }
+
+  .perspectivephoto1,
+  .perspectivephoto2 {
+    aspect-ratio: 4/3; /* Adjust aspect ratio for better mobile display */
+  }
+}
+
+/* Screens up to 320px (Small mobile devices) */
+@media (max-width: 320px) {
+  .perspective_section {
+    --section-padding: clamp(1.5rem, 4vw, 4rem); /* Minimal padding */
+    --text-gap: clamp(0.75rem, 2vw, 1.5rem); /* Minimal gap */
+  }
+
+  .kanteiner-perpective {
+    padding: 0 1rem; /* Minimal padding for very small screens */
+  }
+
+  .text-photo {
+    gap: clamp(0.75rem, 5vw, 4rem); /* Minimal gap */
+  }
+
+  .kanteiner-textboxx-h2 {
+    font-size: clamp(1.25rem, 3.5vw, 2rem); /* Further reduce heading size */
+  }
+
+  .kanteiner-textboxx-p {
+    font-size: clamp(0.625rem, 1.25vw, 0.75rem); /* Minimal paragraph size */
+  }
+
+  .kanteiner-textboxx-h3 {
+    font-size: clamp(0.625rem, 1vw, 0.875rem); /* Minimal subheading size */
+  }
+
+  .perspectivephoto1,
+  .perspectivephoto2 {
+    border-radius: 10px; /* Slightly smaller border radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+}
+
+
 
 
 
@@ -126,4 +298,4 @@
   .kanteiner-photobox {
     flex-direction: column;
   }
-}
+} 

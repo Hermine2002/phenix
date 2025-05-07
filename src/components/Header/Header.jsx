@@ -6,10 +6,9 @@ import { IoIosPin, IoLogoFacebook } from "react-icons/io";
 import { ImLinkedin2 } from "react-icons/im";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
-import logoo from "../../assets/imgs/logo.png"
+import logoo from "../../assets/imgs/IMG_03171-2.png"
 
-
-import logo from "../../assets/imgs/logo.png"
+import logo from "../../assets/imgs/IMG_03171-2.png"
 
 
 
@@ -67,8 +66,9 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar">
-
+  
         <div className="header-logo">
+         
         <img
           src={logoo}
           alt="logo"
@@ -97,12 +97,12 @@ const Header = () => {
         </ul>  */}
          <div className="menu-box"> 
           <ul className="nav-menu">
-         <li className="list" > <Link to='/' className="list"> Home</Link> </li>
-           <li className="list"> <Link to='/about' className="list">About </Link> </li>
-            <li className="list list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
-            <li className="list"><Link className="list" to="/perspective">Perspective</Link></li>
-            <li className="list" > <Link to="/coin" className="list">coin</Link></li>
-            <li className="list"> <Link to="/curses" className="list">curses</Link></li>
+         <li className="lists" > <Link to='/' className="list"> Home</Link> </li>
+           <li className="lists"> <Link to='/about' className="list">About </Link> </li>
+            <li className="lists list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
+            <li className="lists"><Link className="list" to="/perspective">Perspective</Link></li>
+            <li className="lists" > <Link to="/coin" className="list">coin</Link></li>
+            <li className="lists"> <Link to="/curses" className="list">courses</Link></li>
              </ul>
         </div> 
 
@@ -141,7 +141,7 @@ const Header = () => {
 
 
 <div className="menu-box"> 
-          <ul className="nav-menu">
+          <ul className="nav-menu-icon">
          <li className="list" > <Link to='/' className="list"> Home</Link> </li>
            <li className="list"> <Link to='/about' className="list">About </Link> </li>
             <li className="list list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>

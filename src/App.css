@@ -32,3 +32,52 @@
     transform: rotate(360deg);
   }
 }
+
+.follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(99, 6, 111, 0.5);
+  background-color: transparent;
+  border:1px solid rgba(99, 6, 111, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+}
+
+.inner-square {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(106, 4, 117, 0.7);
+border-radius: 100%;
+ 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .follower {
+    width: 40px;
+    height: 40px;
+  }
+  .inner-square {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .follower {
+    width: 32px;
+    height: 32px;
+  }
+  .inner-square {
+    width: 16px;
+    height: 16px;
+  }
+}

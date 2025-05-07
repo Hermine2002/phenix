@@ -2,7 +2,7 @@ import WhatWeDoMainSection from "../../Main/WhatWeDoMainSection/WhatWeDoMainSect
 
 const WhatWeDo = () => {
   return (
-    <div>
+    <div className="whatWeDo">
       <WhatWeDoMainSection />
     </div>
   )

@@ -1,9 +1,9 @@
 .second-section-curses{
     width: 100%;
-    height: 750px;
+  
     /* border:1px solid red; */
     background-color: #222222;
-    display: flex;
+  
     justify-content: center;
     align-items: center;
 }
@@ -11,13 +11,11 @@
 
 
 .second-section-curses-child{
-  
-
-    /* border:1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 40px;
+  padding: 30px;
 }
 
 
@@ -113,272 +111,275 @@
 .price-container {
     /* width: 32%; */
     transition: width 0.5s ease-in-out;
+    padding-bottom: 25px;
   }
 
 
 
-/* 
 
-  @media (max-width: 1024px) {
-    .second-section-curses {
-      height: auto;
-      padding: 60px 20px;
-    }
-  
+
+  @media (max-width: 1400px) {
     .second-section-curses-child {
-      flex-wrap: wrap;
-      gap: 30px;
-      height: auto;
-    }
-  
-    .price-container {
-      width: 45%;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .second-section-curses {
-      padding: 50px 15px;
-    }
-  
-    .price-container {
-      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(15px, 2.5vw, 30px);
+      padding: clamp(15px, 3vw, 25px);
     }
   
     .price-container-title {
-      font-size: 24px;
+      font-size: clamp(22px, 2.8vw, 28px);
     }
   
     .price-container-child-amd {
-      font-size: 36px;
-    }
-  
-    .price-container-child-text,
-    .price-container-child-per,
-    .price-container-lists,
-    .price-container-link {
-      font-size: 16px;
-    }
-  
-    .price-container-lists-child2 {
-      font-size: 20px;
+      font-size: clamp(34px, 4vw, 42px);
     }
   }
   
-  @media (max-width: 480px) {
+  /* Medium Desktops (992px - 1200px) */
+  @media (max-width: 1200px) {
+    .second-section-curses-child {
+      grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+      grid-template-rows: auto;
+      gap: clamp(15px, 2vw, 25px);
+    }
+  
+    .price-container {
+      width: 100%; /* Full width within grid cell */
+    }
+  
     .price-container-title {
-      font-size: 20px;
+      font-size: clamp(20px, 2.5vw, 26px);
     }
   
     .price-container-child-amd {
-      font-size: 28px;
+      font-size: clamp(32px, 3.8vw, 40px);
+      margin-top: clamp(15px, 2.5vw, 30px);
+    }
+  
+    .price-container-child-text {
+      font-size: clamp(15px, 1.6vw, 17px);
     }
   
     .price-container-child-per {
-      font-size: 16px;
+      font-size: clamp(15px, 1.8vw, 18px);
+    }
+  }
+  
+  /* Tablets (768px - 992px) */
+  @media (max-width: 992px) {
+    .second-section-curses {
+      padding: clamp(15px, 3vw, 30px);
+    }
+  
+    .second-section-curses-child {
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(10px, 1.5vw, 20px);
+      padding: clamp(10px, 2vw, 20px);
+    }
+  
+    .price-container-title {
+      font-size: clamp(18px, 2.2vw, 24px);
+    }
+  
+    .price-container-child-amd {
+      font-size: clamp(30px, 3.5vw, 38px);
+    }
+  
+    .price-container-lists {
+      font-size: clamp(15px, 1.6vw, 17px);
     }
   
     .price-container-lists-child2 {
-      font-size: 18px;
+      font-size: clamp(18px, 2.2vw, 22px);
     }
   
     .price-container-link {
-      font-size: 14px;
+      font-size: clamp(13px, 1.3vw, 15px);
     }
   }
   
-
-
-
-
-  @media (max-width: 1200px) {
-    .price-container {
-      width: 80%;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .price-container {
-      width: 80%;
-    }
-  }
-
-  @media (max-width: 850px) {
-    .price-container {
-      width: 100%;
-    }
-  }
-
-
-  @media (max-width: 826px) {
-    .price-container {
-      width: 80%;
-    }
-  }
-
-  @media (max-width: 824px) {
-    .price-container {
-      width: 80%;
-    }
-  }
-
-
-
-  @media (max-width: 823px) {
-    .price-container {
-      width: 80%;
-    }
-  } */
-
-
-  @media (max-width:1179px){
-
-    .price-container-child-amd{
-        font-size: 18px;
-    }
-
-    .price-container-child-text{
-        font-size: 16px;
-    }
-
-    .price-container-child-per{
-        font-size: 16px;
-    }
-  }
-
-
-  @media (max-width:951px){
-    .section-coin-container-child-top{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-
-    .section-coin-container-child-bottom{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-
-
-    .price-container-child-per{
-        font-size: 16px;
-    }
-
-
-    .price-container-child-amd{
-        font-size: 16px;
-    }
-
-    .price-container-child-text{
-        font-size: 16px;
-    }
-  }
-
-
-  
-  /* Стили при ширине до 768px */
+  /* Small Tablets (576px - 768px) */
   @media (max-width: 768px) {
+    .second-section-curses-child {
+      grid-template-columns: 0.5fr; /* Single column */
+      gap: clamp(10px, 1.2vw, 15px);
+      justify-content: center;
+    }
+  
     .price-container {
-      width: 100%;
+      border-radius: 18px; /* Slightly smaller radius */
     }
-
-    .section-coin-container-child-top{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .price-container-lists{
-        font-size: 14px;
-    }
-
-
-    .price-container-child-per{
-        font-size: 16px;
-    }
-
-
-
-    .price-container-child-per{
-        font-size: 16px;
-    }
-
-
-    .price-container-child-amd{
-        font-size: 16px;
-    }
-
-    .price-container-child-text{
-        font-size: 16px;
-    }
-
   
-    .section-coin-container-child {
-      height: auto;
+    .price-container-title {
+      font-size: clamp(16px, 2vw, 22px);
+      margin: clamp(10px, 2vw, 20px);
     }
-  }
-
-    
-  @media(max-width:575px){
-    .section-coin-container-child-top{
-        display: grid;
-        grid-template-columns: 1fr;
+  
+    .price-container-child-amd {
+      font-size: clamp(28px, 3.2vw, 36px);
+      margin-left: clamp(8px, 1.5vw, 15px);
+      margin-bottom: clamp(10px, 2vw, 20px);
     }
-  }
-
-
-
-  @media (max-width: 354px) {
+  
+    .price-container-child-text {
+      font-size: clamp(14px, 1.5vw, 16px);
+    }
+  
+    .price-container-child-per {
+      font-size: clamp(14px, 1.6vw, 16px);
+      margin-left: clamp(8px, 1.5vw, 15px);
+    }
+  
     .price-container-lists {
-      /* padding: 10px; */
-      font-size: 12px;
-      margin-top: 0px;
+      font-size: clamp(14px, 1.5vw, 16px);
     }
-
-    .price-container-child-per{
-        font-size: 16px;
-    }
-
-
-    .price-container-child-amd{
-        font-size: 16px;
-    }
-
-    .price-container-child-text{
-        font-size: 16px;
+  
+    .price-container-link {
+      margin: clamp(10px, 2vw, 20px);
     }
   }
-
-
-
   
-  @media (max-width: 347px) {
+  /* Mobile (480px - 576px) */
+  @media (max-width: 576px) {
+    .second-section-curses {
+      padding: clamp(10px, 2vw, 20px);
+    }
+  
+    .second-section-curses-child {
+      gap: clamp(8px, 1vw, 12px);
+      padding: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .price-container {
+      border-radius: 16px;
+    }
+  
+    .price-container-title {
+      font-size: clamp(14px, 1.8vw, 20px);
+    }
+  
+    .price-container-child-amd {
+      font-size: clamp(26px, 3vw, 34px);
+    }
+  
+    .price-container-child-text {
+      font-size: clamp(13px, 1.4vw, 15px);
+    }
+  
+    .price-container-child-per {
+      font-size: clamp(13px, 1.5vw, 15px);
+    }
+  
     .price-container-lists {
-      /* padding: 10px; */
-      font-size: 12px;
-      margin-top: 0px;
+      font-size: clamp(13px, 1.4vw, 15px);
     }
-
-
-    .price-container-child-amd{
-        font-size: 25px;
+  
+    .price-container-lists-child {
+      margin-left: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .price-container-lists-child2 {
+      font-size: clamp(16px, 2vw, 20px);
+    }
+  
+    .price-container-link {
+      font-size: clamp(12px, 1.2vw, 14px);
+      margin: clamp(8px, 1.5vw, 15px);
     }
   }
   
-
-
-
-  /* Стили при ширине до 374px (например, мобильные) */
+  /* Extra Small Mobile (320px - 480px) */
+  @media (max-width: 480px) {
+    .second-section-curses {
+      padding: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .second-section-curses-child {
+      gap: clamp(6px, 0.8vw, 10px);
+      padding: clamp(6px, 1vw, 12px);
+    }
+  
+    .price-container {
+      border-radius: 14px;
+    }
+  
+    .price-container-title {
+      font-size: clamp(12px, 1.6vw, 18px);
+      margin: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .price-container-child-amd {
+      font-size: clamp(24px, 2.8vw, 32px);
+      margin-top: clamp(10px, 2vw, 20px);
+      margin-bottom: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .price-container-child-text {
+      font-size: clamp(12px, 1.3vw, 14px);
+    }
+  
+    .price-container-child-per {
+      font-size: clamp(12px, 1.4vw, 14px);
+    }
+  
+    .price-container-lists {
+      font-size: clamp(12px, 1.3vw, 14px);
+    }
+  
+    .price-container-lists-child2 {
+      font-size: clamp(14px, 1.8vw, 18px);
+    }
+  
+    .price-container-link {
+      font-size: clamp(11px, 1.1vw, 13px);
+    }
+  }
+  
+  /* Very Small Mobile (below 320px) */
   @media (max-width: 320px) {
-    .price-container-lists {
-      /* padding: 10px; */
-      font-size: 12px;
-      margin-top: 0px;
+    .second-section-curses {
+      padding: clamp(5px, 1vw, 10px);
     }
-
-
-    .price-container-child-amd{
-        font-size: 25px;
+  
+    .second-section-curses-child {
+      gap: clamp(5px, 0.6vw, 8px);
+      padding: clamp(5px, 0.8vw, 10px);
+    }
+  
+    .price-container {
+      border-radius: 12px;
+    }
+  
+    .price-container-title {
+      font-size: clamp(11px, 1.5vw, 16px);
+    }
+  
+    .price-container-child-amd {
+      font-size: clamp(22px, 2.5vw, 30px);
+    }
+  
+    .price-container-child-text {
+      font-size: clamp(11px, 1.2vw, 13px);
+    }
+  
+    .price-container-child-per {
+      font-size: clamp(11px, 1.3vw, 13px);
+    }
+  
+    .price-container-lists {
+      font-size: clamp(11px, 1.2vw, 13px);
+    }
+  
+    .price-container-lists-child {
+      margin: clamp(2px, 0.4vw, 4px);
+      margin-left: clamp(6px, 1vw, 12px);
+    }
+  
+    .price-container-lists-child2 {
+      font-size: clamp(13px, 1.6vw, 16px);
+    }
+  
+    .price-container-link {
+      font-size: clamp(10px, 1vw, 12px);
+      margin: clamp(6px, 1vw, 12px);
     }
   }

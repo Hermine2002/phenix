@@ -26,17 +26,17 @@ const WillTakeSection = () => {
           <img src={walli} alt="Artificial Intelligence" className="willtake-featured-image" />
           <div className="willtake-article-meta">
             <div className="meta-info">
-              <Link className="meta-link">Arino<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">Oct 10, 2023<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">7 Comments</Link>
+              <Link className="meta-link">Phenix <span className="meta-separator"> | </span></Link>     
+              <Link className="meta-link">turns technology into opportunity</Link>
             </div>
             <h2 className="willtake-article-title">
-              Artificial will take all human job next year
+            Automated analytics and reporting <br/>
+            AI integration in customer service and marketing
             </h2>
             <p className="willtake-article-excerpt">
-              Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator...
+            Artificial Intelligence is not a threat, but a tool for accelerating business.  
+            Phenix develops AI solutions that automate workflows and increase productivity.
+            We help businesses adapt to the future without compromise.
             </p>
           </div>
         <CreativestudioSection />

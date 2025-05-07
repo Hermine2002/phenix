@@ -1,8 +1,8 @@
 import "./PortfolioSection.css";
-import image1 from "../../../../assets/imgs/image1.png";
-import image2 from "../../../../assets/imgs/imag2.png";
-import image3 from "../../../../assets/imgs/image3.png";
-import image4 from "../../../../assets/imgs/image4.png";
+import image1 from "../../../../assets/imgs/annie-spratt-QckxruozjRg-unsplash.jpeg";
+import image2 from "../../../../assets/imgs/brooke-cagle-g1Kr4Ozfoac-unsplash.jpeg";
+import image3 from "../../../../assets/imgs/upscalemedia-transformed.jpeg";
+import image4 from "../../../../assets/imgs/adeolu-eletu-E7RLgUjjazc-unsplash.jpeg";
 
 import React, { useState, useRef } from "react";
 
@@ -25,10 +25,10 @@ const PortfolioSection = () => {
   };
   return (
     <div className="portfolio-section">
-      <h3 className="portfolioh3">Latest Projects</h3>
-      <h2 className="portfolioh2">Portfolio to explore</h2>
+      <h3 className="portfolioh3"> to see the uniqueness</h3>
+      <h2 className="portfolioh2">our uniqueness</h2>
       <div className="carousel">
-        <button className="prev" onClick={prevSlide}>
+        <button className="prev-portfolio" onClick={prevSlide}>
           ‹
         </button>
         <div className="carousel-inner" ref={carouselRef}>
@@ -41,7 +41,7 @@ const PortfolioSection = () => {
             />
           ))}
         </div>
-        <button className="next" onClick={nextSlide}>
+        <button className="next-portfolio" onClick={nextSlide}>
           ›
         </button>
       </div>

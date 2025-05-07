@@ -89,112 +89,265 @@ h4 {
     font-size: 16px;
 }
 
-@media (max-width: 1200px) {
-  .ourawards-section {
-      gap: 100px;
-      padding-top: 150px;
-      padding-left: 80px;
-  }
-  .ourh3 {
-      font-size: 44px;
-  }
-  .contentttbox1 {
-      width: 50%;
-      gap: 100px;
-  }
-}
 
-@media (max-width: 992px) {
-  .ourawards-section {
-      flex-direction: column;
+  
+  /* Media Queries (1400px - 320px) */
+  
+  /* Large Desktops (1200px - 1400px) */
+  @media (max-width: 1400px) {
+    .ourawards-section {
+      padding-top: clamp(35px, 7vw, 50px);
+      padding-left: clamp(25px, 5vw, 50px);
+    }
+  
+    .contentttbox {
+      width: clamp(38%, 43%, 48%);
+      margin-top: clamp(-90px, -12vw, -110px);
+    }
+  
+    .contentttbox1 {
+      width: clamp(58%, 62%, 68%);
+      gap: clamp(35px, 7vw, 70px);
+    }
+  
+    .awards-list,
+    .awards-list2 {
+      margin-left: clamp(15px, 3vw, 30px);
+    }
+  }
+  
+  /* Medium Desktops (992px - 1200px) */
+  @media (max-width: 1200px) {
+    .ourawards-section {
+      flex-direction: column; /* Stack vertically */
       align-items: center;
-      gap: 80px;
-      padding-top: 120px;
-      padding-left: 0;
+      padding-top: clamp(30px, 6vw, 45px);
+      padding-left: clamp(20px, 4vw, 40px);
+      padding-bottom: clamp(30px, 6vw, 50px);
+    }
+  
+    .contentttbox {
+      width: clamp(80%, 90%, 100%);
+      margin-top: 0; /* Remove negative margin */
+      align-items: center;
       text-align: center;
-  }
-  .ourh3 {
-      font-size: 38px;
-  }
-  .contentttbox1 {
-      width: 80%;
-      gap: 60px;
-  }
-  .text001 {
-      font-size: 26px;
-  }
-  .text002 {
-      font-size: 20px;
-  }
-  .text003 {
-      font-size: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .ourawards-section {
-      gap: 60px;
-      padding-top: 100px;
-  }
-  .ourh3 {
-      font-size: 34px;
-  }
-  .contentttbox1 {
-      width: 90%;
-      gap: 50px;
-  }
-  .text001 {
-      font-size: 24px;
-  }
-  .text002 {
-      font-size: 18px;
-  }
-  .text003 {
-      font-size: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  .ourawards-section {
-      gap: 40px;
-      padding-top: 80px;
-  }
-  .ourh3 {
-      font-size: 30px;
-  }
-  .contentttbox1 {
+    }
+  
+    .contentttbox1 {
       width: 100%;
-      gap: 40px;
+      gap: clamp(30px, 6vw, 60px);
+      justify-content: center; /* Center items */
+    }
+  
+    .awards-list,
+    .awards-list2 {
+      margin-left: 0;
+      align-items: center;
+    }
+  
+    .ourh3 {
+      font-size: clamp(28px, 4.5vw, 44px);
+    }
   }
-  .text001 {
-      font-size: 22px;
+  
+  /* Tablets (768px - 992px) */
+  @media (max-width: 992px) {
+    .ourawards-section {
+      padding-top: clamp(25px, 5vw, 40px);
+      padding-left: clamp(15px, 3vw, 30px);
+    }
+  
+    .contentttbox {
+      gap: clamp(12px, 1.5vw, 15px);
+    }
+  
+    .contentttbox1 {
+      gap: clamp(25px, 5vw, 50px);
+    }
+  
+    .ourh2 {
+      font-size: clamp(14px, 1.6vw, 16px);
+    }
+  
+    .ourh3 {
+      font-size: clamp(24px, 4vw, 40px);
+    }
+  
+    .text001 {
+      font-size: clamp(20px, 2.8vw, 28px);
+    }
+  
+    .text002 {
+      font-size: clamp(16px, 2vw, 20px);
+    }
+  
+    .text003 {
+      font-size: clamp(13px, 1.4vw, 15px);
+    }
+  
+    .award-item {
+      padding: clamp(12px, 1.5vw, 15px);
+    }
   }
-  .text002 {
-      font-size: 16px;
+  
+  /* Small Tablets (576px - 768px) */
+  @media (max-width: 768px) {
+    .ourawards-section {
+      padding-top: clamp(20px, 4vw, 30px);
+      padding-left: clamp(10px, 2vw, 20px);
+      padding-bottom: clamp(20px, 4vw, 30px);
+    }
+  
+    .contentttbox1 {
+      gap: clamp(20px, 4vw, 40px);
+    }
+  
+    .awards-list,
+    .awards-list2 {
+      gap: clamp(2px, 0.4vw, 4px);
+    }
+  
+    .award-item {
+      border-radius: clamp(5px, 0.6vw, 6px);
+    }
+  
+    .ourh3 {
+      font-size: clamp(22px, 3.5vw, 36px);
+    }
+  
+    .text001 {
+      font-size: clamp(18px, 2.5vw, 26px);
+    }
+  
+    .text002 {
+      font-size: clamp(14px, 1.8vw, 18px);
+    }
+  
+    .text003 {
+      font-size: clamp(12px, 1.3vw, 14px);
+    }
   }
-  .text003 {
-      font-size: 13px;
+  
+  /* Mobile (480px - 576px) */
+  @media (max-width: 576px) {
+    .ourawards-section {
+      padding-top: clamp(15px, 3vw, 25px);
+      padding-left: clamp(8px, 1.5vw, 15px);
+    }
+  
+    .contentttbox {
+      gap: clamp(10px, 1.2vw, 12px);
+    }
+  
+    .contentttbox1 {
+      gap: clamp(15px, 3vw, 30px);
+    }
+  
+    .ourh2 {
+      font-size: clamp(12px, 1.4vw, 14px);
+    }
+  
+    .ourh3 {
+      font-size: clamp(20px, 3vw, 32px);
+    }
+  
+    .text001 {
+      font-size: clamp(16px, 2.2vw, 24px);
+    }
+  
+    .text002 {
+      font-size: clamp(13px, 1.6vw, 16px);
+    }
+  
+    .text003 {
+      font-size: clamp(11px, 1.2vw, 13px);
+    }
+  
+    .award-item {
+      padding: clamp(10px, 1.2vw, 12px);
+    }
+  
+    h4 {
+      font-size: clamp(12px, 1.3vw, 14px);
+    }
   }
-}
-
-@media (max-width: 400px) {
-  .ourawards-section {
-      padding-top: 60px;
-      gap: 30px;
+  
+  /* Extra Small Mobile (320px - 480px) */
+  @media (max-width: 480px) {
+    .ourawards-section {
+      padding-top: clamp(12px, 2.5vw, 20px);
+      padding-left: clamp(5px, 1vw, 12px);
+      padding-bottom: clamp(15px, 3vw, 20px);
+    }
+  
+    .contentttbox1 {
+      gap: clamp(12px, 2.5vw, 25px);
+    }
+  
+    .awards-list,
+    .awards-list2 {
+      margin-left: 0;
+    }
+  
+    .ourh3 {
+      font-size: clamp(18px, 2.5vw, 28px);
+    }
+  
+    .text001 {
+      font-size: clamp(14px, 2vw, 22px);
+    }
+  
+    .text002 {
+      font-size: clamp(12px, 1.5vw, 14px);
+    }
+  
+    .text003 {
+      font-size: clamp(10px, 1.1vw, 12px);
+    }
   }
-  .ourh3 {
-      font-size: 26px;
+  
+  /* Very Small Mobile (below 320px) */
+  @media (max-width: 320px) {
+    .ourawards-section {
+      padding-top: clamp(10px, 2vw, 15px);
+      padding-left: clamp(5px, 0.8vw, 10px);
+      padding-bottom: clamp(10px, 2vw, 15px);
+    }
+  
+    .contentttbox {
+      gap: clamp(8px, 1vw, 10px);
+    }
+  
+    .contentttbox1 {
+      gap: clamp(10px, 2vw, 20px);
+    }
+  
+    .ourh2 {
+      font-size: clamp(11px, 1.3vw, 13px);
+    }
+  
+    .ourh3 {
+      font-size: clamp(16px, 2vw, 24px);
+    }
+  
+    .text001 {
+      font-size: clamp(12px, 1.8vw, 20px);
+    }
+  
+    .text002 {
+      font-size: clamp(11px, 1.4vw, 13px);
+    }
+  
+    .text003 {
+      font-size: clamp(9px, 1vw, 11px);
+    }
+  
+    .award-item {
+      padding: clamp(8px, 1vw, 10px);
+      border-radius: clamp(4px, 0.5vw, 5px);
+    }
+  
+    h4 {
+      font-size: clamp(11px, 1.2vw, 13px);
+    }
   }
-  .contentttbox1 {
-      gap: 30px;
-  }
-  .text001 {
-      font-size: 20px;
-  }
-  .text002 {
-      font-size: 15px;
-  }
-  .text003 {
-      font-size: 12px;
-  }
-}

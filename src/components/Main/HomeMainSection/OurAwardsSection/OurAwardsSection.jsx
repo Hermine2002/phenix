@@ -7,42 +7,40 @@ const OurAwardsSection = () => {
         {" "}
         <h2 className="ourh2">Our Awards</h2>
         <h3 className="ourh3">
-          We get multiple <br />
-          awards
+        The advantages of working with us
         </h3>
       </div>
       <div className="contentttbox1">
         <div className="awards-list">
-          <h3 className="text001">2019</h3>
-          <h2 className="text002">Google awards</h2>
+          <h3 className="text001"> Projects, </h3>
+          <h2 className="text002">non-repetitive</h2>
           <p className="text003">
-            Website of the day <br />
-            Mobile exelence
+          original  projects
           </p>
         </div>
         <div className="awards-list">
-          <h3 className="text001">2020</h3>
-          <h2 className="text002">New technology innovation</h2>
+          <h3 className="text001"> Business</h3>
+          <h2 className="text002"> Business growth </h2>
           <p className="text003">
-            Honorable mention
+          The business is growing
             <br />
-            Desktop excellence
+            by 30–60%
           </p>
         </div>
         <div className="awards-list">
-          <h3 className="text001">2021</h3>
-          <h2 className="text002">CSS awards design</h2>
+          <h3 className="text001">Training </h3>
+          <h2 className="text002"> Quality education</h2>
           <p className="text003">
-            Honorable mention <br />
-            Desktop excellence
+          in line with <br/>
+          international standards
           </p>
         </div>
         <div className="awards-list2">
-          <h3 className="text001">2022</h3>
-          <h2 className="text002">UI/UX design of the month</h2>
+          <h3 className="text001"> Marketing </h3>
+          <h2 className="text002"> New and Effective</h2>
           <p className="text003">
-            Website of the day <br />
-            Mobile exelence
+          Marketing solutions  <br />
+           in a short time
           </p>
         </div>
       </div>

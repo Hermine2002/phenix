@@ -8,11 +8,14 @@ import DisscuseMakeSection from "../../Main/AboutMainSection/DisscuseMakeSection
 export default function About() {
   return (
     <>
+
       <FirstPartAboutSection />
       <SecondPartAboutSection />
       <OurFunSection />
       <HighlySection />
       <DisscuseMakeSection />
+ 
     </>
+
   );
 }

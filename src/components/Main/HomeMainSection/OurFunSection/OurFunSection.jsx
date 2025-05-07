@@ -4,43 +4,45 @@ const OurFunSection = () => {
   return (
     <div className="ourfunconteiner">
       <div className="ourfun-section">
-        <div className="fun-fact">
-          <div className="container">
-            <div className="fun-fact-content">
-              <h2 className="h2">Our fun fact</h2>
+        <div className="fun-fact-home">
+          <div className="container-home">
+            <div className="fun-fact-content-home">
+              <h2 className="h2-home">Our Achievements</h2>
               <p className="p">
-                Sed ut perspiciatis unde omnis iste natus error voluptatem{" "}
-                accusantium doloremque laudantium, totam rem aperiam,
-                eaque ipsa quae ab illo inventore veritatis.
+            Phenix is a space for those who strive for more.
+             We work with both aspiring and established entrepreneurs.
+             We bring together people ready to grow, build, and achieve real results.
+              Here, ideas take shape and goals gain momentum.
+              Join us. The time to act is now.
               </p>
             </div>
             <div className="fun-fact-stats">
               <div className="box">
-                <h3 className="h3">40k</h3>
+                <h3 className="h3">1500</h3>
                 <div className="contentbox">
                   <span>+</span>
-                  <p>Global Happy Clients</p>
+                  <p className="contentbox-p">Our Graduates</p>
                 </div>
               </div>
               <div className="box">
-                <h3 className="h3">245</h3>
+                <h3 className="h3">77</h3>
                 <div className="contentbox">
                   <span>+</span>
-                  <p>Global Happy Clients</p>
+                  <p className="contentbox-p">Partners cooperating with us</p>
                 </div>
               </div>
               <div className="box">
-                <h3 className="h3">50k</h3>
+                <h3 className="h3">67</h3>
                 <div className="contentbox">
                   <span>+</span>
-                  <p>Global Happy Clients</p>
+                  <p className="contentbox-p">Our successfully developed projects for our partners</p>
                 </div>
               </div>
               <div className="box">
-                <h3 className="h3">550</h3>
+                <h3 className="h3">1644</h3>
                 <div className="contentbox">
                   <span>+</span>
-                  <p>Global Happy Clients</p>
+                  <p className="contentbox-p">Our results</p>
                 </div>
               </div>
             </div>

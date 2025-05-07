@@ -3,7 +3,7 @@ import { ImLinkedin2 } from "react-icons/im";
 import { FaYoutube } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 
-import logo from "../../assets/imgs/logo.png";
+import logo from "../../assets/imgs/IMG_03171-2.png";
 
 import "./Footer.css";
 import { useState } from "react";
@@ -29,7 +29,11 @@ const Footer = () => {
      <div className="footer-container">
       <div className="footer-container-child">
      <div className="footer-section">
-     <img src={logo} alt="logo"/>
+      <div className="footer-section-img">
+      <img src={logo} alt="logo" />
+      </div>
+
+   
           <p className="footer-container-p">
             Welcome to arino sed ut perspiciae 
             omunde omnis iste natus error sitort 
@@ -47,10 +51,10 @@ const Footer = () => {
           <div className="footer-section2">
          
          <a href="/" className="menu-widget"><h3 className="sectionfooter-h3">Services</h3></a> 
-         <a href="/" className="menu-widget"> <p className="sectionfooter-p"> Digital Marketing</p></a>
-         <a href="/" className="menu-widget"> <p className="sectionfooter-p"> UI/UX Design</p></a>
-         <a href="/" className="menu-widget"> <p className="sectionfooter-p"> Technology</p></a> 
-         <a href="/" className="menu-widget"> <p className="sectionfooter-p"> React JS Development</p></a> 
+         <a href="/coin" className="menu-widget"> <p className="sectionfooter-p"> Coin</p></a>
+         <a href="/curses" className="menu-widget"> <p className="sectionfooter-p"> Courses</p></a>
+         <a href="/what-we-do" className="menu-widget"> <p className="sectionfooter-p"> What we do</p></a> 
+         <a href="/perspective" className="menu-widget"> <p className="sectionfooter-p"> Perspective</p></a> 
      
           </div>
        {/* ///////////////////////////////// */}

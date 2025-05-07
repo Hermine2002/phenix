@@ -1,0 +1,260 @@
+.highly-section-coin {
+    --section-padding: clamp(5rem, 15vw, 500px);
+    --content-gap: clamp(2rem, 8vw, 120px);
+    
+    padding-top: var(--section-padding);
+    padding-bottom: 4rem;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .higly-kanteiner-coin {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    gap: var(--content-gap);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .higly-photobox-coin {
+    width: clamp(300px, 40%, 466px);
+    background-color: #49034b;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .higlyphoto-coin {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: relative;
+    top: -60px;
+    left: -45px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+
+
+  .higlyphoto-coin:hover{
+    filter: grayscale(0);
+  }
+  
+  
+  .higly-textbox-coin {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  
+  .higly-h3-coin {
+    font-size: clamp(0.875rem, 1.25vw, 1.125rem);
+    color: #999696;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .higly-h2-coin {
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    color: #FEFEFE;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .higly-p-coin {
+    font-size: clamp(0.875rem, 1.75vw, 1rem);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    max-width: 60ch;
+  }
+  
+/* Media Queries */
+
+  /* Large Desktops (1200px - 1400px) */
+  @media (max-width: 1400px) {
+    .higly-kanteiner-coin {
+
+        align-items: center;
+    }
+
+    .higly-photobox-coin {
+        width: clamp(280px, 50%, 400px); /* Reduce width */
+        margin-left: 0; /* Center by removing margin */
+    }
+
+    .higlyphoto-coin {
+        top: -40px; /* Reduce offset */
+        left: -30px;
+    }
+
+    .higly-textbox-coin {
+        max-width: 80%; /* Allow more width for text */
+        text-align: center; /* Center text for better mobile appearance */
+    }
+  }
+
+/* Medium Desktops (992px - 1200px) */
+@media (max-width: 1200px) {
+    .highly-section-coin {
+        --section-padding: clamp(3rem, 10vw, 4rem); /* Reduce padding */
+        --content-gap: clamp(1.5rem, 6vw, 2rem);
+        flex-wrap: nowrap;
+    }
+
+    .higly-photobox-coin {
+        width: clamp(260px, 45%, 360px);
+    }
+
+    .higlyphoto-coin {
+        top: -30px;
+        left: -20px;
+    }
+
+    .higly-h2-coin {
+        font-size: clamp(1.75rem, 4.5vw, 2.5rem); /* Smaller heading */
+    }
+
+    .higly-p-coin {
+        font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    }
+}
+
+/* Tablets (768px - 992px) */
+@media (max-width: 992px) {
+    .higly-kanteiner-coin {
+        padding: 0 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .higly-photobox-coin {
+        width: clamp(240px, 60%, 340px); /* Wider relative width */
+        margin: 0 auto; /* Center */
+    }
+
+    .higlyphoto-coin {
+        top: -25px;
+        left: -15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    }
+
+    .higly-textbox-coin {
+        max-width: 90%;
+        padding: 0 0.5rem;
+    }
+
+    .higly-h3-coin {
+        font-size: clamp(0.75rem, 1vw, 1rem);
+    }
+
+    .higly-h2-coin {
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+    }
+}
+
+/* Small Tablets (576px - 768px) */
+@media (max-width: 768px) {
+    .highly-section-coin {
+        --section-padding: clamp(2rem, 8vw, 3rem);
+        --content-gap: clamp(1rem, 5vw, 1.5rem);
+        padding-bottom: 2rem;
+    }
+
+    .higly-kanteiner-coin{
+     flex-wrap: nowrap;
+    }
+
+    .higly-photobox-coin {
+        width: clamp(200px, 70%, 300px);
+    }
+
+    .higlyphoto-coin {
+        top: -20px;
+        left: -10px;
+    }
+
+    .higly-textbox-coin {
+        max-width: 95%;
+    }
+
+    .higly-h2-coin {
+        font-size: clamp(1.25rem, 3.5vw, 2rem);
+    }
+
+    .higly-p-coin {
+        font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+        line-height: 1.6;
+    }
+}
+
+/* Mobile (320px - 576px) */
+@media (max-width: 576px) {
+    .highly-section-coin {
+        --section-padding: clamp(1.5rem, 6vw, 2rem);
+        --content-gap: clamp(0.75rem, 4vw, 1rem);
+    }
+
+    .higly-kanteiner-coin {
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+
+    .higly-photobox-coin {
+        width: clamp(180px, 80%, 280px);
+        margin: 0 auto;
+    }
+
+    .higlyphoto-coin {
+        top: -15px;
+        left: -8px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .higly-textbox-coin {
+        max-width: 100%;
+        padding: 0 0.25rem;
+    }
+
+    .higly-h3-coin {
+        font-size: clamp(0.625rem, 0.75vw, 0.875rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .higly-h2-coin {
+        font-size: clamp(1rem, 3vw, 1.75rem);
+    }
+
+    .higly-p-coin {
+        font-size: clamp(0.625rem, 1vw, 0.75rem);
+        max-width: 100%;
+    }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 320px) {
+    .higly-photobox-coin {
+        width: clamp(160px, 85%, 260px);
+    }
+
+    .higlyphoto-coin {
+        top: -10px;
+        left: -5px;
+    }
+
+    .higly-h2-coin {
+        font-size: clamp(0.875rem, 2.5vw, 1.5rem);
+    }
+
+    .higly-p-coin {
+        font-size: 0.625rem;
+        line-height: 1.5;
+    }
+}
