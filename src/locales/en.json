@@ -1,26 +1,186 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "whatWeDo": "What we do",
+    "blog": "Blog",
+    "coin": "Coin ",
+    "courses": "Courses",
+    "burger-h2": "Do you have a project in mind? Stay connected with us.",
+    "contactus-box-p": "Contact Us",
+    "Subsc-p": " Subscribe",
+    "submit": "Send"
+  },
+  "home-section": {
+    "header": "Phenix",
+    "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
+    "cta": "Get a Quote",
 
-     "header":{
-        "home": "Home",
-        "about": "About",
-        "whatWeDo": "What we do",
-        "blog": "Blog",
-        "coin": "Coin ",
-        "courses": "Courses",
-        "burger-h2": "Do you have a project in mind? Stay connected with us.",
-        "contactus-box-p": "Contact Us",
-         "Subsc-p": " Subscribe",
-          "submit": "Send"
-     },
-     "home-section": {
-        "header": "Phenix",
-        "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
-        "cta": "Get a Quote",
-        
-         "title": "Seminars"
-       
-       
+    "title": "Seminars",
+
+    "ourAchievements": "Our Achievements",
+    "description": "Phenix is a space for those who strive for more. We work with both aspiring and established entrepreneurs. We bring together people ready to grow, build, and achieve real results. Here, ideas take shape and goals gain momentum. Join us. The time to act is now.",
+    "graduates": "Our Graduates",
+    "partners": "Partners cooperating with us",
+    "projects": "Our successful projects for partners",
+    "results": "Our results",
+
+    "blog": {
+      "header": "Our Blog",
+      "subheader": "Explore recent publication",
+      "viewMore": "View More Blog",
+      "posts": {
+        "1": "Arino is the leading source of news for marketing",
+        "2": "Top 21 Must-Read Blogs For Agencies",
+        "3": "Artistic mind for creation",
+        "4": "Artistic mind for creation",
+        "5": "Artistic mind for creation",
+        "6": "Artistic mind for creation",
+        "7": "Artistic mind for creation"
       }
-      
+    },
 
+    "heading": "Sign up on our website for offers",
+    "button": "Apply for Meeting",
+
+    "ourAwards.title": "Our Awards",
+    "ourAwards.subtitle": "The advantages of working with us",
+    "ourAwards.projects.title": "Projects",
+    "ourAwards.projects.subtitle": "non-repetitive",
+    "ourAwards.projects.description": "original projects",
+    "ourAwards.business.title": "Business",
+    "ourAwards.business.subtitle": "Business growth",
+    "ourAwards.business.description": "The business is growing\nby 30–60%",
+    "ourAwards.training.title": "Training",
+    "ourAwards.training.subtitle": "Quality education",
+    "ourAwards.training.description": "in line with\ninternational standards",
+    "ourAwards.marketing.title": "Marketing",
+    "ourAwards.marketing.subtitle": "New and Effective",
+    "ourAwards.marketing.description": "Marketing solutions\nin a short time",
+
+    "portfolio": {
+      "headingSmall": "to see the uniqueness",
+      "headingLarge": "our uniqueness",
+      "prev": "‹",
+      "next": "›"
+    },
+
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Awesome Team Members"
+    },
+
+    "testimonials": [
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "Ahon Monsery",
+        "position": "CEO AT TECH"
+      },
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "Jane Doe",
+        "position": "CEO AT TECH"
+      },
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "John Smith",
+        "position": "CEO AT TECH"
+      }
+    ],
+
+    
+      "secondPartCoin": {
+        "title": "What Can We Do",
+        "subtitle": "What can we offer you? \nOpportunities for success and growth.",
+        "cards": [
+          {
+            "text1": "Digital",
+            "text2": "Marketing"
+          },
+          {
+            "text1": "UI/UX",
+            "text2": "design"
+          },
+          {
+            "text1": "Technology",
+            "text2": ""
+          },
+          {
+            "text1": "React Js",
+            "text2": "Development"
+          }
+        ]
+      }
+    
+    
+  },
+
+  "blog-section": {
+    "aroadmap": {
+      "imageAlt": "Artificial Intelligence",
+      "author": "Arino",
+      "date": "Oct 10, 2023",
+      "comments": "7 Comments",
+      "title": "A roadmap for building a business chatbot",
+      "excerpt": "Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator..."
+    },
+
+    "creativeThinking": "Creative thinking is the driving force of business",
+    "articleTitle": "Branding based on values and style",
+    "articleExcerpt": "Phenix combines design, content, and strategy to build memorable brands. Creativity is one of the key factors in business success.",
+
+    "studio.name": "Phenix Creative Studio",
+    "studio.tagline": "– to tell your business story the right way",
+    "studio.title": "Multimedia content to showcase your brand’s story\nProfessional support for social media and ad campaigns",
+    "studio.description": "We are building a new platform for collaboration between businesses, designers, and marketers. Here, technology meets creativity. Phenix is building a platform designed to create impact.",
+
+    "FirstPartPerspectiveSection": {
+      "ourBlog": "Our BLOG",
+      "home": "HOME",
+      "separator": "|",
+      "ourBlogLink": "OUR BLOG"
+    },
+
+    "top21": {
+      "linkText": "Phenix shares experience to help growing agencies",
+      "title": "Insights based on real-world projects",
+      "excerpt": "We don't just create — we also educate. The Phenix blog is a valuable resource for the growth of agencies and startups. Articles on digital marketing, design, and technology. Your business growth starts with knowledge."
+    },
+
+    "search": "Search",
+    "categories": "Categories",
+    "recentPost": "Recent Post",
+    "article": {
+      "meta1": "Phenix",
+      "meta2": "turns technology into opportunity",
+      "title": "Automated analytics and reporting\nAI integration in customer service and marketing",
+      "excerpt": "Artificial Intelligence is not a threat, but a tool for accelerating business. Phenix develops AI solutions that automate workflows and increase productivity. We help businesses adapt to the future without compromise."
+    },
+
+    "categoryItems": [
+      "Company",
+      "Corporate",
+      "Creative Agency",
+      "Painting Agency",
+      "Creative"
+    ],
+    "recentPosts": {
+      "Post1": {
+        "title": "Digital Marketing A...",
+        "date": "Oct 28, 2023"
+      },
+      "Post2": {
+        "title": "Arino is the leading...",
+        "date": "Oct 28, 2023"
+      },
+      "Post3": {
+        "title": "Top21 Must-Read Bl...",
+        "date": "Oct 28, 2023"
+      },
+      "Post4": {
+        "title": "Artistic mind will be...",
+        "date": "Oct 28, 2023"
+      }
+    }
+  }
 }

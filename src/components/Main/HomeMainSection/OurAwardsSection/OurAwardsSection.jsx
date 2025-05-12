@@ -1,46 +1,62 @@
-import "./OurAwardsSection.css";
+import './OurAwardsSection.css';
+import { useTranslation } from 'react-i18next';
 
 const OurAwardsSection = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <div className="ourawards-section">
       <div className="contentttbox">
-        {" "}
-        <h2 className="ourh2">Our Awards</h2>
-        <h3 className="ourh3">
-        The advantages of working with us
-        </h3>
+        {' '}
+        <h2 className="ourh2">{t('home-section.ourAwards.title')}</h2>
+        <h3 className="ourh3">{t('home-section.ourAwards.subtitle')}</h3>
       </div>
       <div className="contentttbox1">
         <div className="awards-list">
-          <h3 className="text001"> Projects, </h3>
-          <h2 className="text002">non-repetitive</h2>
+          <h3 className="text001">
+            {t('home-section.ourAwards.projects.title')}
+          </h3>
+          <h2 className="text002">
+            {t('home-section.ourAwards.projects.subtitle')}
+          </h2>
           <p className="text003">
-          original  projects
+            {t('home-section.ourAwards.projects.description')}
           </p>
         </div>
         <div className="awards-list">
-          <h3 className="text001"> Business</h3>
-          <h2 className="text002"> Business growth </h2>
+          <h3 className="text001">
+            {t('home-section.ourAwards.business.title')}
+          </h3>
+          <h2 className="text002">
+            {t('home-section.ourAwards.business.subtitle')}
+          </h2>
           <p className="text003">
-          The business is growing
-            <br />
-            by 30–60%
+            {t('home-section.ourAwards.business.description')}
           </p>
         </div>
         <div className="awards-list">
-          <h3 className="text001">Training </h3>
-          <h2 className="text002"> Quality education</h2>
+          <h3 className="text001">
+            {t('home-section.ourAwards.training.title')}
+          </h3>
+          <h2 className="text002">
+            {t('home-section.ourAwards.training.subtitle')}
+          </h2>
           <p className="text003">
-          in line with <br/>
-          international standards
+            {t('home-section.ourAwards.training.description')}
           </p>
         </div>
         <div className="awards-list2">
-          <h3 className="text001"> Marketing </h3>
-          <h2 className="text002"> New and Effective</h2>
+          <h3 className="text001">
+            {t('home-section.ourAwards.marketing.title')}
+          </h3>
+          <h2 className="text002">
+            {t('home-section.ourAwards.marketing.subtitle')}
+          </h2>
           <p className="text003">
-          Marketing solutions  <br />
-           in a short time
+            {t('home-section.ourAwards.marketing.description')}
           </p>
         </div>
       </div>

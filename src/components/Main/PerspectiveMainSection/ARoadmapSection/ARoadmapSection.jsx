@@ -1,31 +1,49 @@
-import studio from '../../../../assets/imgs/hd9yDqDAPfPnFGYZ0yQ2TPICV7C5yMNhaxW5471P.jpg'
+import studio from '../../../../assets/imgs/hd9yDqDAPfPnFGYZ0yQ2TPICV7C5yMNhaxW5471P.jpg';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import '../WillTakeSection/WillTakeSection.css';
+import { useTranslation } from 'react-i18next';
 
 const ARoadmapSection = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <section>
-            <div className="willtake-article">
-          <img src={studio} alt="Artificial Intelligence" className="willtake-featured-image" />
-          <div className="willtake-article-meta">
-            <div className="meta-info">
-              <Link className="meta-link">Arino<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">Oct 10, 2023<span className="meta-separator"> | </span></Link>
-              
-              <Link className="meta-link">7 Comments</Link>
-            </div>
-            <h2 className="willtake-article-title">
-            A roadmap for building a business chatbot
-            </h2>
-            <p className="willtake-article-excerpt">
-              Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator...
-            </p>
-          </div>
-        </div>
-    </section>
-  )
-}
+      <div className="willtake-article">
+        <img
+          src={studio}
+          alt={t('blog-section.aroadmap.imageAlt')}
+          className="willtake-featured-image"
+        />
+        <div className="willtake-article-meta">
+          <div className="meta-info">
+            <Link className="meta-link">
+              {t('blog-section.aroadmap.author')}
+              <span className="meta-separator"> | </span>
+            </Link>
 
-export default ARoadmapSection
+            <Link className="meta-link">
+              {t('blog-section.aroadmap.date')}
+              <span className="meta-separator"> | </span>
+            </Link>
+
+            <Link className="meta-link">
+              {t('blog-section.aroadmap.comments')}
+            </Link>
+          </div>
+          <h2 className="willtake-article-title">
+            {t('blog-section.aroadmap.title')}
+          </h2>
+          <p className="willtake-article-excerpt">
+            {t('blog-section.aroadmap.excerpt')}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ARoadmapSection;
