@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { LuMoveRight } from "react-icons/lu";
-
+import { useTranslation } from "react-i18next";
 import "./HomeCreativitySection.css";
 import axios from "axios";
 
 const HomeCreativitySection = () => {
   const [headerText, setHeaderText] = useState("Loading...");
+  const { t, i18n } = useTranslation()
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
 
   useEffect(() => {
     const fetchHeaderText = async () => {
@@ -23,17 +28,15 @@ const HomeCreativitySection = () => {
     fetchHeaderText();
   }, []);
   return (
-    <div className="hero-content">
+    <div className="bg-blue-500 p-4 hero-content">
       <h1 className="hero-content-h1">{headerText}</h1>
       <div className="hero-content-box">
 
         <p className="hero-content-p">
-        Phenix is more than a company. It's the power behind successful IT projects.
-         We don’t look for clients — we build partners who change the rules of the game.
-          If you're ready to lead, welcome to the place where leaders are made.
+       {t('home-section.paragraph')}
         </p>
         <a href="/" className="cta">
-          Get a Quote <LuMoveRight className="icoon" />
+          {t('home-section.cta')} <LuMoveRight className="icoon" />
         </a>
       </div>
     </div>

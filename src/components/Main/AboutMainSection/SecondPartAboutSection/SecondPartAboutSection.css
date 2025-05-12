@@ -99,7 +99,9 @@
 .photo-photo {
   display: flex;
   gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .kanteiner-photobox {
@@ -114,6 +116,7 @@
   width: 600px;
   height: 390px;
   perspective: 1000px;
+  max-width: 100%;
 }
 
 .flip-card-inner {
@@ -212,6 +215,10 @@
     --text-gap: clamp(1rem, 2.5vw, 2rem); /* Reduce text gap */
   }
 
+  .flip-card-front{
+    max-width: 700px;
+  }
+
   .kanteiner-perpective {
     padding: 0 1.5rem; /* Further reduce padding */
   }
@@ -248,6 +255,19 @@
 
   .kanteiner-perpective {
     padding: 0 1rem; /* Minimal padding for very small screens */
+  }
+
+
+  .flip-card-front{
+    max-width: 300px;
+  }
+
+
+
+
+  .flip-card-back{
+    max-width: 300px;
+ margin-left: 0px;
   }
 
   .text-photo {
@@ -297,5 +317,11 @@
 
   .kanteiner-photobox {
     flex-direction: column;
+    max-width: 100%;
+  }
+
+  .flip-card-back p {
+    font-size: 14px;
+    line-height: 20px;
   }
 } 

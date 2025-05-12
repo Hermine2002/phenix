@@ -1,3 +1,26 @@
 {
 
+     "header":{
+        "home": "Home",
+        "about": "About",
+        "whatWeDo": "What we do",
+        "blog": "Blog",
+        "coin": "Coin ",
+        "courses": "Courses",
+        "burger-h2": "Do you have a project in mind? Stay connected with us.",
+        "contactus-box-p": "Contact Us",
+         "Subsc-p": " Subscribe",
+          "submit": "Send"
+     },
+     "home-section": {
+        "header": "Phenix",
+        "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
+        "cta": "Get a Quote",
+        
+         "title": "Seminars"
+       
+       
+      }
+      
+
 }

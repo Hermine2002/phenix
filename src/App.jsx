@@ -1,7 +1,7 @@
 import "./App.css";
 import Routers from "./Routes/Routes";
 import MouseFollower from "./components/MouseFollower";
-import {useTranslation, I18nextProvider} from 'react-i18next';
+import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
 import enTranslation from './locales/en.json';
 import ruTranslation from './locales/ru.json';

@@ -517,3 +517,7 @@ span {
     position: unset;
   }
 }
+
+.about .fun-fact-home {
+  margin: 0 auto;
+}

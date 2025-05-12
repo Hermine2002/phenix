@@ -7,7 +7,7 @@ import { ImLinkedin2 } from "react-icons/im";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdAddIcCall, MdEmail } from "react-icons/md";
 import logoo from "../../assets/imgs/IMG_03171-2.png"
-
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/imgs/IMG_03171-2.png"
 
 
@@ -23,6 +23,11 @@ const Header = () => {
     socials: {},
     isLoading: true,
   });
+  const { t, i18n } = useTranslation()
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
 
   useEffect(() => {
     const fetchHeaderData = async () => {
@@ -59,6 +64,51 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'am', name: 'Հայերեն', flag: '🇦🇲' }
+  ];
+
+  const LanguageDropdown = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const changeLanguage = (code) => {
+      i18n.changeLanguage(code);
+      setIsOpen(false);
+    };
+
+    return (
+      <div className="relative w-48">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between w-full"
+        >
+          <span>
+            {languages.find(lang => lang.code === i18n.language)?.flag}{' '}
+          </span>
+          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        {isOpen && (
+          <ul className="absolute z-10 mt-1 w-full bg-gray-800 border border-gray-600 rounded-md shadow-lg max-h-60 overflow-auto">
+            {languages.map((lang) => (
+              <li
+                key={lang.code}
+                onClick={() => changeLanguage(lang.code)}
+                className="px-3 py-2 text-white hover:bg-gray-700 cursor-pointer flex items-center"
+              >
+                {lang.flag} {lang.name}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+  };
+
   if (headerData.isLoading) {
     return <div className="header-loading">Loading...</div>;
   }
@@ -67,8 +117,9 @@ const Header = () => {
     <header>
       <nav className="navbar">
   
+        
+        <Link to='/'>
         <div className="header-logo">
-         
         <img
           src={logoo}
           alt="logo"
@@ -79,6 +130,8 @@ const Header = () => {
           }}
         />
         </div>
+        </Link>
+        
 
         
 {/*       
@@ -95,15 +148,16 @@ const Header = () => {
             </li>
           ))}
         </ul>  */}
-         <div className="menu-box"> 
+        <div className="menu-box"> 
           <ul className="nav-menu">
-         <li className="lists" > <Link to='/' className="list"> Home</Link> </li>
-           <li className="lists"> <Link to='/about' className="list">About </Link> </li>
-            <li className="lists list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
-            <li className="lists"><Link className="list" to="/perspective">Perspective</Link></li>
-            <li className="lists" > <Link to="/coin" className="list">coin</Link></li>
-            <li className="lists"> <Link to="/curses" className="list">courses</Link></li>
-             </ul>
+            <li className="lists" > <Link to='/' className="list"> {t('header.home')}</Link> </li>
+            <li className="lists"> <Link to='/about' className="list">{t('header.about')} </Link> </li>
+            <li className="lists"><Link to='/what-we-do' className="list">{t('header.whatWeDo')}</Link></li>
+            <li className="lists"><Link className="list" to="/perspective">{t('header.blog')}</Link></li>
+            <li className="lists" > <Link to="/coin" className="list">{t('header.coin')}</Link></li>
+            <li className="lists"> <Link to="/curses" className="list">{t('header.courses')}</Link></li>
+          </ul>
+          <LanguageDropdown />
         </div> 
 
          <div className="menu-icons-box">
@@ -142,21 +196,21 @@ const Header = () => {
 
 <div className="menu-box"> 
           <ul className="nav-menu-icon">
-         <li className="list" > <Link to='/' className="list"> Home</Link> </li>
-           <li className="list"> <Link to='/about' className="list">About </Link> </li>
-            <li className="list list2"><Link to='/what-we-do' className="list list2">what we do</Link></li>
-            <li className="list"><Link className="list" to="/perspective">Perspective</Link></li>
-            <li className="list" > <Link to="/coin" className="list">coin</Link></li>
-            <li className="list"> <Link to="/curses" className="list">curses</Link></li>
+         <li className="list" > <Link to='/' className="list"> {t('header.home')}</Link> </li>
+           <li className="list"> <Link to='/about' className="list">{t('header.about')} </Link> </li>
+            <li className="list"><Link to='/what-we-do' className="list">{t('header.what we do')}</Link></li>
+            <li className="list"><Link className="list" to="/perspective">{t('header.blog')}</Link></li>
+            <li className="list" > <Link to="/coin" className="list">{t('header.coin')}</Link></li>
+            <li className="list"> <Link to="/curses" className="list">{t('header.courses')}</Link></li>
              </ul>
         </div>
 
           <h2 className="burger-h2">
-            Do you have a project in your mind? Keep connect us.
+            {t('header.burger-h2')}
           </h2>
 
           <div className="contactus-box">
-            <p className="contactus-box-p">Contact Us</p>
+            <p className="contactus-box-p">{t('header.contactus-box-p')}</p>
             <div className="contact-item">
               <span className="icon">
                 <MdAddIcCall className="callll" />
@@ -178,14 +232,14 @@ const Header = () => {
           </div>
 
           <div className="subscribe-container">
-            <p className="Subsc-p">Subscribe</p>
+            <p className="Subsc-p">{t('header.Subsc-p')}</p>
             <form className="subscribe-form">
               <input
                 type="email"
                 placeholder="example@gmail.com"
                 className="subscinput"
               />
-              <button type="submit">Send</button>
+              <button type="submit">{t('header.submit')}</button>
             </form>
           </div>
 

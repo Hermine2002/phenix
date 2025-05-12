@@ -40,14 +40,11 @@
     left: -45px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transition: 0.5s ease-in-out;
-    filter: grayscale(100%);
+   
   }
 
 
-  .higlyphoto-coin:hover{
-    filter: grayscale(0);
-  }
-  
+ 
   
   .higly-textbox-coin {
     max-width: 600px;
@@ -55,18 +52,16 @@
   }
   
   .higly-h3-coin {
-    font-size: clamp(0.875rem, 1.25vw, 1.125rem);
+    font-size: 18px;
     color: #999696;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
   
   .higly-h2-coin {
-    font-size: clamp(2rem, 5vw, 3.125rem);
+     font-size: 30px;
     color: #FEFEFE;
-    font-weight: 600;
-    line-height: 1.2;
+ 
     margin-bottom: 1.5rem;
   }
   

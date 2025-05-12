@@ -19,7 +19,7 @@
 
   
   .fun-fact-about {
-    width: 85%;
+    width: 90%;
      margin: 0px auto; 
      padding: 60px; 
     display: flex;
@@ -135,6 +135,7 @@
  /* Media Queries for 1200px to 320px */
 
 /* Screens up to 1200px */
+
 @media (max-width: 1200px) {
     .fun-fact-about {
       width: 90%; /* Slightly wider to use available space */

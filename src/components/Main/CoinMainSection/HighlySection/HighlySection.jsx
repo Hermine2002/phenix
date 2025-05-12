@@ -1,4 +1,4 @@
-import higlyphoto from '../../../../assets/imgs/W36HeJlhRELdASQcXhtyoO4EYd6cc7VNizphjWsO.jpg'
+import higlyphoto from '../../../../assets/imgs/IMG_2425.JPG'
 
 import './HighlySection.css'
 
@@ -10,17 +10,13 @@ const HighlySection = () => {
                     <img src={higlyphoto} alt="higlyphoto" className='higlyphoto-coin'/>
                 </div>
                 <div className="higly-textbox-coin">
-                    <h3 className='higly-h3-coin'>Why Choose Us</h3>
-                    <h2 className='higly-h2-coin'>Highly experienced <br />
-                    pepole with us</h2>
-                    <p className='higly-p-coin'>This is the main factor that sets us apart from our competition and <br />
-                    allows us to deliver a specialist business consultancy service. Our team <br />
-                    applies its wide-ranging experience to determining. Through our years <br />
-                    of experience, we’ve also learned that while each channel.This is the <br />
-                    main factor that sets us apart from our competition and allows us to 
-                    deliver a <br />specialist business consultancy service. Our team applies its
-                    wide-ranging experience <br />
-                    to determining.</p>
+                    <h3 className='higly-h3-coin'>Phenix Coin is a flexible and secure cryptocurrency based on
+                       Ethereum technology, combining the power of modern digital finance with years of Phenix’s 
+                       experience in IT and marketing.</h3>
+                    <p className='higly-h2-coin'> Phenix Coin — Building a Trusted Future for Digital Business</p>
+                    <p className='higly-p-coin'>Phenix is more than just a coin:
+                    It is an ecosystem where digital currency serves as a tool for technological 
+                    advancement, educational development, and innovative business solutions.</p>
                 </div>
             </div>
     </section>
