@@ -1,6 +1,8 @@
-import './OurFunSection.css'
+import './OurFunSection.css';
+import { useTranslation } from "react-i18next";
 
 const OurFunSection = () => {
+   const { t, i18n } = useTranslation()
   return (
     <div className="ourfunconteiner-about">
 
@@ -9,7 +11,7 @@ const OurFunSection = () => {
     <div className="fun-fact-about">
       <div className="container-about">
         <div className="fun-fact-content-about">
-          <h2 className="h22-about">Our Achievements</h2>
+          <h2 className="h22-about">{t('about.ourFun.title')}</h2>
           <p className="p-about">
           Phenix is a space for those who strive for more.
              We work with both aspiring and established entrepreneurs.

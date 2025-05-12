@@ -10,7 +10,7 @@ export default function FirstPartAboutSection() {
       <br />
       <Link className="home" to="/">HOME </Link>
       <span className="ss"> | </span>
-      <Link className="pers" to="/about"> OUR About</Link>
+      <Link className="pers" to="/about">  About</Link>
     </h2>
     <div className="fakeShadow"></div>
     </div>

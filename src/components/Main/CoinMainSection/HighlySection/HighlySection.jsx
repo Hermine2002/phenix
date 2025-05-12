@@ -1,8 +1,13 @@
 import higlyphoto from '../../../../assets/imgs/IMG_2425.JPG'
-
+import { useTranslation } from "react-i18next";
 import './HighlySection.css'
 
 const HighlySection = () => {
+  const { t, i18n } = useTranslation()
+  
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng)
+    }
   return (
     <section className='highly-section-coin'>
             <div className="higly-kanteiner-coin">
@@ -10,13 +15,9 @@ const HighlySection = () => {
                     <img src={higlyphoto} alt="higlyphoto" className='higlyphoto-coin'/>
                 </div>
                 <div className="higly-textbox-coin">
-                    <h3 className='higly-h3-coin'>Phenix Coin is a flexible and secure cryptocurrency based on
-                       Ethereum technology, combining the power of modern digital finance with years of Phenix’s 
-                       experience in IT and marketing.</h3>
-                    <p className='higly-h2-coin'> Phenix Coin — Building a Trusted Future for Digital Business</p>
-                    <p className='higly-p-coin'>Phenix is more than just a coin:
-                    It is an ecosystem where digital currency serves as a tool for technological 
-                    advancement, educational development, and innovative business solutions.</p>
+                    <h3 className='higly-h3-coin'>{t('coin-section.title')}</h3>
+                    <p className='higly-h2-coin'> {t('coin-section.subtitle')}</p>
+                    <p className='higly-p-coin'>{t('coin-section.paragraph')}</p>
                 </div>
             </div>
     </section>

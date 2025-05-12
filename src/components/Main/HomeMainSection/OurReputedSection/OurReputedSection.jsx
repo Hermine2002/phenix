@@ -1,7 +1,7 @@
-import logggo1 from "../../../../assets/imgs/partner_1.png";
-import logggo2 from "../../../../assets/imgs/partner_2.png";
-import logggo3 from "../../../../assets/imgs/partner_3.png";
-import logggo4 from "../../../../assets/imgs/partner_4.png";
+import logggo1 from "../../../../assets/imgs/IMG_4071.PNG";
+import logggo2 from "../../../../assets/imgs/IMG_3142 (1).PNG";
+import logggo3 from "../../../../assets/imgs/mone 2.jpg";
+import logggo4 from "../../../../assets/imgs/4301ce39-f9f2-4f11-b06c-fe4ac5436add.png";
 import logggo5 from "../../../../assets/imgs/partner_5.png";
 
 import "./OurReputedSection.css";

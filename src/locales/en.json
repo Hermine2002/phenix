@@ -17,10 +17,147 @@
         "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
         "cta": "Get a Quote",
         
-         "title": "Seminars"
+         "title": "Seminars",
+         
+      "testimonial_text": "Our strength lies in:\n• Security and trust — based on the Ethereum blockchain, making interference or forgery impossible\n• Integration into real business processes — Phenix Coin operates within the Phenix company for payments, rewards, and educational platforms\n• Real value and utility — not just a stored asset, but a daily tool for purchasing services, funding projects, and exchanging knowledge\n• Created by experts — people who have already built businesses in marketing and IT, now shaping the future through digital currency"
+       
+          
+       
+      },
+      "coin-section":{
+         
+            "title": "Phenix Coin is a flexible and secure cryptocurrency based on Ethereum technology, combining the power of modern digital finance with years of Phenix’s experience in IT and marketing.",
+            "subtitle": "Phenix Coin — Building a Trusted Future for Digital Business",
+            "paragraph": "Phenix is more than just a coin: It is an ecosystem where digital currency serves as a tool for technological advancement, educational development, and innovative business solutions."
+          
+          
+      },
+
+
+
+      "WhatWeDoSection":{
+         "header": {
+           "title": "What we do",
+           "subtitle": "Importance of storytelling and influencer marketing in social media marketing"
+         },
+         "overview": {
+           "title": "Build Your IT Business With Us",
+           "text": "Phenix is a platform for innovators, aspiring entrepreneurs, and anyone who wants to transform their idea into a powerful digital business.\nWe help create startups from scratch, develop professional websites, and provide the necessary technical and business support for a successful launch and growth.\nIf you have an idea, we know how to make it a reality."
+         },
+         "research": {
+           "title": "Case Study Research",
+           "items": [
+             {
+               "title": "Knowledge That Becomes Power",
+               "text": "At Phenix, education is not just a course — it's a launchpad for a sustainable future.\nWe teach programming, marketing, and business not only in theory, but with real hands-on experience.\nOur training model is designed so that even beginners can build a career or start their own IT business in just 6 months.\nWe teach:\n– Programming (Python, Web, App)\n– Marketing and SMM\n– Business management and startup creation\nTransform your life with knowledge that works.\nAt Phenix, we foster forward-thinking minds."
+             },
+             {
+               "title": "Marketing That Delivers Results",
+               "text": "At Phenix, marketing is not just advertising — it's a strategy that drives growth. We help businesses present themselves effectively, engage their target audience, and turn interest into real sales.\n\nWe provide:\n– Digital marketing (SMM, advertising campaigns, content)\n– Comprehensive marketing strategy\n– SEO and brand development\n– Targeting, analysis, and result-driven management\n\nIf you want your business to speak to the right people, trust us.\nAt Phenix, we create marketing that works."
+             }
+           ]
+         },
+         "results": {
+           "title": "Build Your Success with Phenix",
+           "text": "If you're looking for high-quality tech solutions and want to confidently build and grow your business, we are here to help. Phenix offers not only cutting-edge technology but also in-depth analysis and a support system at every step.\n\nOur team ensures that your idea turns into results. We understand how important every decision is, which is why we provide reliable advice and guidance focused on achieving the best outcomes.\n\nJoin our partners who have already reached new heights with our support. Believe in your idea and let us take it to the next level."
+         },
+         "discuss": {
+           "title": "Let's discuss and make something cool together",
+           "button": "Apply for Meeting"
+         }
+       }  ,
+
+
+
+
+       "courses-section":{
+         "choosePath": "Choose Your Path",
+         "starterPack": {
+           "title": "Starter Pack — The Beginning of Your Journey",
+           "price": "$79/",
+           "only": "Only",
+           "features": [
+             "If you've never written code, this is for you.",
+             "HTML, CSS, JavaScript fundamentals",
+             "5 projects with pre-made web designs",
+             "6 months of access",
+             "4 Packages Tailored for You",
+             "Or $15/month"
+           ]
+         },
+         "proPack": {
+           "title": "Pro Pack",
+           "price": "$139/",
+           "only": "Only",
+           "description": "Need a bit more depth? React is here.",
+           "features": [
+             "Learn Like a Professional",
+             "Everything from the Starter Pack",
+             "Full React.js — Hooks, Routing, State",
+             "Build product websites",
+             "Or $25/month",
+             "Only $139"
+           ]
+         },
+         "fullStackPack": {
+           "title": "Full Stack Pack",
+           "price": "$189/",
+           "only": "Only",
+           "description": "Become a Web Master",
+           "features": [
+             "Everything from the Pro Pack",
+             "Next.js, SEO, Deployment",
+             "Certificate + Personal Project",
+             "Or $35/month",
+             "Launch your website",
+             "Open the doors to professional development."
+           ]
+         },
+         "mentorPack": {
+           "title": "Premium Mentor Pack",
+           "price": "$299/",
+           "only": "Only",
+           "description": "You Won't Walk Alone",
+           "features": [
+             "Everything from the Full Stack Pack",
+             "Zoom mentor meetings",
+             "Code review, personal roadmap",
+             "Support 7/7",
+             "Or $59/month",
+             "Only 20 spots per month"
+           ]
+         },
+         "purchaseNow": "Purchase now"
+       },
+
+
+         "about": {
+           "heading": "Phenix — Creating Solutions That Drive Growth",
+           "subheading": "Phenix turns your ideas into success.",
+           "paragraph1": "Phenix combines innovative thinking, deep marketing expertise, and technical capability to build modern and effective projects. We specialize in brand and web project creation, digital marketing, and software development — delivering real results, not just promises.",
+           "paragraph2": "Our team works in alignment with your business goals, providing solutions that not only stand out but truly make an impact. We focus on quality, creativity, and fast results. If you're looking for a partner who can turn ideas into real success — Phenix is the place to start.",
+           "card1": "Phenix is a company where technology merges with business thinking. We develop software projects for small businesses, early-stage startups, and established enterprises. What makes us unique is that we don’t just create business solutions — we also teach how to build your own IT business from scratch.\nPhenix is a platform where ideas become reality. We bring together creators, entrepreneurs, and beginners by providing knowledge, tools, and support to help them start and grow with confidence.\nWe stand out because we go beyond services — we build a community where people grow together.",
+           "card2": "By collaborating with Phenix, you gain more than just a service.\n\nPersonalized approach — We thoroughly analyze your needs and offer solutions tailored to your business.\nKnowledge and tools — We teach you not only how to use technology but also how to manage and grow your own projects.\nA platform for growth — You become part of a community where ideas and people grow together.\nMarket visibility — Our marketing expertise helps your project reach its audience.\nFast and high-quality execution — We value your time and deliver fast yet thoughtful results.\n\nPhenix is more than just an agency. It’s a space where business, technology, and human potential come together to achieve success.",
+           
+            "ourFun": {
+              "title": "Our Achievements",
+              "description": "Phenix is a space for those who strive for more. We work with both aspiring and established entrepreneurs. We bring together people ready to grow, build, and achieve real results. Here, ideas take shape and goals gain momentum. Join us. The time to act is now.",
+              "stats": {
+                "graduates": "Our Graduates",
+                "partners": "Partners cooperating with us",
+                "projects": "Our successful projects for partners",
+                "results": "Our results"
+              }
+            
+          }
+          
+         }
        
        
-      }
-      
+       
+
+     
+
+     
 
 }

@@ -21,7 +21,7 @@ const OurFunSection = () => {
                 <h3 className="h3">1500</h3>
                 <div className="contentbox">
                   <span>+</span>
-                  <p className="contentbox-p">Our Graduates</p>
+                  <p className="contentbox-p"></p>
                 </div>
               </div>
               <div className="box">
