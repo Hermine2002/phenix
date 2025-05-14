@@ -1,83 +1,120 @@
 import { useState } from "react";
-import Input from "./ui/Input";
-import Button from "./ui/Button";
-import CustomPhoneInput from "./ui/PhoneInput";
-import "./RegisterForm.css";
+import FormField from "./ui/FormField";
+import PhoneInputField from "./ui/PhoneInput";
+import { validateForm } from "../lib/validation";
 
-const RegisterForm = () => {
-  const [form, setForm] = useState({
-    name: "",
+const RegistrationForm = ({ onSubmit }) => {
+  const [formData, setFormData] = useState({
     surname: "",
+    name: "",
     email: "",
     phone: "",
     password: "",
-    passwordConfirm: ""
+    repeatPassword: "",
   });
+
+  const [errors, setErrors] = useState({});
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+
+    if (errors[id]) {
+      setErrors((prev) => ({
+        ...prev,
+        [id]: "",
+      }));
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+    console.log("formData:", formData);
+    const validationErrors = validateForm(formData);
+    console.log("validationErrors:", validationErrors);
+
+    // Ensure validationErrors is an object
+    if (typeof validationErrors !== "object" || validationErrors === null) {
+      console.error("validateForm returned invalid value:", validationErrors);
+      setErrors({ general: "An error occurred during validation" });
+      return;
+    }
+
+    if (Object.keys(validationErrors).length === 0) {
+      console.log("Submitting formData:", formData);
+      onSubmit(formData);
+    } else {
+      setErrors(validationErrors);
+    }
   };
 
   return (
-    <div className="register-form-container">
-      <form className="register-form" onSubmit={handleSubmit}>
-        <h1 className="register-title">Register</h1>
-        <Input 
-          type="text"
-          placeholder="Surname..."  
-          value={form.surname}
-          setValue={(t) => setForm(prev => ({...prev, surname: t}))}
-          header="Surname"
-        />
-
-        <Input 
-          type="text"
-          placeholder="Name..."
-          value={form.name}
-          setValue={(t) => setForm(prev => ({...prev, name: t}))}
-          header="Name"
-        />
-
-        <Input 
-          type="email"
-          placeholder="example@example.com"
-          value={form.email}
-          setValue={(t) => setForm(prev => ({...prev, email: t}))}
-          header="Email"
-        />
-
-        <CustomPhoneInput 
-          header="Phone Number"
-          value={form.phone}
-          setValue={(t) => setForm(prev => ({...prev, phone: t}))}
-        />
-
-        <Input 
-          type="password"
-          placeholder="********"
-          value={form.password}
-          setValue={(t) => setForm(prev => ({...prev, password: t}))}
-          header="Password"
-        />
-
-        <Input 
-          type="password"
-          placeholder="********"
-          value={form.passwordConfirm}
-          setValue={(t) => setForm(prev => ({...prev, passwordConfirm: t}))}
-          header="Repeat Password"
-        />
-
-        <Button
-          type="submit"
-          className="register-button"
-        >
-          <span className="button-text">Register</span>
-        </Button>
+      <form onSubmit={handleSubmit}>
+        <div className="form-fields">
+          <FormField
+              id="name"
+              label="Name"
+              type="text"
+              placeholder="Name..."
+              value={formData.name}
+              onChange={handleInputChange}
+              error={errors.name}
+          />
+          <FormField
+              id="surname"
+              label="Surname"
+              type="text"
+              placeholder="Surname..."
+              value={formData.surname}
+              onChange={handleInputChange}
+              error={errors.surname}
+          />
+          <FormField
+              id="email"
+              label="Email"
+              type="email"
+              placeholder="example@example.com"
+              value={formData.email}
+              onChange={handleInputChange}
+              error={errors.email}
+          />
+          <PhoneInputField
+              id="phone"
+              label="Phone Number"
+              value={formData.phone}
+              onChange={handleInputChange}
+              error={errors.phone}
+          />
+          <FormField
+              id="password"
+              label="Password"
+              type="password"
+              placeholder="********"
+              value={formData.password}
+              onChange={handleInputChange}
+              error={errors.password}
+          />
+          <FormField
+              id="repeatPassword"
+              label="Repeat Password"
+              type="password"
+              placeholder="********"
+              value={formData.repeatPassword}
+              onChange={handleInputChange}
+              error={errors.repeatPassword}
+          />
+          {errors.general && <div className="error">{errors.general}</div>}
+          <div className="form-submit">
+            <button type="submit" className="btn-register">
+              Register
+            </button>
+          </div>
+        </div>
       </form>
-    </div>
   );
 };
 
-export default RegisterForm;
+export default RegistrationForm;

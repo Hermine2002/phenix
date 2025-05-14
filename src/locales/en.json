@@ -1,163 +1,186 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "whatWeDo": "What we do",
+    "blog": "Blog",
+    "coin": "Coin ",
+    "courses": "Courses",
+    "burger-h2": "Do you have a project in mind? Stay connected with us.",
+    "contactus-box-p": "Contact Us",
+    "Subsc-p": " Subscribe",
+    "submit": "Send"
+  },
+  "home-section": {
+    "header": "Phenix",
+    "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
+    "cta": "Get a Quote",
 
-     "header":{
-        "home": "Home",
-        "about": "About",
-        "whatWeDo": "What we do",
-        "blog": "Blog",
-        "coin": "Coin ",
-        "courses": "Courses",
-        "burger-h2": "Do you have a project in mind? Stay connected with us.",
-        "contactus-box-p": "Contact Us",
-         "Subsc-p": " Subscribe",
-          "submit": "Send"
-     },
-     "home-section": {
-        "header": "Phenix",
-        "paragraph": "Phenix is more than a company. It's the power behind successful IT projects. We don’t look for clients — we build partners who change the rules of the game. If you're ready to lead, welcome to the place where leaders are made.",
-        "cta": "Get a Quote",
-        
-         "title": "Seminars",
-         
-      "testimonial_text": "Our strength lies in:\n• Security and trust — based on the Ethereum blockchain, making interference or forgery impossible\n• Integration into real business processes — Phenix Coin operates within the Phenix company for payments, rewards, and educational platforms\n• Real value and utility — not just a stored asset, but a daily tool for purchasing services, funding projects, and exchanging knowledge\n• Created by experts — people who have already built businesses in marketing and IT, now shaping the future through digital currency"
-       
-          
-       
+    "title": "Seminars",
+
+    "ourAchievements": "Our Achievements",
+    "description": "Phenix is a space for those who strive for more. We work with both aspiring and established entrepreneurs. We bring together people ready to grow, build, and achieve real results. Here, ideas take shape and goals gain momentum. Join us. The time to act is now.",
+    "graduates": "Our Graduates",
+    "partners": "Partners cooperating with us",
+    "projects": "Our successful projects for partners",
+    "results": "Our results",
+
+    "blog": {
+      "header": "Our Blog",
+      "subheader": "Explore recent publication",
+      "viewMore": "View More Blog",
+      "posts": {
+        "1": "Arino is the leading source of news for marketing",
+        "2": "Top 21 Must-Read Blogs For Agencies",
+        "3": "Artistic mind for creation",
+        "4": "Artistic mind for creation",
+        "5": "Artistic mind for creation",
+        "6": "Artistic mind for creation",
+        "7": "Artistic mind for creation"
+      }
+    },
+
+    "heading": "Sign up on our website for offers",
+    "button": "Apply for Meeting",
+
+    "ourAwards.title": "Our Awards",
+    "ourAwards.subtitle": "The advantages of working with us",
+    "ourAwards.projects.title": "Projects",
+    "ourAwards.projects.subtitle": "non-repetitive",
+    "ourAwards.projects.description": "original projects",
+    "ourAwards.business.title": "Business",
+    "ourAwards.business.subtitle": "Business growth",
+    "ourAwards.business.description": "The business is growing\nby 30–60%",
+    "ourAwards.training.title": "Training",
+    "ourAwards.training.subtitle": "Quality education",
+    "ourAwards.training.description": "in line with\ninternational standards",
+    "ourAwards.marketing.title": "Marketing",
+    "ourAwards.marketing.subtitle": "New and Effective",
+    "ourAwards.marketing.description": "Marketing solutions\nin a short time",
+
+    "portfolio": {
+      "headingSmall": "to see the uniqueness",
+      "headingLarge": "our uniqueness",
+      "prev": "‹",
+      "next": "›"
+    },
+
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Awesome Team Members"
+    },
+
+    "testimonials": [
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "Ahon Monsery",
+        "position": "CEO AT TECH"
       },
-      "coin-section":{
-         
-            "title": "Phenix Coin is a flexible and secure cryptocurrency based on Ethereum technology, combining the power of modern digital finance with years of Phenix’s experience in IT and marketing.",
-            "subtitle": "Phenix Coin — Building a Trusted Future for Digital Business",
-            "paragraph": "Phenix is more than just a coin: It is an ecosystem where digital currency serves as a tool for technological advancement, educational development, and innovative business solutions."
-          
-          
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "Jane Doe",
+        "position": "CEO AT TECH"
       },
+      {
+        "text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "author": "John Smith",
+        "position": "CEO AT TECH"
+      }
+    ],
 
 
-
-      "WhatWeDoSection":{
-         "header": {
-           "title": "What we do",
-           "subtitle": "Importance of storytelling and influencer marketing in social media marketing"
-         },
-         "overview": {
-           "title": "Build Your IT Business With Us",
-           "text": "Phenix is a platform for innovators, aspiring entrepreneurs, and anyone who wants to transform their idea into a powerful digital business.\nWe help create startups from scratch, develop professional websites, and provide the necessary technical and business support for a successful launch and growth.\nIf you have an idea, we know how to make it a reality."
-         },
-         "research": {
-           "title": "Case Study Research",
-           "items": [
-             {
-               "title": "Knowledge That Becomes Power",
-               "text": "At Phenix, education is not just a course — it's a launchpad for a sustainable future.\nWe teach programming, marketing, and business not only in theory, but with real hands-on experience.\nOur training model is designed so that even beginners can build a career or start their own IT business in just 6 months.\nWe teach:\n– Programming (Python, Web, App)\n– Marketing and SMM\n– Business management and startup creation\nTransform your life with knowledge that works.\nAt Phenix, we foster forward-thinking minds."
-             },
-             {
-               "title": "Marketing That Delivers Results",
-               "text": "At Phenix, marketing is not just advertising — it's a strategy that drives growth. We help businesses present themselves effectively, engage their target audience, and turn interest into real sales.\n\nWe provide:\n– Digital marketing (SMM, advertising campaigns, content)\n– Comprehensive marketing strategy\n– SEO and brand development\n– Targeting, analysis, and result-driven management\n\nIf you want your business to speak to the right people, trust us.\nAt Phenix, we create marketing that works."
-             }
-           ]
-         },
-         "results": {
-           "title": "Build Your Success with Phenix",
-           "text": "If you're looking for high-quality tech solutions and want to confidently build and grow your business, we are here to help. Phenix offers not only cutting-edge technology but also in-depth analysis and a support system at every step.\n\nOur team ensures that your idea turns into results. We understand how important every decision is, which is why we provide reliable advice and guidance focused on achieving the best outcomes.\n\nJoin our partners who have already reached new heights with our support. Believe in your idea and let us take it to the next level."
-         },
-         "discuss": {
-           "title": "Let's discuss and make something cool together",
-           "button": "Apply for Meeting"
-         }
-       }  ,
-
-
-
-
-       "courses-section":{
-         "choosePath": "Choose Your Path",
-         "starterPack": {
-           "title": "Starter Pack — The Beginning of Your Journey",
-           "price": "$79/",
-           "only": "Only",
-           "features": [
-             "If you've never written code, this is for you.",
-             "HTML, CSS, JavaScript fundamentals",
-             "5 projects with pre-made web designs",
-             "6 months of access",
-             "4 Packages Tailored for You",
-             "Or $15/month"
-           ]
-         },
-         "proPack": {
-           "title": "Pro Pack",
-           "price": "$139/",
-           "only": "Only",
-           "description": "Need a bit more depth? React is here.",
-           "features": [
-             "Learn Like a Professional",
-             "Everything from the Starter Pack",
-             "Full React.js — Hooks, Routing, State",
-             "Build product websites",
-             "Or $25/month",
-             "Only $139"
-           ]
-         },
-         "fullStackPack": {
-           "title": "Full Stack Pack",
-           "price": "$189/",
-           "only": "Only",
-           "description": "Become a Web Master",
-           "features": [
-             "Everything from the Pro Pack",
-             "Next.js, SEO, Deployment",
-             "Certificate + Personal Project",
-             "Or $35/month",
-             "Launch your website",
-             "Open the doors to professional development."
-           ]
-         },
-         "mentorPack": {
-           "title": "Premium Mentor Pack",
-           "price": "$299/",
-           "only": "Only",
-           "description": "You Won't Walk Alone",
-           "features": [
-             "Everything from the Full Stack Pack",
-             "Zoom mentor meetings",
-             "Code review, personal roadmap",
-             "Support 7/7",
-             "Or $59/month",
-             "Only 20 spots per month"
-           ]
-         },
-         "purchaseNow": "Purchase now"
-       },
-
-
-         "about": {
-           "heading": "Phenix — Creating Solutions That Drive Growth",
-           "subheading": "Phenix turns your ideas into success.",
-           "paragraph1": "Phenix combines innovative thinking, deep marketing expertise, and technical capability to build modern and effective projects. We specialize in brand and web project creation, digital marketing, and software development — delivering real results, not just promises.",
-           "paragraph2": "Our team works in alignment with your business goals, providing solutions that not only stand out but truly make an impact. We focus on quality, creativity, and fast results. If you're looking for a partner who can turn ideas into real success — Phenix is the place to start.",
-           "card1": "Phenix is a company where technology merges with business thinking. We develop software projects for small businesses, early-stage startups, and established enterprises. What makes us unique is that we don’t just create business solutions — we also teach how to build your own IT business from scratch.\nPhenix is a platform where ideas become reality. We bring together creators, entrepreneurs, and beginners by providing knowledge, tools, and support to help them start and grow with confidence.\nWe stand out because we go beyond services — we build a community where people grow together.",
-           "card2": "By collaborating with Phenix, you gain more than just a service.\n\nPersonalized approach — We thoroughly analyze your needs and offer solutions tailored to your business.\nKnowledge and tools — We teach you not only how to use technology but also how to manage and grow your own projects.\nA platform for growth — You become part of a community where ideas and people grow together.\nMarket visibility — Our marketing expertise helps your project reach its audience.\nFast and high-quality execution — We value your time and deliver fast yet thoughtful results.\n\nPhenix is more than just an agency. It’s a space where business, technology, and human potential come together to achieve success.",
-           
-            "ourFun": {
-              "title": "Our Achievements",
-              "description": "Phenix is a space for those who strive for more. We work with both aspiring and established entrepreneurs. We bring together people ready to grow, build, and achieve real results. Here, ideas take shape and goals gain momentum. Join us. The time to act is now.",
-              "stats": {
-                "graduates": "Our Graduates",
-                "partners": "Partners cooperating with us",
-                "projects": "Our successful projects for partners",
-                "results": "Our results"
-              }
-            
+      "secondPartCoin": {
+        "title": "What Can We Do",
+        "subtitle": "What can we offer you? \nOpportunities for success and growth.",
+        "cards": [
+          {
+            "text1": "Digital",
+            "text2": "Marketing"
+          },
+          {
+            "text1": "UI/UX",
+            "text2": "design"
+          },
+          {
+            "text1": "Technology",
+            "text2": ""
+          },
+          {
+            "text1": "React Js",
+            "text2": "Development"
           }
-          
-         }
-       
-       
-       
+        ]
+      }
 
-     
 
-     
+  },
 
+  "blog-section": {
+    "aroadmap": {
+      "imageAlt": "Artificial Intelligence",
+      "author": "Arino",
+      "date": "Oct 10, 2023",
+      "comments": "7 Comments",
+      "title": "A roadmap for building a business chatbot",
+      "excerpt": "Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laborator..."
+    },
+
+    "creativeThinking": "Creative thinking is the driving force of business",
+    "articleTitle": "Branding based on values and style",
+    "articleExcerpt": "Phenix combines design, content, and strategy to build memorable brands. Creativity is one of the key factors in business success.",
+
+    "studio.name": "Phenix Creative Studio",
+    "studio.tagline": "– to tell your business story the right way",
+    "studio.title": "Multimedia content to showcase your brand’s story\nProfessional support for social media and ad campaigns",
+    "studio.description": "We are building a new platform for collaboration between businesses, designers, and marketers. Here, technology meets creativity. Phenix is building a platform designed to create impact.",
+
+    "FirstPartPerspectiveSection": {
+      "ourBlog": "Our BLOG",
+      "home": "HOME",
+      "separator": "|",
+      "ourBlogLink": "OUR BLOG"
+    },
+
+    "top21": {
+      "linkText": "Phenix shares experience to help growing agencies",
+      "title": "Insights based on real-world projects",
+      "excerpt": "We don't just create — we also educate. The Phenix blog is a valuable resource for the growth of agencies and startups. Articles on digital marketing, design, and technology. Your business growth starts with knowledge."
+    },
+
+    "search": "Search",
+    "categories": "Categories",
+    "recentPost": "Recent Post",
+    "article": {
+      "meta1": "Phenix",
+      "meta2": "turns technology into opportunity",
+      "title": "Automated analytics and reporting\nAI integration in customer service and marketing",
+      "excerpt": "Artificial Intelligence is not a threat, but a tool for accelerating business. Phenix develops AI solutions that automate workflows and increase productivity. We help businesses adapt to the future without compromise."
+    },
+
+    "categoryItems": [
+      "Company",
+      "Corporate",
+      "Creative Agency",
+      "Painting Agency",
+      "Creative"
+    ],
+    "recentPosts": {
+      "Post1": {
+        "title": "Digital Marketing A...",
+        "date": "Oct 28, 2023"
+      },
+      "Post2": {
+        "title": "Arino is the leading...",
+        "date": "Oct 28, 2023"
+      },
+      "Post3": {
+        "title": "Top21 Must-Read Bl...",
+        "date": "Oct 28, 2023"
+      },
+      "Post4": {
+        "title": "Artistic mind will be...",
+        "date": "Oct 28, 2023"
+      }
+    }
+  }
 }

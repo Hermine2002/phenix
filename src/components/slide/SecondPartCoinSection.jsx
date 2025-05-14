@@ -6,6 +6,7 @@ import img2 from "../../assets/imgs/card2.png";
 import img3 from "../../assets/imgs/card3..png";
 import img4 from "../../assets/imgs/card4.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 export default function SecondPartCoinSection({ direction = "bottom-to-top" }) {
   const validDirections = ["bottom-to-top", "top-to-bottom"];
@@ -38,7 +39,7 @@ export default function SecondPartCoinSection({ direction = "bottom-to-top" }) {
   ];
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -63,10 +64,11 @@ export default function SecondPartCoinSection({ direction = "bottom-to-top" }) {
   return (
     <div className="second-section-coin-container">
       <div className="content-container">
-        <h3 className="contenth3">What Can We Do</h3>
+        <h3 className="contenth3">
+          {t('home-section.secondPartCoin.title')}
+        </h3>
         <h2 className="contenth2">
-        What can we offer you? <br />
-        Opportunities for success and growth. 
+        {t('home-section.secondPartCoin.subtitle')}
          
         </h2>
       </div>

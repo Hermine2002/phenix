@@ -386,7 +386,7 @@ margin-left: 10px;
 }
 
 .subscribe-form button {
-  width: 83px;
+  width:auto;
   height: 53px;
   background: rgb(105, 1, 129);
   border: none;

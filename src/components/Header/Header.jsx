@@ -198,7 +198,7 @@ const Header = () => {
           <ul className="nav-menu-icon">
          <li className="list" > <Link to='/' className="list"> {t('header.home')}</Link> </li>
            <li className="list"> <Link to='/about' className="list">{t('header.about')} </Link> </li>
-            <li className="list"><Link to='/what-we-do' className="list">{t('header.what we do')}</Link></li>
+            <li className="list"><Link to='/what-we-do' className="list">{t('header.whatWeDo')}</Link></li>
             <li className="list"><Link className="list" to="/perspective">{t('header.blog')}</Link></li>
             <li className="list" > <Link to="/coin" className="list">{t('header.coin')}</Link></li>
             <li className="list"> <Link to="/curses" className="list">{t('header.courses')}</Link></li>
