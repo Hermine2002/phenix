@@ -182,5 +182,24 @@
         "date": "Oct 28, 2023"
       }
     }
-  }
+  },
+  
+    "footer": {
+      "aboutText": "Welcome to Phenix sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.",
+      "services": "Services",
+      "coin": "Coin",
+      "courses": "Courses",
+      "whatWeDo": "What we do",
+      "perspective": "Perspective",
+      "contactUs": "Contact Us",
+      "phone": "+44 454 7800 112",
+      "email": "info@sazday.com",
+      "address": "50 Wall Street Suite, 44150 Ohio, United States",
+      "subscribe": "Subscribe",
+      "subscribePlaceholder": "example@gmail.com",
+      "send": "Send",
+      "subscribeText": "At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
+    }
+  
+  
 }

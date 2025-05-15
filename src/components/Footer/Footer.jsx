@@ -11,7 +11,7 @@ import { useState } from "react";
 
 const Footer = () => {
   const [input, setInput] = useState("");
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
   const handleChange = (e) => {
     setInput(e.target.value);
   };
@@ -50,27 +50,27 @@ const Footer = () => {
           {/* //////////////////////// */}
           <div className="footer-section2">
          
-         <a href="/" className="menu-widget"><h3 className="sectionfooter-h3">   {t('footer.servicesTitle')}</h3></a> 
-         <a href="/coin" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.services.coin')} </p></a>
-         <a href="/curses" className="menu-widget"> <p className="sectionfooter-p">  {t('footer.services.courses')}</p></a>
-         <a href="/what-we-do" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.services.whatWeDo')} </p></a> 
-         <a href="/perspective" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.services.perspective')} </p></a> 
+         <a href="/" className="menu-widget"><h3 className="sectionfooter-h3">   {t('footer.services')}</h3></a> 
+         <a href="/coin" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.coin')} </p></a>
+         <a href="/curses" className="menu-widget"> <p className="sectionfooter-p">  {t('footer.courses')}</p></a>
+         <a href="/what-we-do" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.whatWeDo')} </p></a> 
+         <a href="/perspective" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.perspective')} </p></a> 
      
           </div>
        {/* ///////////////////////////////// */}
        <div className="footer-section3">
-          <h3 className="sectionfooter-h3">{t('footer.contactTitle')}</h3>
-          <p className="sectionfooter-p"> {t('footer.contact.phone')}</p>
+          <h3 className="sectionfooter-h3">{t('footer.contactUs')}</h3>
+          <p className="sectionfooter-p"> {t('footer.phone')}</p>
           <p className="sectionfooter-p"> info@sazday.com</p>
           <p className="sectionfooter-p">
-          {t('footer.contact.address')}
+          {t('footer.email')}
           </p>
         </div>
 
         {/* ///////////////////////// */}
 
         <div className="footer-section-subscribe">
-        <h3 className="sectionfooter-h3">  {t('footer.subscribeTitle')}</h3>
+        <h3 className="sectionfooter-h3">  {t('footer.subscribe')}</h3>
           <div className="button-box">
          
           <form action="" className="input-form">
@@ -81,7 +81,7 @@ const Footer = () => {
             onChange={handleChange}
             value={input}
           /><button className="footer-button" onClick={handleSubmit}>
-         {t('footer.sendButton')}
+         {t('footer.send')}
         </button>
         </form>
         </div>
