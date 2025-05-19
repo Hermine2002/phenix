@@ -7,14 +7,13 @@
 
 .footer-container{
   width: 100%;
-  height: 250px;
   /* border:1px solid rgb(192, 22, 87); */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 18px;
   background-color: #181818;
-  
+
 }
 
 .footer-container-child{
@@ -73,7 +72,7 @@ font-size: 20px;
   height: 38px;
   width: 38px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -82,7 +81,7 @@ font-size: 20px;
   color: #fff;
   width: 20px;
   height: 20px;
- 
+
 }
 
 
@@ -94,7 +93,7 @@ font-size: 20px;
 .footer-section{
    /* border: 1px solid white;  */
   width: 100%;
-  
+
 }
 
 .footer-section2{
@@ -112,7 +111,7 @@ font-size: 20px;
 
 .footer-section-child{
   width: 100%;
- 
+
   display: flex;
   justify-content: center;
   align-items: start;
@@ -253,16 +252,18 @@ opacity: 0.6;
     flex-wrap: wrap; /* Allow wrapping if needed */
     height: auto;
     gap: clamp(8px, 1.5vw, 15px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .footer-container-child,
   .footer-section2,
   .footer-section3,
   .footer-section-subscribe {
-    width: clamp(22%, 30%, 35%);
+    width: 100%;
   }
 
- 
+
 }
 
 /* Medium Desktops (992px - 1200px) */
@@ -272,7 +273,7 @@ opacity: 0.6;
   }
 
 
- 
+
   .footer-section-img{
     width: 30%;
   }
@@ -281,7 +282,7 @@ opacity: 0.6;
   .footer-section2,
   .footer-section3,
   .footer-section-subscribe {
-    width: clamp(25%, 35%, 40%);
+    width: 100%;
     padding: clamp(8px, 1.5vw, 12px);
   }
 
@@ -296,11 +297,11 @@ opacity: 0.6;
   }
 
   .input-footer {
-   
+
     font-size: clamp(13px, 1.3vw, 15px);
   }
 
- 
+
 }
 
 
@@ -416,7 +417,7 @@ opacity: 0.6;
     align-items: center;
     padding: clamp(15px, 2.5vw, 25px);
     gap: clamp(15px, 2vw, 20px);
-    
+
   }
 
   .footer-section {
@@ -442,11 +443,11 @@ opacity: 0.6;
     align-items: center;
   }
 
-  
+
   .footer-section-img{
     width: 30%;
   }
- 
+
 
   .button-box {
     height: clamp(45px, 7vw, 55px);
@@ -458,7 +459,7 @@ opacity: 0.6;
   .footer-container {
     padding: clamp(10px, 2vw, 20px);
     gap: clamp(10px, 1.5vw, 15px);
-  
+
   }
 
   .footer-container-child,
@@ -504,6 +505,12 @@ opacity: 0.6;
   .footer-container {
     padding: clamp(8px, 1.5vw, 15px);
     gap: clamp(8px, 1.2vw, 12px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-section-subscribe .button-box {
+    justify-content: center;
   }
 
   .icons-box {
