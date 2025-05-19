@@ -5,35 +5,36 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 
 import './TeamSliderSection.css';
-
+import image1 from "../../../../assets/imgs/IMG_1225.jpg"
+import image2 from "../../../../assets/imgs/IMG_7574.JPG"
+import image3 from "../../../../assets/imgs/IMG_4107.jpg"
 
 const TeamSliderSection = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
     {
-      text: t('home-section.testimonials.text'),
-      author: t('home-section.testimonials.author'),
-      position: t('home-section.testimonials.position'),
+      text: t('home-section.testimonials.0.text'),
+      author: t('home-section.testimonials.0.author'),
+      position: t('home-section.testimonials.0.position'),
       rating: 4,
-      image:
-        'https://arino-laravel.laralink.com/storage/testimonial/b973SUptilZkJiwhJZAXsPlGmqngXy8b66ZbIHmZ.jpg',
+      image: image1
     },
     {
-      text: t('home-section.testimonials.text'),
-      author: t('home-section.testimonials.author'),
-      position: t('home-section.testimonials.position'),
+      text: t('home-section.testimonials.1.text'),
+      author: t('home-section.testimonials.1.author'),
+      position: t('home-section.testimonials.1.position'),
       rating: 5,
-      image:
-        'https://arino-laravel.laralink.com/storage/testimonial/tO9O78qrxmMUZQOciEGst2MOqarosQkqdNJufOJ9.jpg',
+      image: image2
+        
     },
     {
-      text: t('home-section.testimonials.text'),
-      author: t('home-section.testimonials.author'),
-      position: t('home-section.testimonials.position'),
+      text: t('home-section.testimonials.2.text'),
+      author: t('home-section.testimonials.2.author'),
+      position: t('home-section.testimonials.2.position'),
       rating: 3,
-      image:
-        'https://arino-laravel.laralink.com/storage/testimonial/Ev5h7wiUmB7o7ZETTofCS9qsEEhK5s4hp8bz1Gop.jpg',
+      image: image3
+       
     },
   ];
   const nextSlide = () => {

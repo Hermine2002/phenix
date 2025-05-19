@@ -2,6 +2,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { ImLinkedin2 } from "react-icons/im";
 import { FaYoutube } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 import logo from "../../assets/imgs/IMG_03171-2.png";
 
@@ -10,6 +11,7 @@ import { useState } from "react";
 
 const Footer = () => {
   const [input, setInput] = useState("");
+  const { t, i18n } = useTranslation();
   const handleChange = (e) => {
     setInput(e.target.value);
   };
@@ -35,9 +37,7 @@ const Footer = () => {
 
    
           <p className="footer-container-p">
-            Welcome to arino sed ut perspiciae 
-            omunde omnis iste natus error sitort 
-            voluptatem accusantium.
+          {t('footer.aboutText')}
           </p>
         </div>
         <div className="icons-box">
@@ -50,28 +50,27 @@ const Footer = () => {
           {/* //////////////////////// */}
           <div className="footer-section2">
          
-         <a href="/" className="menu-widget"><h3 className="sectionfooter-h3">Services</h3></a> 
-         <a href="/coin" className="menu-widget"> <p className="sectionfooter-p"> Coin</p></a>
-         <a href="/curses" className="menu-widget"> <p className="sectionfooter-p"> Courses</p></a>
-         <a href="/what-we-do" className="menu-widget"> <p className="sectionfooter-p"> What we do</p></a> 
-         <a href="/perspective" className="menu-widget"> <p className="sectionfooter-p"> Perspective</p></a> 
+         <a href="/" className="menu-widget"><h3 className="sectionfooter-h3">   {t('footer.services')}</h3></a> 
+         <a href="/coin" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.coin')} </p></a>
+         <a href="/curses" className="menu-widget"> <p className="sectionfooter-p">  {t('footer.courses')}</p></a>
+         <a href="/what-we-do" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.whatWeDo')} </p></a> 
+         <a href="/perspective" className="menu-widget"> <p className="sectionfooter-p"> {t('footer.perspective')} </p></a> 
      
           </div>
        {/* ///////////////////////////////// */}
        <div className="footer-section3">
-          <h3 className="sectionfooter-h3">Contact Us</h3>
-          <p className="sectionfooter-p"> +44 454 7800 112</p>
+          <h3 className="sectionfooter-h3">{t('footer.contactUs')}</h3>
+          <p className="sectionfooter-p"> {t('footer.phone')}</p>
           <p className="sectionfooter-p"> info@sazday.com</p>
           <p className="sectionfooter-p">
-            50 Wall Street Suite, 44150 Ohio, United <br />
-            States
+          {t('footer.email')}
           </p>
         </div>
 
         {/* ///////////////////////// */}
 
         <div className="footer-section-subscribe">
-        <h3 className="sectionfooter-h3">Subscribe</h3>
+        <h3 className="sectionfooter-h3">  {t('footer.subscribe')}</h3>
           <div className="button-box">
          
           <form action="" className="input-form">
@@ -82,13 +81,12 @@ const Footer = () => {
             onChange={handleChange}
             value={input}
           /><button className="footer-button" onClick={handleSubmit}>
-          Send
+         {t('footer.send')}
         </button>
         </form>
         </div>
           <p className="input-p2">
-            At vero eos et accusamus et iusto odio <br />
-            as part dignissimos ducimus qui blandit.
+          {t('footer.subscribeText')}
           </p>
         </div>
      </div>
